@@ -1,0 +1,941 @@
+/* screen - desktop-main-page */
+
+.desktop-main-page {
+  align-items: flex-start;
+  border: 1px none;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  min-height: 6112px;
+  min-width: 1440px;
+  width: 100%;
+}
+
+.desktop-main-page .ubc-navigation-menu {
+  background-color: var(--surface);
+  height: 300px;
+  min-width: 1440px;
+  position: relative;
+}
+
+.desktop-main-page .screenshot-2022-10-03-194008-1 {
+  height: 300px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 1440px;
+}
+
+.desktop-main-page .main-page-menu {
+  background-color: var(--surface);
+  height: 582px;
+  min-width: 1440px;
+  position: relative;
+}
+
+.desktop-main-page .navigation-menu {
+  align-items: flex-start;
+  display: flex;
+  gap: 24px;
+  height: 432px;
+  left: 160px;
+  min-width: 1120px;
+  position: absolute;
+  top: 126px;
+}
+
+.desktop-main-page .x-container {
+  flex-direction: column;
+  gap: 32px;
+  min-height: 432px;
+  width: 320px;
+}
+
+.desktop-main-page .x-button {
+  background-color: var(--light-blue);
+  border: 4px solid;
+  border-color: var(--blue);
+  border-radius: 10px;
+  cursor: pointer;
+  height: 200px;
+  min-width: 320px;
+  padding: 51.4px 33.9px;
+}
+
+.desktop-main-page .about-the-program {
+  height: 88px;
+  letter-spacing: 0;
+  line-height: 40px;
+  text-align: center;
+  width: 244px;
+}
+
+.desktop-main-page .our-stories-buton {
+  align-items: flex-start;
+  background-color: var(--light-blue);
+  border: 4px solid;
+  border-color: var(--blue);
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  height: 200px;
+  min-width: 320px;
+  padding: 70px 34px;
+}
+
+.desktop-main-page .our-stories {
+  height: 51px;
+  letter-spacing: 0;
+  line-height: 40px;
+  text-align: center;
+  width: 244px;
+}
+
+.desktop-main-page .heart-1 {
+  height: 432px;
+  object-fit: cover;
+  width: 432px;
+}
+
+.desktop-main-page .the-donation-process {
+  height: 87px;
+  letter-spacing: 0;
+  line-height: 40px;
+  text-align: center;
+  width: 244px;
+}
+
+.desktop-main-page .faq-page-button {
+  align-items: flex-start;
+  background-color: var(--light-blue);
+  border: 4px solid;
+  border-color: var(--blue);
+  border-radius: 10px;
+  display: flex;
+  height: 200px;
+  min-width: 320px;
+  padding: 32px 14px;
+}
+
+.desktop-main-page .frequently-asked-questions {
+  height: 126px;
+  letter-spacing: 0;
+  line-height: 40px;
+  text-align: center;
+  width: 284px;
+}
+
+.desktop-main-page .title {
+  height: 78px;
+  left: 160px;
+  letter-spacing: 0;
+  line-height: 78px;
+  position: absolute;
+  top: 23px;
+  white-space: nowrap;
+  width: 1120px;
+}
+
+.desktop-main-page .intro-text {
+  background-color: var(--surface);
+  height: 340px;
+  min-width: 1440px;
+}
+
+.desktop-main-page .type-header3 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  left: 160px;
+  position: relative;
+  top: 24px;
+  width: 1120px;
+}
+
+.desktop-main-page .header-2 {
+  line-height: 48px;
+}
+
+.desktop-main-page .paragraph {
+  align-self: stretch;
+  letter-spacing: 0;
+  line-height: 26px;
+}
+
+.desktop-main-page .about-the-program-why-donate {
+  background-color: var(--surface);
+  height: 1829px;
+  min-width: 1440px;
+  position: relative;
+}
+
+.desktop-main-page .about-the-program-why-donate-1 {
+  align-items: flex-end;
+  display: flex;
+  height: 1706px;
+  left: 158px;
+  min-width: 1122px;
+  position: absolute;
+  top: 24px;
+}
+
+.desktop-main-page .overlap-group2 {
+  height: 1711px;
+  margin-bottom: -7px;
+  position: relative;
+  width: 1120px;
+}
+
+.desktop-main-page .overlap-group {
+  align-items: flex-start;
+  background-color: var(--unselected);
+  border-radius: 10px 10px 0px 0px;
+  display: flex;
+  height: 73px;
+  justify-content: flex-end;
+  left: 565px;
+  min-width: 555px;
+  padding: 10px 15.8px;
+  position: absolute;
+  top: 0;
+}
+
+.desktop-main-page .why-donate {
+  color: #01204599;
+  font-family: var(--font-family-open_sans);
+  font-size: var(--font-size-xxl);
+  font-weight: 700;
+  height: 52px;
+  letter-spacing: 0;
+  line-height: 40px;
+  text-align: center;
+  width: 523px;
+}
+
+.desktop-main-page .background-box {
+  background-color: var(--surface);
+  border: 4px solid;
+  border-color: var(--blue);
+  border-radius: 0px 0px 10px 10px;
+  height: 1640px;
+  left: 0;
+  position: absolute;
+  top: 71px;
+  width: 1120px;
+}
+
+.desktop-main-page .overlap-group1 {
+  align-items: flex-start;
+  background-color: var(--surface);
+  border-color: var(--blue);
+  border-left-style: solid;
+  border-left-width: 4px;
+  border-radius: 10px 10px 0px 0px;
+  border-right-style: solid;
+  border-right-width: 4px;
+  border-top-style: solid;
+  border-top-width: 4px;
+  display: flex;
+  height: 73px;
+  left: 0;
+  min-width: 555px;
+  padding: 6.9px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.desktop-main-page .about-the-program-1 {
+  height: 52px;
+  letter-spacing: 0;
+  line-height: 40px;
+  text-align: center;
+  width: 523px;
+}
+
+.desktop-main-page .our-team {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  left: 65px;
+  min-height: 518px;
+  position: absolute;
+  top: 1142px;
+  width: 990px;
+}
+
+.desktop-main-page .our-team-1 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  height: 167px;
+  width: 990px;
+}
+
+.desktop-main-page .header {
+  align-self: stretch;
+  letter-spacing: 0;
+  line-height: 48px;
+  margin-top: -1.00px;
+  white-space: nowrap;
+}
+
+.desktop-main-page .as-the-custodian-of {
+  letter-spacing: 0;
+  line-height: 26px;
+  margin-right: 1.0px;
+  margin-top: 23px;
+  min-height: 54px;
+  text-align: center;
+  width: 735px;
+}
+
+.desktop-main-page .matt-tinney-quote {
+  align-items: flex-end;
+  background-color: var(--light-pink);
+  border-radius: 10px;
+  display: flex;
+  height: 249px;
+  justify-content: flex-end;
+  margin-right: 2.0px;
+  margin-top: 25px;
+  min-width: 992px;
+  padding: 20px 32px;
+}
+
+.desktop-main-page .overlap-group-1 {
+  height: 206px;
+  position: relative;
+  width: 925px;
+}
+
+.desktop-main-page .play-pause-icon {
+  align-items: flex-start;
+  background-color: var(--light-blue);
+  border: 4px solid;
+  border-color: var(--blue);
+  border-radius: 32px;
+  display: flex;
+  height: 64px;
+  justify-content: flex-end;
+  left: 861px;
+  min-width: 64px;
+  padding: 10.1px 15.6px;
+  position: absolute;
+  top: 142px;
+}
+
+.desktop-main-page .polygon-1 {
+  height: 36px;
+  width: 31px;
+}
+
+.desktop-main-page .i-would-like-people {
+  color: var(--black);
+  font-family: var(--font-family-open_sans);
+  font-size: var(--font-size-xl);
+  font-weight: 300;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 28px;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 924px;
+}
+
+.desktop-main-page .span {
+  line-height: 36px;
+}
+
+.desktop-main-page .span-1 {
+  font-size: var(--font-size-m);
+  font-style: italic;
+  line-height: 26px;
+}
+
+.desktop-main-page .the-memorial-service {
+  align-items: flex-end;
+  display: flex;
+  gap: 32px;
+  height: 296px;
+  left: 63px;
+  min-width: 992px;
+  position: absolute;
+  top: 822px;
+}
+
+.desktop-main-page .type-header3-1 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  width: 575px;
+}
+
+.desktop-main-page .memorial-illustration {
+  background-image: url(../img/memorial-2@2x.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  border-radius: 10px;
+  height: 260px;
+  margin-bottom: 6px;
+  width: 385px;
+}
+
+.desktop-main-page .ubc-faculty-student {
+  height: 100px;
+  left: 67px;
+  letter-spacing: 0;
+  line-height: 26px;
+  position: absolute;
+  top: 697px;
+  width: 992px;
+}
+
+.desktop-main-page .surgical-training-infographic-1 {
+  background-image: url(../img/surgical-training-infographic-1@2x.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 262px;
+  left: 576px;
+  position: absolute;
+  top: 391px;
+  width: 449px;
+}
+
+.desktop-main-page .indefinite-donation-infographics-1 {
+  background-image: url(../img/indefinite-donation-infographics-1@2x.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 288px;
+  left: 65px;
+  position: absolute;
+  top: 391px;
+  width: 479px;
+}
+
+.desktop-main-page .the-ubc-body-donation-program {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  left: 65px;
+  position: absolute;
+  top: 97px;
+  width: 992px;
+}
+
+.desktop-main-page .back-to-top-1 {
+  height: 47px;
+  left: 1171px;
+  position: absolute;
+  top: 1758px;
+}
+
+.desktop-main-page .back-to-top {
+  height: 47px;
+  letter-spacing: 0;
+  line-height: 26px;
+  margin-top: -1px;
+  text-align: center;
+  width: 107px;
+}
+
+.desktop-main-page .our-stories-1 {
+  background-color: var(--surface);
+  height: 703px;
+  min-width: 1440px;
+  position: relative;
+}
+
+.desktop-main-page .flex-row {
+  align-items: flex-start;
+  display: flex;
+  height: 479px;
+  left: 160px;
+  min-width: 1120px;
+  position: absolute;
+  top: 200px;
+}
+
+.desktop-main-page .kate-fitzsimmons {
+  align-items: flex-end;
+  cursor: pointer;
+  display: flex;
+  height: 403px;
+  min-width: 352px;
+}
+
+.desktop-main-page .overlap-group2-1 {
+  height: 407px;
+  margin-bottom: -4px;
+  position: relative;
+  width: 352px;
+}
+
+.desktop-main-page .name {
+  height: 56px;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 28px;
+  position: absolute;
+  text-align: center;
+  top: 351px;
+  width: 352px;
+}
+
+.desktop-main-page .kate-fitzsimmons-1 {
+  background-image: url(../img/kate-1@2x.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 352px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 352px;
+}
+
+.desktop-main-page .dr-olusegun-oyedele {
+  align-items: flex-end;
+  cursor: pointer;
+  display: flex;
+  height: 403px;
+  margin-left: 32px;
+  min-width: 352px;
+}
+
+.desktop-main-page .olusegun-oyedele-container {
+  height: 407px;
+  margin-bottom: -4px;
+  position: relative;
+  width: 352px;
+}
+
+.desktop-main-page .dr-olusegun-oyedele-1 {
+  height: 56px;
+  letter-spacing: 0;
+  line-height: 28px;
+  text-align: center;
+  top: 351px;
+}
+
+.desktop-main-page .dr-olusegun-oyedele-2 {
+  background-image: url(../img/segun-1@2x.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 352px;
+  top: 0;
+}
+
+.desktop-main-page .flex-col {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-left: 31px;
+  min-height: 479px;
+  width: 353px;
+}
+
+.desktop-main-page .army-alam {
+  align-items: flex-start;
+  cursor: pointer;
+  display: flex;
+  height: 408px;
+  min-width: 353px;
+}
+
+.desktop-main-page .army-container {
+  height: 407px;
+  position: relative;
+  width: 353px;
+}
+
+.desktop-main-page .army-alam-4th-year-ubc-medical-student {
+  height: 56px;
+  left: 1px;
+  letter-spacing: 0;
+  line-height: 28px;
+  position: absolute;
+  text-align: center;
+  top: 351px;
+  width: 352px;
+}
+
+.desktop-main-page .army-1 {
+  height: 352px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 352px;
+}
+
+.desktop-main-page .our-stories-header {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  left: 160px;
+  position: absolute;
+  top: 24px;
+  width: 1120px;
+}
+
+.desktop-main-page .header-1 {
+  line-height: 58px;
+  white-space: nowrap;
+}
+
+.desktop-main-page .paragraph-1 {
+  line-height: 40px;
+}
+
+.desktop-main-page .the-donation-process-1 {
+  background-color: var(--surface);
+  height: 1376px;
+  min-width: 1440px;
+}
+
+.desktop-main-page .flex-col-1 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  left: 160px;
+  min-height: 1328px;
+  position: relative;
+  top: 24px;
+  width: 1122px;
+}
+
+.desktop-main-page .the-donation-process-header {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-right: 2.0px;
+  width: 1120px;
+}
+
+.desktop-main-page .overlap-group-container {
+  align-items: flex-start;
+  display: flex;
+  gap: 24px;
+  margin-right: 2.0px;
+  min-width: 1120px;
+}
+
+.desktop-main-page .x-passing-container {
+  height: 360px;
+  position: relative;
+  width: 548px;
+}
+
+.desktop-main-page .before-passing-button {
+  align-items: flex-start;
+  background-color: var(--light-green);
+  border: 4px solid;
+  border-color: var(--green);
+  border-radius: 10px;
+  display: flex;
+  height: 200px;
+  left: 228px;
+  min-width: 320px;
+  padding: 32px 14px;
+  position: absolute;
+  top: 73px;
+}
+
+.desktop-main-page .before-passing {
+  height: 126px;
+  letter-spacing: 0;
+  line-height: 40px;
+  text-align: center;
+  width: 284px;
+}
+
+.desktop-main-page .before-passing-1 {
+  background-image: url(../img/before-passing-1@2x.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 360px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 360px;
+}
+
+.desktop-main-page .after-passing-button {
+  align-items: flex-start;
+  background-color: var(--light-green);
+  border: 4px solid;
+  border-color: var(--green);
+  border-radius: 10px;
+  display: flex;
+  height: 200px;
+  left: 0;
+  min-width: 320px;
+  padding: 32px 14px;
+  position: absolute;
+  top: 73px;
+}
+
+.desktop-main-page .after-passing {
+  height: 126px;
+  letter-spacing: 0;
+  line-height: 40px;
+  text-align: center;
+  width: 284px;
+}
+
+.desktop-main-page .after-passing-1 {
+  background-image: url(../img/after-passing-1@2x.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 360px;
+  left: 188px;
+  position: absolute;
+  top: 0;
+  width: 360px;
+}
+
+.desktop-main-page .if-you-are-ready-to {
+  color: var(--black);
+  font-family: var(--font-family-open_sans);
+  font-size: var(--font-size-xxl);
+  font-weight: 700;
+  height: 72px;
+  letter-spacing: 0;
+  line-height: 40px;
+  margin-right: 2.0px;
+  margin-top: 23px;
+  text-align: center;
+  width: 1120px;
+}
+
+.desktop-main-page .consent-form-self-registration-download {
+  align-items: flex-start;
+  background-color: var(--light-green);
+  border: 4px solid;
+  border-color: var(--green);
+  border-radius: 10px;
+  display: flex;
+  height: 72px;
+  margin-right: 1.0px;
+  margin-top: 25px;
+  min-width: 925px;
+  padding: 11px 0;
+}
+
+.desktop-main-page .button-text-1 {
+  cursor: pointer;
+  height: 40px;
+  letter-spacing: 0;
+  line-height: 40px;
+  margin-left: -4px;
+  text-align: center;
+  white-space: nowrap;
+  width: 925px;
+}
+
+.desktop-main-page .executor-consent-form-download {
+  align-items: flex-start;
+  background-color: var(--light-green);
+  border: 4px solid;
+  border-color: var(--green);
+  border-radius: 10px;
+  display: flex;
+  height: 72px;
+  margin-right: 1.0px;
+  margin-top: 24px;
+  min-width: 925px;
+  padding: 11px 0;
+}
+
+.desktop-main-page .button-text {
+  height: 40px;
+  letter-spacing: 0;
+  line-height: 40px;
+  margin-left: -4px;
+  text-align: center;
+  white-space: nowrap;
+  width: 925px;
+}
+
+.desktop-main-page .if-you-have-any-ques {
+  height: 130px;
+  letter-spacing: 0;
+  line-height: 26px;
+  margin-top: 23px;
+  width: 1118px;
+}
+
+.desktop-main-page .matt-tinney-quote-1 {
+  align-items: flex-start;
+  background-color: var(--light-green);
+  border-radius: 10px;
+  display: flex;
+  height: 239px;
+  justify-content: flex-end;
+  margin-left: 2.0px;
+  margin-top: 25px;
+  min-width: 1120px;
+  padding: 23px 64px;
+}
+
+.desktop-main-page .our-staff-handles-a {
+  color: var(--black);
+  font-family: var(--font-family-open_sans);
+  font-size: var(--font-size-xl);
+  font-weight: 300;
+  height: 191px;
+  letter-spacing: 0;
+  line-height: 28px;
+  text-align: center;
+  width: 991px;
+}
+
+.desktop-main-page .back-to-top-3 {
+  align-self: flex-end;
+  margin-right: 2px;
+  margin-top: 24px;
+}
+
+.desktop-main-page .anatomical-material {
+  background-color: var(--surface);
+  height: 120px;
+  min-width: 1440px;
+}
+
+.desktop-main-page .anatomical-material-1 {
+  align-items: flex-start;
+  background-color: var(--light-blue);
+  border: 4px solid;
+  border-color: var(--blue);
+  border-radius: 10px;
+  display: flex;
+  height: 72px;
+  left: 259px;
+  min-width: 925px;
+  padding: 11px 0;
+  position: relative;
+  top: 24px;
+}
+
+.desktop-main-page .download-brochure {
+  background-color: var(--surface);
+  height: 272px;
+  min-width: 1440px;
+  position: relative;
+}
+
+.desktop-main-page .download-brochure-1 {
+  align-items: flex-start;
+  background-color: var(--light-pink);
+  border: 4px solid;
+  border-color: var(--pink);
+  border-radius: 10px;
+  display: flex;
+  height: 72px;
+  left: 259px;
+  min-width: 925px;
+  padding: 11px 0;
+  position: absolute;
+  top: 152px;
+}
+
+.desktop-main-page .know-someone-who-may {
+  height: 80px;
+  left: 160px;
+  letter-spacing: 0;
+  line-height: 40px;
+  position: absolute;
+  text-align: center;
+  top: 47px;
+  width: 1120px;
+}
+
+.desktop-main-page .contact-us {
+  background-color: var(--surface);
+  height: 415px;
+  min-width: 1440px;
+  position: relative;
+}
+
+.desktop-main-page .back-to-top-4 {
+  height: 47px;
+  left: 1173px;
+  position: absolute;
+  top: 344px;
+}
+
+.desktop-main-page .contact-info {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  left: 160px;
+  position: absolute;
+  top: 24px;
+  width: 1120px;
+}
+
+.desktop-main-page .header-3 {
+  line-height: 48px;
+  white-space: nowrap;
+}
+
+.desktop-main-page .paragraph-2 {
+  line-height: 26px;
+}
+
+.desktop-main-page .ubc-footer {
+  background-color: var(--surface);
+  height: 327px;
+  margin-bottom: -152.00px;
+  min-width: 1440px;
+  position: relative;
+}
+
+.desktop-main-page .screenshot-2022-10-03-204313-2 {
+  height: 327px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 1440px;
+}
+
+.desktop-main-page .back-to-top-5 {
+  align-items: flex-start;
+  cursor: pointer;
+  display: flex;
+  min-width: 107px;
+}
+
+.desktop-main-page .dr-olusegun-oyedele-3 {
+  left: 0;
+  position: absolute;
+  width: 352px;
+}
+
+.desktop-main-page .header-4 {
+  align-self: stretch;
+  letter-spacing: 0;
+  margin-top: -1.00px;
+  text-align: center;
+}
+
+.desktop-main-page .paragraph-3 {
+  align-self: stretch;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+.desktop-main-page .x {
+  align-items: flex-start;
+  display: flex;
+}
