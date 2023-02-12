@@ -110,21 +110,25 @@
       .panel {
           box-sizing: border-box;
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+          align-items: center;
+          width: 98%;
+          position: relative;
+          left: 1%;
+          border-radius: 0 0 10px 10px;
+          margin-top: -8px;
+          max-height: 0;
           overflow: hidden;
-          display: none;
+          transition: max-height 0.5s;
+      }
+
+      .panel-text {
+          padding: 16px 30px 20px;
           font-family: var(--font-family-open_sans);
           font-style: normal;
           font-weight: 400;
           font-size: 18px;
           line-height: 25px;
-          align-items: center;
           color: #000000;
-          width: 98%;
-          position: relative;
-          left: 1%;
-          border-radius: 0 0 10px 10px;
-          padding: 5px 30px;
-          margin-top: -4px;
       }
 
       .panel.purple {
@@ -352,42 +356,50 @@
             Can I make a financial contribution?
           </button>
           <div class="panel purple">
-            Yes, financial contributions are accepted. Cheques made payable to the Anatomical Sciences Research
-            Endowment, can be mailed to the program address below. <br> <br>
-            Department of Cellular & Physiological Sciences <br>
-            Faculty of Medicine <br>
-            2350 Health Sciences Mall <br>
-            Vancouver, BC Canada V6T 1Z3 <br>
+            <div class="panel-text">
+              Yes, financial contributions are accepted. Cheques made payable to the Anatomical Sciences Research
+              Endowment, can be mailed to the program address below. <br> <br>
+              Department of Cellular & Physiological Sciences <br>
+              Faculty of Medicine <br>
+              2350 Health Sciences Mall <br>
+              Vancouver, BC Canada V6T 1Z3 <br>
+            </div>
           </div>
           <button class="accordion purple">
             Will there be a memorial service for donors?
           </button>
           <div class="panel purple">
-            Yes, each year the students organize a beautiful and dignified memorial service for donors who were
-            cremated in the previous year. The memorial is an opportunity for students to express their appreciation
-            of the special privilege granted to them. The ceremony includes musical performances, and family members
-            and loved ones are invited to honor the donor and share fond memories with speeches and unforgettable
-            stories. Favorite pictures and treasured belongings of the donor can be displayed in the memory hall for
-            all guests to view. Invitations to the ceremony, typically held at the Life Sciences Atrium at UBC on a
-            Saturday in late September, are sent out to close family members and next of kin in early August.
+            <div class="panel-text">
+              Yes, each year the students organize a beautiful and dignified memorial service for donors who were
+              cremated in the previous year. The memorial is an opportunity for students to express their appreciation
+              of the special privilege granted to them. The ceremony includes musical performances, and family members
+              and loved ones are invited to honor the donor and share fond memories with speeches and unforgettable
+              stories. Favorite pictures and treasured belongings of the donor can be displayed in the memory hall for
+              all guests to view. Invitations to the ceremony, typically held at the Life Sciences Atrium at UBC on a
+              Saturday in late September, are sent out to close family members and next of kin in early August.
+            </div>
           </div>
           <button class="accordion purple">
             How are donated bodies used by the program?
           </button>
           <div class="panel purple">
-            Most body donations are used for teaching purposes and will be the subject of student examination and
-            dissection. However, some donations will be used specifically for medical and research training. These
-            donations will help to advance surgical training techniques and enhance progress in areas of medical
-            research, making a very special and valuable contribution to the education of our health care
-            professionals and the communities they serve. <br>
-            The UBC Body Donation program does not perform and is not involved in any individual- or disease-specific
-            research, as this is more appropriately performed in tissue culture or living patients.
+            <div class="panel-text">
+              Most body donations are used for teaching purposes and will be the subject of student examination and
+              dissection. However, some donations will be used specifically for medical and research training. These
+              donations will help to advance surgical training techniques and enhance progress in areas of medical
+              research, making a very special and valuable contribution to the education of our health care
+              professionals and the communities they serve. <br>
+              The UBC Body Donation program does not perform and is not involved in any individual- or disease-specific
+              research, as this is more appropriately performed in tissue culture or living patients.
+            </div>
           </div>
           <button class="accordion purple">
             Can I donate my remains to a local medical program?
           </button>
           <div class="panel purple">
-            No, UBC - Vancouver is the only Body Donor Program in British Columbia
+            <div class="panel-text">
+              No, UBC - Vancouver is the only Body Donor Program in British Columbia
+            </div>
           </div>
         </div>
         <div class="deciding-to-donate">
@@ -398,82 +410,102 @@
             Does the university accept all donations?
           </button>
           <div class="panel blue">
-            No. Every potential donor is appreciated, but some conditions will not allow for donation to occur. The
-            University reserves the right to decline any donation if considered unsuitable. For this reason it is
-            recommended that alternate arrangements be made in advance. For more information on what conditions may
-            prevent body donation, please see the questions below.
+            <div class="panel-text">
+              No. Every potential donor is appreciated, but some conditions will not allow for donation to occur. The
+              University reserves the right to decline any donation if considered unsuitable. For this reason it is
+              recommended that alternate arrangements be made in advance. For more information on what conditions may
+              prevent body donation, please see the questions below.
+            </div>
           </div>
           <button class="accordion blue">
             Are there age requirements for donating?
           </button>
           <div class="panel blue">
-            There is no upper age limit for donation, but donors must be over the age of 30.
+            <div class="panel-text">
+              There is no upper age limit for donation, but donors must be over the age of 30.
+            </div>
           </div>
           <button class="accordion blue">
             What conditions prevent body donations?
           </button>
           <div class="panel blue">
-            <ul>
-              <li>Some infectious diseases</li>
-              <li>Severe antibiotic resistance infections</li>
-              <li>A body mass index higher than 27 or lower than 16.</li>
-              <li>Excessive trauma to the body (including recent surgery)</li>
-              <li>Autopsy or Coroner’s case</li>
-              <li>Delay in notification of death</li>
-              <li>Most organ donations (except corneas)</li>
-              <li>Some forms of cancer</li>
-              <li>Other conditions at the discretion of the Physician and Body program staff</li>
-            </ul>
+            <div class="panel-text">
+              <ul>
+                <li>Some infectious diseases</li>
+                <li>Severe antibiotic resistance infections</li>
+                <li>A body mass index higher than 27 or lower than 16.</li>
+                <li>Excessive trauma to the body (including recent surgery)</li>
+                <li>Autopsy or Coroner’s case</li>
+                <li>Delay in notification of death</li>
+                <li>Most organ donations (except corneas)</li>
+                <li>Some forms of cancer</li>
+                <li>Other conditions at the discretion of the Physician and Body program staff</li>
+              </ul>
+            </div>
           </div>
           <button class="accordion blue">
             Does medically assisted dying prevent body donation?
           </button>
           <div class="panel blue">
-            No.
+            <div class="panel-text">
+              No.
+            </div>
           </div>
           <button class="accordion blue">
             Can I register to donate my body if I am a registerred organ donor?
           </button>
           <div class="panel blue">
-            Yes. However, in the event of solid organ removal for transplant (with the exception of corneal
-            transplant) body donation is not possible. <br>
-            If you are declined as an organ donor, body donation may be considered as an alternative. For information
-            on organ donation, please contact BC Transplant at 604-877-2240 or online at <a
-                  href="http://www.transplant.bc.ca/">www.transplant.bc.ca</a>
+            <div class="panel-text">
+              Yes. However, in the event of solid organ removal for transplant (with the exception of corneal
+              transplant) body donation is not possible. <br>
+              If you are declined as an organ donor, body donation may be considered as an alternative. For information
+              on organ donation, please contact BC Transplant at 604-877-2240 or online at <a
+                    href="http://www.transplant.bc.ca/">www.transplant.bc.ca</a>
+            </div>
           </div>
           <button class="accordion blue">
             What are the costs involved with donating?
           </button>
           <div class="panel blue">
-            The University covers all transportation costs throughout BC and the cost of cremation.
+            <div class="panel-text">
+              The University covers all transportation costs throughout BC and the cost of cremation.
+            </div>
           </div>
           <button class="accordion blue">
             Are there any costs not covered by the university?
           </button>
           <div class="panel blue">
-            Special urns, burial plots, monuments, or private memorial services for the donor. <br>
-            Registration of Death and the Issuance of Death Certificate through our partnered funeral home, Alternatives
-            Funeral and Cremation Services.
+            <div class="panel-text">
+              Special urns, burial plots, monuments, or private memorial services for the donor. <br>
+              Registration of Death and the Issuance of Death Certificate through our partnered funeral home,
+              Alternatives
+              Funeral and Cremation Services.
+            </div>
           </div>
           <button class="accordion blue">
             Can I revoke my consent once I have registerred?
           </button>
           <div class="panel blue">
-            Yes. You may contact the office at any time to rescind your consent for donation. After passing, UBC cannot
-            accept donations if the family or executor of the donor contests the donation. <br>
-            However, family cannot revoke the donation after we have completed the transport and received the donor.
+            <div class="panel-text">
+              Yes. You may contact the office at any time to rescind your consent for donation. After passing, UBC
+              cannot
+              accept donations if the family or executor of the donor contests the donation. <br>
+              However, family cannot revoke the donation after we have completed the transport and received the donor.
+            </div>
           </div>
           <button class="accordion blue">
             Who should I notify of my decision?
           </button>
           <div class="panel blue">
-            It is recommended that you notify and discuss this decision with: <br>
-            <ul>
-              <li>Your next of kin</li>
-              <li>Executor of your estate</li>
-              <li>Your physician</li>
-              <li>Anyone else potentially involved in the donation process</li>
-            </ul>
+            <div class="panel-text">
+              It is recommended that you notify and discuss this decision with: <br>
+              <ul>
+                <li>Your next of kin</li>
+                <li>Executor of your estate</li>
+                <li>Your physician</li>
+                <li>Anyone else potentially involved in the donation process</li>
+              </ul>
+            </div>
           </div>
         </div>
         <div class="what-happens-after-passing">
@@ -484,39 +516,52 @@
             What if I die outside of BC?
           </button>
           <div class="panel green">
-            A medical school in the region where death occurs may be contacted to make arrangements for donation to
-            another program. If you move away from British Columbia, we recommend that you make arrangements with a
-            donor program in your place of residence.
+            <div class="panel-text">
+              A medical school in the region where death occurs may be contacted to make arrangements for donation to
+              another program. If you move away from British Columbia, we recommend that you make arrangements with a
+              donor program in your place of residence.
+            </div>
           </div>
           <button class="accordion green">
             Does UBC perform autopsies?
           </button>
           <div class="panel green">
-            No.
+            <div class="panel-text">
+              No.
+            </div>
           </div>
           <button class="accordion green">
             How do I get a death certificate?
           </button>
           <div class="panel green">
-            Death Certificates will be issued for our donors by our contracted funeral home, Alternatives Funeral and
-            Cremation Services.
+            <div class="panel-text">
+              Death Certificates will be issued for our donors by our contracted funeral home, Alternatives Funeral and
+              Cremation Services.
+            </div>
           </div>
           <button class="accordion green">
             How long will donations remain with UBC?
           </button>
           <div class="panel green">
-            The Donation will remain at UBC up to a maximum of 3 years. However, donors have the option to register
-            indefinitely where a portion may be retained for use in teaching, training, and research. <br>
-            After it, the University will arrange for and provide cremation of the remains with Alternatives Funeral and
-            Cremation Services. An executor/Next of kin will be contacted to collect the ashes in a simple urn provided
-            by the University.
+            <div class="panel-text">
+              The Donation will remain at UBC up to a maximum of 3 years. However, donors have the option to register
+              indefinitely where a portion may be retained for use in teaching, training, and research. <br>
+              After it, the University will arrange for and provide cremation of the remains with Alternatives Funeral
+              and
+              Cremation Services. An executor/Next of kin will be contacted to collect the ashes in a simple urn
+              provided
+              by the University.
+            </div>
           </div>
           <button class="accordion green">
             What happens if my donation is not accepted?
           </button>
           <div class="panel green">
-            If the body is not accepted into the donation program, it will be the responsibility of the executor or next
-            of kin to proceed with your alternate arrangements.
+            <div class="panel-text">
+              If the body is not accepted into the donation program, it will be the responsibility of the executor or
+              next
+              of kin to proceed with your alternate arrangements.
+            </div>
           </div>
         </div>
         <a href="#faq-header">
@@ -556,13 +601,14 @@
 
             /* Toggle between hiding and showing the active panel */
             let panel = this.nextElementSibling;
-            if (panel.style.display === "block") {
-                panel.style.display = "none";
+            // If maxHeight is not null, set it to null, otherwise set it to scrollHeight px
+            panel.style.maxHeight = (panel.style.maxHeight ? null : panel.scrollHeight + "px");
+            if (panel === activePanel) {
                 activePanel = null;
             } else {
-                panel.style.display = "block";
-                if (activePanel != null)
-                    activePanel.style.display = "none";
+                if (activePanel != null) {
+                    activePanel.style.maxHeight = null;
+                }
                 activePanel = panel;
             }
         });
