@@ -1,593 +1,675 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>FAQs</title> <!-- TODO -->
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width" />
-  <meta name="og:type" content="website" />
-  <meta name="twitter:card" content="photo" />
-  <link rel="stylesheet" type="text/css" href="css/desktop-main-page.css" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="css/styleguide.css" />
-  <link rel="stylesheet" type="text/css" href="css/globals.css" />
+  <meta charset="utf-8"/>
+  <meta content="width=device-width" name="viewport"/>
+  <meta content="website" name="og:type"/>
+  <meta content="photo" name="twitter:card"/>
   <style>
-    /* screen - desktop-faqs */
+      /* screen - desktop-faqs */
 
-    .desktop-faqs {
-      align-items: flex-start;
-      border: 1px none;
-      display: flex;
-      flex-direction: column;
-      width: 1440px;
-    }
+      .desktop-faqs {
+          align-items: flex-start;
+          border: 1px none;
+          display: flex;
+          flex-direction: column;
+          width: 1440px;
+      }
 
-    .desktop-faqs .screenshot-2022-10-03-194008-1 {
-      height: 300px;
-      object-fit: cover;
-      width: 1440px;
-    }
+      .desktop-faqs .faq-header {
+          align-items: flex-start;
+          background-color: var(--surface);
+          display: flex;
+          padding: 23px 160px;
+          width: 1440px;
+      }
 
-    .desktop-faqs .faq-header {
-      align-items: flex-start;
-      background-color: var(--surface);
-      display: flex;
-      padding: 23px 160px;
-      width: 1440px;
-    }
+      .desktop-faqs .fa-qs {
+          align-items: flex-start;
+          display: flex;
+          flex-direction: column;
+          gap: 14px;
+          width: 1120px;
+      }
 
-    .desktop-faqs .fa-qs {
-      align-items: flex-start;
-      display: flex;
-      flex-direction: column;
-      gap: 14px;
-      width: 1120px;
-    }
+      .desktop-faqs .paragraph {
+          align-self: stretch;
+          letter-spacing: 0;
+          line-height: 40px;
+          white-space: nowrap;
+      }
 
-    .desktop-faqs .header {
-      align-self: stretch;
-      letter-spacing: 0;
-      line-height: 58px;
-      margin-top: -1.00px;
-      white-space: nowrap;
-    }
+      .desktop-faqs .faqs1 {
+          align-items: flex-start;
+          background-color: var(--surface);
+          display: flex;
+          height: 1835px;
+          padding: 24px 160px;
+          width: 1440px;
+      }
 
-    .desktop-faqs .paragraph {
-      align-self: stretch;
-      letter-spacing: 0;
-      line-height: 40px;
-      white-space: nowrap;
-    }
+      .desktop-faqs .faq-menu {
+          align-items: flex-end;
+          display: flex;
+          flex-direction: column;
+          min-height: 1535px;
+          width: 1120px;
+      }
 
-    .desktop-faqs .fa-qs-1 {
-      align-items: flex-start;
-      background-color: var(--surface);
-      display: flex;
-      height: 1835px;
-      padding: 24px 160px;
-      width: 1440px;
-    }
+      .desktop-faqs .about-the-program {
+          align-items: flex-start;
+          display: flex;
+          flex-direction: column;
+          min-height: 336px;
+          width: 1120px;
+      }
 
-    .desktop-faqs .faq-menu {
-      align-items: flex-end;
-      display: flex;
-      flex-direction: column;
-      min-height: 1535px;
-      width: 1120px;
-    }
+      .desktop-faqs .about-the-program-1 {
+          letter-spacing: 0;
+          line-height: 48px;
+          margin-top: -1px;
+          white-space: nowrap;
+      }
 
-    .desktop-faqs .about-the-program {
-      align-items: flex-start;
-      display: flex;
-      flex-direction: column;
-      min-height: 336px;
-      width: 1120px;
-    }
+      .accordion {
+          align-items: center;
+          border-radius: 10px;
+          border: none;
+          color: var(--surface);
+          display: flex;
+          flex-direction: column;
+          font-family: var(--font-family-open_sans);
+          font-size: var(--font-size-m);
+          font-style: normal;
+          font-weight: 700;
+          height: 48px;
+          justify-content: center;
+          letter-spacing: 0;
+          line-height: 26px;
+          min-width: 1120px;
+          text-align: center;
+          width: 1120px;
+          margin-top: 25px;
+          margin-bottom: 0;
+      }
 
-    .desktop-faqs .about-the-program-1 {
-      letter-spacing: 0;
-      line-height: 48px;
-      margin-top: -1px;
-      white-space: nowrap;
-    }
+      .accordion.purple {
+          background-color: var(--pink);
+      }
 
-    .desktop-faqs .overlap-group3 {
-      background-color: var(--pink);
-      margin-top: 25px;
-    }
+      .accordion.blue {
+          background-color: var(--blue);
+      }
 
-    .desktop-faqs .overlap-group {
-      background-color: var(--pink);
-      margin-top: 24px;
-    }
+      .accordion.green {
+          background-color: var(--green);
+      }
 
-    .desktop-faqs .name {
-      height: 48px;
-      letter-spacing: 0;
-      line-height: 26px;
-      text-align: center;
-      width: 1120px;
-    }
+      .panel {
+          box-sizing: border-box;
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+          overflow: hidden;
+          display: none;
+          font-family: var(--font-family-open_sans);
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 25px;
+          align-items: center;
+          color: #000000;
+          width: 98%;
+          position: relative;
+          left: 1%;
+          border-radius: 0 0 10px 10px;
+          padding: 5px 30px;
+          margin-top: -4px;
+      }
 
-    .desktop-faqs .deciding-to-donate {
-      align-items: flex-start;
-      display: flex;
-      flex-direction: column;
-      margin-top: 48px;
-      min-height: 624px;
-      width: 1120px;
-    }
+      .panel.purple {
+          border: 4px solid var(--pink);
+          background-color: var(--light-pink);
+      }
 
-    .desktop-faqs .deciding-to-donate-1 {
-      letter-spacing: 0;
-      line-height: 48px;
-      margin-left: 2px;
-      margin-top: -1px;
-      white-space: nowrap;
-    }
+      .panel.blue {
+          border: 4px solid var(--blue);
+          background-color: var(--light-blue);
+      }
 
-    .desktop-faqs .overlap-group7 {
-      background-color: var(--blue);
-      margin-top: 25px;
-    }
+      .panel.green {
+          border: 4px solid var(--green);
+          background-color: var(--light-green);
+      }
 
-    .desktop-faqs .overlap-group-1 {
-      background-color: var(--blue);
-    }
+      .desktop-faqs .name {
+          height: 48px;
+          letter-spacing: 0;
+          line-height: 26px;
+          text-align: center;
+          width: 1120px;
+      }
 
-    .desktop-faqs .what-happens-after-passing {
-      align-items: flex-start;
-      display: flex;
-      flex-direction: column;
-      margin-right: 0;
-      margin-top: 48px;
-      min-height: 408px;
-      width: 1120px;
-    }
+      .desktop-faqs .deciding-to-donate {
+          align-items: flex-start;
+          display: flex;
+          flex-direction: column;
+          margin-top: 48px;
+          min-height: 624px;
+          width: 1120px;
+      }
 
-    .desktop-faqs .what-happens-after-passing-1 {
-      letter-spacing: 0;
-      line-height: 48px;
-      margin-top: -1px;
-      white-space: nowrap;
-    }
+      .desktop-faqs .deciding-to-donate-1 {
+          letter-spacing: 0;
+          line-height: 48px;
+          margin-left: 2px;
+          margin-top: -1px;
+          white-space: nowrap;
+      }
 
-    .desktop-faqs .overlap-group4 {
-      background-color: var(--green);
-      margin-top: 25px;
-    }
+      .desktop-faqs .what-happens-after-passing {
+          align-items: flex-start;
+          display: flex;
+          flex-direction: column;
+          margin-right: 0;
+          margin-top: 48px;
+          min-height: 408px;
+          width: 1120px;
+      }
 
-    .desktop-faqs .overlap-group-2 {
-      background-color: var(--green);
-    }
+      .desktop-faqs .what-happens-after-passing-1 {
+          letter-spacing: 0;
+          line-height: 48px;
+          margin-top: -1px;
+          white-space: nowrap;
+      }
 
-    .desktop-faqs .back-to-top {
-      align-items: flex-start;
-      cursor: pointer;
-      display: flex;
-      margin-top: 24px;
-      min-width: 107px;
-    }
+      .desktop-faqs .back-to-top {
+          align-items: flex-start;
+          cursor: pointer;
+          display: flex;
+          margin-top: 24px;
+          min-width: 107px;
+      }
 
-    .desktop-faqs .back-to-top-1 {
-      height: 47px;
-      letter-spacing: 0;
-      line-height: 26px;
-      margin-top: -1px;
-      text-align: center;
-      width: 107px;
-    }
+      .desktop-faqs .back-to-top-1 {
+          height: 47px;
+          letter-spacing: 0;
+          line-height: 26px;
+          margin-top: -1px;
+          text-align: center;
+          width: 107px;
+      }
 
-    .desktop-faqs .contact-us {
-      align-items: flex-end;
-      background-color: var(--surface);
-      gap: 24px;
-      padding: 24px 160px;
-      width: -moz-fit-content;
-      width: fit-content;
-    }
+      .desktop-faqs .contact-us {
+          align-items: flex-end;
+          background-color: var(--surface);
+          gap: 24px;
+          padding: 24px 160px;
+          width: -moz-fit-content;
+          width: fit-content;
+      }
 
-    .desktop-faqs .contact-info {
-      align-items: flex-start;
-      gap: 14px;
-      width: 1120px;
-    }
+      .desktop-faqs .contact-info {
+          align-items: flex-start;
+          gap: 14px;
+          width: 1120px;
+      }
 
-    .desktop-faqs .header-1 {
-      align-self: stretch;
-      letter-spacing: 0;
-      line-height: 48px;
-      margin-top: -1.00px;
-      text-align: center;
-      white-space: nowrap;
-    }
+      .desktop-faqs .header-1 {
+          align-self: stretch;
+          letter-spacing: 0;
+          line-height: 48px;
+          margin-top: -1.00px;
+          text-align: center;
+          white-space: nowrap;
+      }
 
-    .desktop-faqs .paragraph-1 {
-      align-self: stretch;
-      letter-spacing: 0;
-      line-height: 26px;
-      text-align: center;
-    }
+      .desktop-faqs .paragraph-1 {
+          align-self: stretch;
+          letter-spacing: 0;
+          line-height: 26px;
+          text-align: center;
+      }
 
-    .desktop-faqs .back-to-top-2 {
-      cursor: pointer;
-      height: 47px;
-      min-width: 107px;
-      position: relative;
-    }
+      .desktop-faqs .back-to-top-2 {
+          cursor: pointer;
+          height: 47px;
+          min-width: 107px;
+          position: relative;
+      }
 
-    .desktop-faqs .back-to-top-3 {
-      height: 47px;
-      left: 0;
-      letter-spacing: 0;
-      line-height: 26px;
-      position: absolute;
-      text-align: center;
-      top: -1px;
-      width: 107px;
-    }
+      .desktop-faqs .back-to-top-3 {
+          height: 47px;
+          left: 0;
+          letter-spacing: 0;
+          line-height: 26px;
+          position: absolute;
+          text-align: center;
+          top: -1px;
+          width: 107px;
+      }
 
-    .desktop-faqs .screenshot-2022-10-03-204313-2 {
-      height: 327px;
-      object-fit: cover;
-      width: 1440px;
-    }
+      .desktop-faqs .screenshot-2022-10-03-204313-2 {
+          height: 327px;
+          object-fit: cover;
+          width: 1440px;
+      }
 
-    .desktop-faqs .overlap {
-      align-items: flex-start;
-      border-radius: 10px;
-      display: flex;
-      min-width: 1120px;
-    }
+      .desktop-faqs .overlap {
+          align-items: flex-start;
+          border-radius: 10px;
+          display: flex;
+          min-width: 1120px;
+      }
 
-    .desktop-faqs .overlap-group-3 {
-      align-items: flex-start;
-      border-radius: 10px;
-      display: flex;
-      margin-top: 24px;
-      min-width: 1120px;
-    }
-
-    @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
-    @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,300italic");
+      @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+      @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,300italic");
 
 
-    p {
-      margin: 0;
-    }
+      p {
+          margin: 0;
+      }
 
-    .screen a {
-      display: contents;
-      text-decoration: none;
-    }
+      .screen a {
+          display: contents;
+          text-decoration: none;
+      }
 
-    .container-center-horizontal {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      pointer-events: none;
-      width: 100%;
-    }
+      .container-center-horizontal {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          pointer-events: none;
+          width: 100%;
+      }
 
-    .container-center-horizontal>* {
-      flex-shrink: 0;
-      pointer-events: auto;
-    }
+      .container-center-horizontal > * {
+          flex-shrink: 0;
+          pointer-events: auto;
+      }
 
-    .align-self-flex-end {
-      align-self: flex-end;
-    }
+      .align-self-flex-end {
+          align-self: flex-end;
+      }
 
-    .valign-text-middle {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
+      .valign-text-middle {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+      }
 
-    * {
-      box-sizing: border-box;
-    }
+      * {
+          box-sizing: border-box;
+      }
 
-    .ubc {
-      align-items: flex-start;
-      background-color: var(--surface);
-      display: flex;
-      width: 1440px;
-    }
+      .ubc {
+          align-items: flex-start;
+          background-color: var(--surface);
+          display: flex;
+          width: 1440px;
+      }
 
-    .contact {
-      display: flex;
-      flex-direction: column;
-    }
+      .contact {
+          display: flex;
+          flex-direction: column;
+      }
 
-    :root {
-      --black: #000000;
-      --blue: #5970af;
-      --green: #2f8292;
-      --light-blue: #a1a7ca;
-      --light-green: #aad4d1;
-      --light-pink: #c699b6;
-      --main-headers: #012045;
-      --pink: #965c88;
-      --surface: #ffffff;
-      --unselected: #dee2f8;
+      :root {
+          --black: #000000;
+          --blue: #5970af;
+          --green: #2f8292;
+          --pink: #965c88;
+          --surface: #ffffff;
+          --unselected: #dee2f8;
+          --light-blue: #a1a7ca;
+          --font-family-open_sans: "Open Sans", Helvetica;
+          --light-green: #aad4d1;
+          --main-headers: #012045;
 
-      --font-size-l: 20px;
-      --font-size-m: 18px;
-      --font-size-s: 14px;
-      --font-size-xl: 28px;
-      --font-size-xxl: 32px;
-      --font-size-xxxl: 40px;
-      --font-size-xxxxl: 50px;
+          --light-pink: #c699b6;
+          --font-size-l: 20px;
+          --font-size-m: 18px;
+          --font-size-s: 14px;
+          --font-size-xl: 28px;
+          --font-size-xxl: 32px;
+          --font-size-xxxl: 40px;
 
-      --font-family-open_sans: "Open Sans", Helvetica;
-    }
+          --font-size-xxxxl: 50px;
+      }
 
-    .opensans-normal-black-18px {
-      color: var(--black);
-      font-family: var(--font-family-open_sans);
-      font-size: var(--font-size-m);
-      font-style: normal;
-      font-weight: 400;
-    }
+      .opensans-normal-black-18px {
+          color: var(--black);
+          font-family: var(--font-family-open_sans);
+          font-size: var(--font-size-m);
+          font-style: normal;
+          font-weight: 400;
+      }
 
-    .opensans-bold-magic-potion-32px {
-      color: var(--main-headers);
-      font-family: var(--font-family-open_sans);
-      font-size: var(--font-size-xxl);
-      font-style: normal;
-      font-weight: 700;
-    }
+      .opensans-bold-magic-potion-32px {
+          color: var(--main-headers);
+          font-family: var(--font-family-open_sans);
+          font-size: var(--font-size-xxl);
+          font-style: normal;
+          font-weight: 700;
+      }
 
-    .opensans-bold-white-18px {
-      color: var(--surface);
-      font-family: var(--font-family-open_sans);
-      font-size: var(--font-size-m);
-      font-style: normal;
-      font-weight: 700;
-    }
+      .opensans-bold-white-18px {
+          color: var(--surface);
+          font-family: var(--font-family-open_sans);
+          font-size: var(--font-size-m);
+          font-style: normal;
+          font-weight: 700;
+      }
 
-    .opensans-bold-black-18px {
-      color: var(--black);
-      font-family: var(--font-family-open_sans);
-      font-size: var(--font-size-m);
-      font-style: normal;
-      font-weight: 700;
-    }
+      .opensans-bold-black-18px {
+          color: var(--black);
+          font-family: var(--font-family-open_sans);
+          font-size: var(--font-size-m);
+          font-style: normal;
+          font-weight: 700;
+      }
 
-    .opensans-bold-magic-potion-40px {
-      color: var(--main-headers);
-      font-family: var(--font-family-open_sans);
-      font-size: var(--font-size-xxxl);
-      font-style: normal;
-      font-weight: 700;
-    }
+      .opensans-bold-magic-potion-40px {
+          color: var(--main-headers);
+          font-family: var(--font-family-open_sans);
+          font-size: var(--font-size-xxxl);
+          font-style: normal;
+          font-weight: 700;
+      }
 
-    .opensans-light-black-32px {
-      color: var(--black);
-      font-family: var(--font-family-open_sans);
-      font-size: var(--font-size-xxl);
-      font-style: normal;
-      font-weight: 300;
-    }
+      .opensans-light-black-32px {
+          color: var(--black);
+          font-family: var(--font-family-open_sans);
+          font-size: var(--font-size-xxl);
+          font-style: normal;
+          font-weight: 300;
+      }
 
-    .opensans-bold-magic-potion-50px {
-      color: var(--main-headers);
-      font-family: var(--font-family-open_sans);
-      font-size: var(--font-size-xxxxl);
-      font-style: normal;
-      font-weight: 700;
-    }
+      .opensans-bold-magic-potion-50px {
+          color: var(--main-headers);
+          font-family: var(--font-family-open_sans);
+          font-size: var(--font-size-xxxxl);
+          font-style: normal;
+          font-weight: 700;
+      }
 
-    .opensans-light-black-28px {
-      color: var(--black);
-      font-family: var(--font-family-open_sans);
-      font-size: var(--font-size-xl);
-      font-style: italic;
-      font-weight: 300;
-    }
+      .opensans-light-black-28px {
+          color: var(--black);
+          font-family: var(--font-family-open_sans);
+          font-size: var(--font-size-xl);
+          font-style: italic;
+          font-weight: 300;
+      }
 
-    .opensans-bold-magic-potion-70px {
-      color: var(--main-headers);
-      font-family: var(--font-family-open_sans);
-      font-size: 70px;
-      font-style: normal;
-      font-weight: 700;
-    }
+      .opensans-bold-magic-potion-70px {
+          color: var(--main-headers);
+          font-family: var(--font-family-open_sans);
+          font-size: 70px;
+          font-style: normal;
+          font-weight: 700;
+      }
 
-    .opensans-bold-magic-potion-20px {
-      color: var(--main-headers);
-      font-family: var(--font-family-open_sans);
-      font-size: var(--font-size-l);
-      font-style: normal;
-      font-weight: 700;
-    }
+      .opensans-bold-magic-potion-20px {
+          color: var(--main-headers);
+          font-family: var(--font-family-open_sans);
+          font-size: var(--font-size-l);
+          font-style: normal;
+          font-weight: 700;
+      }
 
-    .opensans-normal-white-14px {
-      color: var(--surface);
-      font-family: var(--font-family-open_sans);
-      font-size: var(--font-size-s);
-      font-style: normal;
-      font-weight: 400;
-    }
+      .opensans-normal-white-14px {
+          color: var(--surface);
+          font-family: var(--font-family-open_sans);
+          font-size: var(--font-size-s);
+          font-style: normal;
+          font-weight: 400;
+      }
 
-    .opensans-bold-white-90px {
-      color: var(--surface);
-      font-family: var(--font-family-open_sans);
-      font-size: 90px;
-      font-style: normal;
-      font-weight: 700;
-    }
+      .opensans-bold-white-90px {
+          color: var(--surface);
+          font-family: var(--font-family-open_sans);
+          font-size: 90px;
+          font-style: normal;
+          font-weight: 700;
+      }
 
-    body {
-      margin: 0;
-    }
+      body {
+          margin: 0;
+      }
   </style>
+  <title>FAQs</title>
 </head>
 
 <body>
-  <!DOCTYPE html>
-  <html>
-
-  <head>
-    <meta charset="utf-8" />
-    <!--<meta name=description content="This site was generated with Anima. www.animaapp.com"/>-->
-    <!-- <link rel="shortcut icon" type=image/png href="https://animaproject.s3.amazonaws.com/home/favicon.png" /> -->
-    <meta name="viewport" content="width=1440, maximum-scale=1.0" />
-    <link rel="shortcut icon" type="image/png" href="https://animaproject.s3.amazonaws.com/home/favicon.png" />
-    <meta name="og:type" content="website" />
-    <meta name="twitter:card" content="photo" />
-    <link rel="stylesheet" type="text/css" href="css/desktop-faqs.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-    <script src="https://animaapp.s3.amazonaws.com/launchpad-static/launchpad.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/styleguide.css" />
-    <link rel="stylesheet" type="text/css" href="css/globals.css" />
-  </head>
-
-  <body>
-    <input type="hidden" id="anPageName" name="page" value="desktop-faqs" />
-    <div class="container-center-horizontal">
-      <div class="desktop-faqs screen">
-        <div class="faq-header" id="faq-header">
-          <div class="fa-qs">
-            <p class="paragraph opensans-light-black-32px">
-              Find answers to some common questions about the Body Donation Program.
-            </p>
-          </div>
-        </div>
-        <div class="fa-qs-1">
-          <div class="faq-menu">
-            <div class="about-the-program">
-              <div class="about-the-program-1 opensans-bold-magic-potion-40px">About the Program</div>
-              <div class="overlap-group3 overlap">
-                <button>
-                  <p class="name valign-text-middle opensans-bold-white-18px">
-                    Can I make a financial contribution?
-                  </p>
-                </button>
-                <div>
-                  <p>Hello</p>
-                </div>
-              </div>
-              <div class="overlap-group overlap">
-                <p class="name valign-text-middle opensans-bold-white-18px">
-                  Will there be a memorial service for donors?
-                </p>
-              </div>
-              <div class="overlap-group overlap">
-                <p class="name valign-text-middle opensans-bold-white-18px">
-                  How are donated bodies used by the program?
-                </p>
-              </div>
-              <div class="overlap-group overlap">
-                <p class="name valign-text-middle opensans-bold-white-18px">
-                  Can I donate my remains to a local medical program?
-                </p>
-              </div>
-            </div>
-            <div class="deciding-to-donate">
-              <p class="name opensans-bold-magic-potion-40px">
-                Deciding to Donate, Registration, and Consent
-              </p>
-              <div class="overlap-group7 overlap">
-                <p class="name valign-text-middle opensans-bold-white-18px">
-                  Does the university accept all donations?
-                </p>
-              </div>
-              <div class="overlap-group-1 overlap-group-3">
-                <p class="name valign-text-middle opensans-bold-white-18px">
-                  Are there age requirements for donating?
-                </p>
-              </div>
-              <div class="overlap-group-1 overlap-group-3">
-                <p class="name valign-text-middle opensans-bold-white-18px">
-                  What conditions prevent body donations?
-                </p>
-              </div>
-              <div class="overlap-group-1 overlap-group-3">
-                <p class="name valign-text-middle opensans-bold-white-18px">
-                  Does medically assisted dying prevent body donation?
-                </p>
-              </div>
-              <div class="overlap-group-1 overlap-group-3">
-                <p class="name valign-text-middle opensans-bold-white-18px">
-                  Can I register to donate my body if I am a registerred organ donor?
-                </p>
-              </div>
-              <div class="overlap-group-1 overlap-group-3">
-                <p class="name valign-text-middle opensans-bold-white-18px">
-                  What are the costs involved with donating?
-                </p>
-              </div>
-              <div class="overlap-group-1 overlap-group-3">
-                <p class="name valign-text-middle opensans-bold-white-18px">
-                  Can I revoke my consent once I have registerred?
-                </p>
-              </div>
-              <div class="overlap-group-1 overlap-group-3">
-                <p class="name valign-text-middle opensans-bold-white-18px">
-                  Who should I notify of my decision?
-                </p>
-              </div>
-            </div>
-            <div class="what-happens-after-passing">
-              <div class="what-happens-after-passing-1 opensans-bold-magic-potion-40px">
-                What Happens After Passing?
-              </div>
-              <div class="overlap-group4 overlap">
-                <p class="name valign-text-middle opensans-bold-white-18px">
-                  What if I die outside of BC?
-                </p>
-              </div>
-              <div class="overlap-group-2 overlap-group-3">
-                <div class="name valign-text-middle opensans-bold-white-18px">
-                  Does UBC perform autopsies?
-                </div>
-              </div>
-              <div class="overlap-group-2 overlap-group-3">
-                <p class="name valign-text-middle opensans-bold-white-18px">
-                  How do I get a death certificate?
-                </p>
-              </div>
-              <div class="overlap-group-2 overlap-group-3">
-                <p class="name valign-text-middle opensans-bold-white-18px">
-                  How long will donations remain with UBC?
-                </p>
-              </div>
-              <div class="overlap-group-2 overlap-group-3">
-                <p class="name valign-text-middle opensans-bold-white-18px">
-                  What happens if my donation is not accepted?
-                </p>
-              </div>
-            </div>
-            <a href="#faq-header">
-              <div class="back-to-top">
-                <div class="back-to-top-1 valign-text-middle opensans-normal-black-18px">Back to Top</div>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="contact-us contact">
-          <div class="contact-info contact">
-            <div class="header-1 opensans-bold-magic-potion-40px">Contact Us</div>
-            <p class="paragraph-1 opensans-normal-black-18px">
-              Contact Tel: 604-822-2578<br />Fax: 604-827-4209<br /><br />Department of Cellular &amp; Physiological
-              Sciences<br />Faculty of Medicine<br />2350 Health Sciences Mall<br />Vancouver, BC Canada V6T
-              1Z3<br />Website
-              cps.med.ubc.ca<br />Contact us
-            </p>
-          </div>
-          <a href="#faq-header">
-            <div class="back-to-top-2">
-              <div class="back-to-top-3 valign-text-middle opensans-normal-black-18px">Back to Top</div>
-            </div>
-          </a>
-        </div>
+<input id="anPageName" name="page" type="hidden" value="desktop-faqs"/>
+<div class="container-center-horizontal">
+  <div class="desktop-faqs screen">
+    <div class="faq-header" id="faq-header">
+      <div class="fa-qs">
+        <p class="paragraph opensans-light-black-32px">
+          Find answers to some common questions about the Body Donation Program.
+        </p>
       </div>
     </div>
-  </body>
+    <div class="faqs1">
+      <div class="faq-menu">
+        <div class="about-the-program">
+          <div class="about-the-program-1 opensans-bold-magic-potion-40px">About the Program</div>
+          <button class="accordion purple">
+            Can I make a financial contribution?
+          </button>
+          <div class="panel purple">
+            Yes, financial contributions are accepted. Cheques made payable to the Anatomical Sciences Research
+            Endowment, can be mailed to the program address below. <br> <br>
+            Department of Cellular & Physiological Sciences <br>
+            Faculty of Medicine <br>
+            2350 Health Sciences Mall <br>
+            Vancouver, BC Canada V6T 1Z3 <br>
+          </div>
+          <button class="accordion purple">
+            Will there be a memorial service for donors?
+          </button>
+          <div class="panel purple">
+            Yes, each year the students organize a beautiful and dignified memorial service for donors who were
+            cremated in the previous year. The memorial is an opportunity for students to express their appreciation
+            of the special privilege granted to them. The ceremony includes musical performances, and family members
+            and loved ones are invited to honor the donor and share fond memories with speeches and unforgettable
+            stories. Favorite pictures and treasured belongings of the donor can be displayed in the memory hall for
+            all guests to view. Invitations to the ceremony, typically held at the Life Sciences Atrium at UBC on a
+            Saturday in late September, are sent out to close family members and next of kin in early August.
+          </div>
+          <button class="accordion purple">
+            How are donated bodies used by the program?
+          </button>
+          <div class="panel purple">
+            Most body donations are used for teaching purposes and will be the subject of student examination and
+            dissection. However, some donations will be used specifically for medical and research training. These
+            donations will help to advance surgical training techniques and enhance progress in areas of medical
+            research, making a very special and valuable contribution to the education of our health care
+            professionals and the communities they serve. <br>
+            The UBC Body Donation program does not perform and is not involved in any individual- or disease-specific
+            research, as this is more appropriately performed in tissue culture or living patients.
+          </div>
+          <button class="accordion purple">
+            Can I donate my remains to a local medical program?
+          </button>
+          <div class="panel purple">
+            No, UBC - Vancouver is the only Body Donor Program in British Columbia
+          </div>
+        </div>
+        <div class="deciding-to-donate">
+          <p class="deciding-to-donate-1 opensans-bold-magic-potion-40px">
+            Deciding to Donate, Registration, and Consent
+          </p>
+          <button class="accordion blue">
+            Does the university accept all donations?
+          </button>
+          <div class="panel blue">
+            No. Every potential donor is appreciated, but some conditions will not allow for donation to occur. The
+            University reserves the right to decline any donation if considered unsuitable. For this reason it is
+            recommended that alternate arrangements be made in advance. For more information on what conditions may
+            prevent body donation, please see the questions below.
+          </div>
+          <button class="accordion blue">
+            Are there age requirements for donating?
+          </button>
+          <div class="panel blue">
+            There is no upper age limit for donation, but donors must be over the age of 30.
+          </div>
+          <button class="accordion blue">
+            What conditions prevent body donations?
+          </button>
+          <div class="panel blue">
+            <ul>
+              <li>Some infectious diseases</li>
+              <li>Severe antibiotic resistance infections</li>
+              <li>A body mass index higher than 27 or lower than 16.</li>
+              <li>Excessive trauma to the body (including recent surgery)</li>
+              <li>Autopsy or Coroner’s case</li>
+              <li>Delay in notification of death</li>
+              <li>Most organ donations (except corneas)</li>
+              <li>Some forms of cancer</li>
+              <li>Other conditions at the discretion of the Physician and Body program staff</li>
+            </ul>
+          </div>
+          <button class="accordion blue">
+            Does medically assisted dying prevent body donation?
+          </button>
+          <div class="panel blue">
+            No.
+          </div>
+          <button class="accordion blue">
+            Can I register to donate my body if I am a registerred organ donor?
+          </button>
+          <div class="panel blue">
+            Yes. However, in the event of solid organ removal for transplant (with the exception of corneal
+            transplant) body donation is not possible. <br>
+            If you are declined as an organ donor, body donation may be considered as an alternative. For information
+            on organ donation, please contact BC Transplant at 604-877-2240 or online at <a
+                  href="http://www.transplant.bc.ca/">www.transplant.bc.ca</a>
+          </div>
+          <button class="accordion blue">
+            What are the costs involved with donating?
+          </button>
+          <div class="panel blue">
+            The University covers all transportation costs throughout BC and the cost of cremation.
+          </div>
+          <button class="accordion blue">
+            Are there any costs not covered by the university?
+          </button>
+          <div class="panel blue">
+            Special urns, burial plots, monuments, or private memorial services for the donor. <br>
+            Registration of Death and the Issuance of Death Certificate through our partnered funeral home, Alternatives
+            Funeral and Cremation Services.
+          </div>
+          <button class="accordion blue">
+            Can I revoke my consent once I have registerred?
+          </button>
+          <div class="panel blue">
+            Yes. You may contact the office at any time to rescind your consent for donation. After passing, UBC cannot
+            accept donations if the family or executor of the donor contests the donation. <br>
+            However, family cannot revoke the donation after we have completed the transport and received the donor.
+          </div>
+          <button class="accordion blue">
+            Who should I notify of my decision?
+          </button>
+          <div class="panel blue">
+            It is recommended that you notify and discuss this decision with: <br>
+            <ul>
+              <li>Your next of kin</li>
+              <li>Executor of your estate</li>
+              <li>Your physician</li>
+              <li>Anyone else potentially involved in the donation process</li>
+            </ul>
+          </div>
+        </div>
+        <div class="what-happens-after-passing">
+          <div class="what-happens-after-passing-1 opensans-bold-magic-potion-40px">
+            What Happens After Passing?
+          </div>
+          <button class="accordion green">
+            What if I die outside of BC?
+          </button>
+          <div class="panel green">
+            A medical school in the region where death occurs may be contacted to make arrangements for donation to
+            another program. If you move away from British Columbia, we recommend that you make arrangements with a
+            donor program in your place of residence.
+          </div>
+          <button class="accordion green">
+            Does UBC perform autopsies?
+          </button>
+          <div class="panel green">
+            No.
+          </div>
+          <button class="accordion green">
+            How do I get a death certificate?
+          </button>
+          <div class="panel green">
+            Death Certificates will be issued for our donors by our contracted funeral home, Alternatives Funeral and
+            Cremation Services.
+          </div>
+          <button class="accordion green">
+            How long will donations remain with UBC?
+          </button>
+          <div class="panel green">
+            The Donation will remain at UBC up to a maximum of 3 years. However, donors have the option to register
+            indefinitely where a portion may be retained for use in teaching, training, and research. <br>
+            After it, the University will arrange for and provide cremation of the remains with Alternatives Funeral and
+            Cremation Services. An executor/Next of kin will be contacted to collect the ashes in a simple urn provided
+            by the University.
+          </div>
+          <button class="accordion green">
+            What happens if my donation is not accepted?
+          </button>
+          <div class="panel green">
+            If the body is not accepted into the donation program, it will be the responsibility of the executor or next
+            of kin to proceed with your alternate arrangements.
+          </div>
+        </div>
+        <a href="#faq-header">
+          <div class="back-to-top">
+            <div class="back-to-top-1 valign-text-middle opensans-normal-black-18px">Back to Top</div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="contact-us contact">
+      <div class="contact-info contact">
+        <div class="header-1 opensans-bold-magic-potion-40px">Contact Us</div>
+        <p class="paragraph-1 opensans-normal-black-18px">
+          Contact Tel: 604-822-2578<br/>Fax: 604-827-4209<br/><br/>Department of Cellular &amp; Physiological
+          Sciences<br/>Faculty of Medicine<br/>2350 Health Sciences Mall<br/>Vancouver, BC Canada V6T
+          1Z3<br/>Website
+          cps.med.ubc.ca<br/>Contact us
+        </p>
+      </div>
+      <a href="#faq-header">
+        <div class="back-to-top-2">
+          <div class="back-to-top-3 valign-text-middle opensans-normal-black-18px">Back to Top</div>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+<script>
+    let acc = document.getElementsByClassName("accordion");
+    let i;
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+            /* Toggle between adding and removing the "active" class,
+            to highlight the button that controls the panel */
+            this.classList.toggle("active");
 
-  </html>
+            /* Toggle between hiding and showing the active panel */
+            let panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+                panel.style.display = "none";
+            } else {
+                panel.style.display = "block";
+            }
+        });
+    }
+</script>
 </body>
 
 </html>
