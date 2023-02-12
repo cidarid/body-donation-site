@@ -654,6 +654,7 @@
 <script>
     let acc = document.getElementsByClassName("accordion");
     let i;
+    let activePanel;
     for (i = 0; i < acc.length; i++) {
         acc[i].addEventListener("click", function () {
             /* Toggle between adding and removing the "active" class,
@@ -664,8 +665,12 @@
             let panel = this.nextElementSibling;
             if (panel.style.display === "block") {
                 panel.style.display = "none";
+                activePanel = null;
             } else {
                 panel.style.display = "block";
+                if (activePanel != null)
+                    activePanel.style.display = "none";
+                activePanel = panel;
             }
         });
     }
