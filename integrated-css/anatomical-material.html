@@ -1,606 +1,505 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>Anatomical Material</title>
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width" />
-  <meta name="og:type" content="website" />
-  <meta name="twitter:card" content="photo" />
-  <link rel="stylesheet" type="text/css" href="css/desktop-main-page.css" />
+  <title>Anatomical Material</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width"/>
+  <meta name="og:type" content="website"/>
+  <meta name="twitter:card" content="photo"/>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="css/styleguide.css" />
-  <link rel="stylesheet" type="text/css" href="css/globals.css" />
   <style>
-    /* screen - desktop-anatomical-material-for-education-and-research */
+      @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+      @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,300italic"); /* screen - desktop-anatomical-material-for-education-and-research */
 
 
-    .desktop-anatomical-material-for-education-and-research {
-      align-items: flex-start;
-      border: 1px none;
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-      transform: translateX(-160px);
-    }
+      .desktop-anatomical-material-for-education-and-research {
+          align-items: flex-start;
+          border: 1px none;
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          transform: translateX(-160px);
+      }
 
-    .desktop-anatomical-material-for-education-and-research .screenshot-2022-10-03-194008-1 {
-      height: 300px;
-      object-fit: cover;
-      width: 1440px;
-    }
+      .desktop-anatomical-material-for-education-and-research .anatomical-material {
+          align-items: flex-start;
+          background-color: var(--surface);
+          display: flex;
+          padding: 23px 160px;
+          width: 1440px;
+      }
 
-    .desktop-anatomical-material-for-education-and-research .anatomical-material {
-      align-items: flex-start;
-      background-color: var(--surface);
-      display: flex;
-      padding: 23px 160px;
-      width: 1440px;
-    }
+      .desktop-anatomical-material-for-education-and-research .tion {
+          align-items: flex-start;
+          display: flex;
+          flex-direction: column;
+          gap: 14px;
+          width: 1120px;
+      }
 
-    .desktop-anatomical-material-for-education-and-research .tion {
-      align-items: flex-start;
-      display: flex;
-      flex-direction: column;
-      gap: 14px;
-      width: 1120px;
-    }
+      .desktop-anatomical-material-for-education-and-research .paragraph-1 {
+          line-height: 40px;
+      }
 
-    .desktop-anatomical-material-for-education-and-research .header-1 {
-      line-height: 58px;
-    }
+      .desktop-anatomical-material-for-education-and-research .policies-on-the-use {
+          align-items: center;
+          background-color: var(--surface);
+          display: flex;
+          height: 528px;
+          padding: 0 160px;
+          width: 1440px;
+      }
 
-    .desktop-anatomical-material-for-education-and-research .paragraph-1 {
-      line-height: 40px;
-    }
+      .desktop-anatomical-material-for-education-and-research .overlap-group2 {
+          align-items: flex-start;
+          background-color: var(--light-blue);
+          border-radius: 10px 0 0 10px;
+          display: flex;
+          height: 480px;
+          min-width: 736px;
+          padding: 37px 48px;
+      }
 
-    .desktop-anatomical-material-for-education-and-research .policies-on-the-use {
-      align-items: center;
-      background-color: var(--surface);
-      display: flex;
-      height: 528px;
-      padding: 0 160px;
-      width: 1440px;
-    }
+      .desktop-anatomical-material-for-education-and-research .policies-on-the-use-1 {
+          align-items: flex-start;
+          display: flex;
+          flex-direction: column;
+          gap: 14px;
+          height: 405px;
+          width: 640px;
+      }
 
-    .desktop-anatomical-material-for-education-and-research .overlap-group2 {
-      align-items: flex-start;
-      background-color: var(--light-blue);
-      border-radius: 10px 0px 0px 10px;
-      display: flex;
-      height: 480px;
-      min-width: 736px;
-      padding: 37px 48px;
-    }
+      .desktop-anatomical-material-for-education-and-research .header-2 {
+          line-height: 40px;
+          text-align: center;
+      }
 
-    .desktop-anatomical-material-for-education-and-research .policies-on-the-use-1 {
-      align-items: flex-start;
-      display: flex;
-      flex-direction: column;
-      gap: 14px;
-      height: 405px;
-      width: 640px;
-    }
+      .desktop-anatomical-material-for-education-and-research .paragraph {
+          align-self: stretch;
+          letter-spacing: 0;
+          line-height: 26px;
+      }
 
-    .desktop-anatomical-material-for-education-and-research .header-2 {
-      line-height: 40px;
-      text-align: center;
-    }
+      .desktop-anatomical-material-for-education-and-research .heart-illustration-blue-background {
+          align-items: flex-start;
+          border-radius: 0 10px 10px 0;
+          display: flex;
+          min-width: 384px;
+      }
 
-    .desktop-anatomical-material-for-education-and-research .paragraph {
-      align-self: stretch;
-      letter-spacing: 0;
-      line-height: 26px;
-    }
+      .desktop-anatomical-material-for-education-and-research .heart_w__bg2-1 {
+          height: 480px;
+          object-fit: cover;
+          width: 384px;
+      }
 
-    .desktop-anatomical-material-for-education-and-research .heart-illustration-blue-background {
-      align-items: flex-start;
-      border-radius: 0px 10px 10px 0px;
-      display: flex;
-      min-width: 384px;
-    }
+      .desktop-anatomical-material-for-education-and-research .universal-precautions {
+          align-items: center;
+          background-color: var(--surface);
+          display: flex;
+          height: 188px;
+          padding: 0 160px;
+          width: 1440px;
+      }
 
-    .desktop-anatomical-material-for-education-and-research .heart_w__bg2-1 {
-      height: 480px;
-      object-fit: cover;
-      width: 384px;
-    }
+      .desktop-anatomical-material-for-education-and-research .header {
+          align-self: stretch;
+          letter-spacing: 0;
+          line-height: 48px;
+          margin-top: -1.00px;
+          white-space: nowrap;
+      }
 
-    .desktop-anatomical-material-for-education-and-research .universal-precautions {
-      align-items: center;
-      background-color: var(--surface);
-      display: flex;
-      height: 188px;
-      padding: 0 160px;
-      width: 1440px;
-    }
+      .desktop-anatomical-material-for-education-and-research .your-application {
+          align-items: center;
+          background-color: var(--surface);
+          display: flex;
+          height: 552px;
+          padding: 0 160px;
+          width: 1440px;
+      }
 
-    .desktop-anatomical-material-for-education-and-research .header {
-      align-self: stretch;
-      letter-spacing: 0;
-      line-height: 48px;
-      margin-top: -1.00px;
-      white-space: nowrap;
-    }
+      .desktop-anatomical-material-for-education-and-research .please-note-the-following {
+          align-items: center;
+          background-color: var(--surface);
+          display: flex;
+          height: 314px;
+          padding: 0 160px;
+          width: 1440px;
+      }
 
-    .desktop-anatomical-material-for-education-and-research .your-application {
-      align-items: center;
-      background-color: var(--surface);
-      display: flex;
-      height: 552px;
-      padding: 0 160px;
-      width: 1440px;
-    }
+      .desktop-anatomical-material-for-education-and-research .overlap-group1 {
+          align-items: center;
+          background-color: var(--light-pink);
+          border-radius: 10px;
+          display: flex;
+          height: 266px;
+          min-width: 1120px;
+          padding: 0 48px;
+      }
 
-    .desktop-anatomical-material-for-education-and-research .please-note-the-following {
-      align-items: center;
-      background-color: var(--surface);
-      display: flex;
-      height: 314px;
-      padding: 0 160px;
-      width: 1440px;
-    }
+      .desktop-anatomical-material-for-education-and-research .please-note-the-following-1 {
+          align-items: flex-start;
+          display: flex;
+          flex-direction: column;
+          gap: 14px;
+          width: 1024px;
+      }
 
-    .desktop-anatomical-material-for-education-and-research .overlap-group1 {
-      align-items: center;
-      background-color: var(--light-pink);
-      border-radius: 10px;
-      display: flex;
-      height: 266px;
-      min-width: 1120px;
-      padding: 0 48px;
-    }
+      .desktop-anatomical-material-for-education-and-research .application-forms {
+          align-items: center;
+          background-color: var(--surface);
+          display: flex;
+          flex-direction: column;
+          height: 288px;
+          padding: 23px 160px;
+          width: 1440px;
+      }
 
-    .desktop-anatomical-material-for-education-and-research .please-note-the-following-1 {
-      align-items: flex-start;
-      display: flex;
-      flex-direction: column;
-      gap: 14px;
-      width: 1024px;
-    }
+      .desktop-anatomical-material-for-education-and-research .application-forms-1 {
+          align-self: flex-start;
+          color: var(--black);
+          font-family: var(--font-family-open_sans);
+          font-size: var(--font-size-xxxl);
+          font-weight: 700;
+          height: 48px;
+          letter-spacing: 0;
+          line-height: 48px;
+          white-space: nowrap;
+      }
 
-    .desktop-anatomical-material-for-education-and-research .application-forms {
-      align-items: center;
-      background-color: var(--surface);
-      display: flex;
-      flex-direction: column;
-      height: 288px;
-      padding: 23px 160px;
-      width: 1440px;
-    }
+      .desktop-anatomical-material-for-education-and-research .bdp-research {
+          align-items: flex-start;
+          background-color: var(--light-blue);
+          border: 4px solid;
+          border-color: var(--blue);
+          border-radius: 10px;
+          display: flex;
+          height: 72px;
+          margin-right: 3px;
+          margin-top: 25px;
+          min-width: 925px;
+          padding: 11px 0;
+      }
 
-    .desktop-anatomical-material-for-education-and-research .application-forms-1 {
-      align-self: flex-start;
-      color: var(--black);
-      font-family: var(--font-family-open_sans);
-      font-size: var(--font-size-xxxl);
-      font-weight: 700;
-      height: 48px;
-      letter-spacing: 0;
-      line-height: 48px;
-      white-space: nowrap;
-    }
+      .desktop-anatomical-material-for-education-and-research .button-text {
+          height: 40px;
+          letter-spacing: 0;
+          line-height: 40px;
+          margin-left: -4px;
+          text-align: center;
+          white-space: nowrap;
+          width: 925px;
+      }
 
-    .desktop-anatomical-material-for-education-and-research .bdp-research {
-      align-items: flex-start;
-      background-color: var(--light-blue);
-      border: 4px solid;
-      border-color: var(--blue);
-      border-radius: 10px;
-      display: flex;
-      height: 72px;
-      margin-right: 3.0px;
-      margin-top: 25px;
-      min-width: 925px;
-      padding: 11px 0;
-    }
+      .desktop-anatomical-material-for-education-and-research .span {
+          text-decoration: underline;
+      }
 
-    .desktop-anatomical-material-for-education-and-research .button-text {
-      height: 40px;
-      letter-spacing: 0;
-      line-height: 40px;
-      margin-left: -4px;
-      text-align: center;
-      white-space: nowrap;
-      width: 925px;
-    }
+      .desktop-anatomical-material-for-education-and-research .bdp-surgery-education {
+          align-items: flex-start;
+          background-color: var(--light-blue);
+          border: 4px solid;
+          border-color: var(--blue);
+          border-radius: 10px;
+          display: flex;
+          height: 72px;
+          margin-right: 3px;
+          margin-top: 24px;
+          min-width: 925px;
+          padding: 11px 0;
+      }
 
-    .desktop-anatomical-material-for-education-and-research .span {
-      text-decoration: underline;
-    }
+      .desktop-anatomical-material-for-education-and-research .return-address {
+          align-items: center;
+          background-color: var(--surface);
+          display: flex;
+          height: 403px;
+          padding: 0 160px;
+          width: 1440px;
+      }
 
-    .desktop-anatomical-material-for-education-and-research .bdp-surgery-education {
-      align-items: flex-start;
-      background-color: var(--light-blue);
-      border: 4px solid;
-      border-color: var(--blue);
-      border-radius: 10px;
-      display: flex;
-      height: 72px;
-      margin-right: 3.0px;
-      margin-top: 24px;
-      min-width: 925px;
-      padding: 11px 0;
-    }
+      .desktop-anatomical-material-for-education-and-research .overlap-group {
+          height: 355px;
+          position: relative;
+          width: 1120px;
+      }
 
-    .desktop-anatomical-material-for-education-and-research .return-address {
-      align-items: center;
-      background-color: var(--surface);
-      display: flex;
-      height: 403px;
-      padding: 0 160px;
-      width: 1440px;
-    }
+      .desktop-anatomical-material-for-education-and-research .type-header3 {
+          align-items: flex-start;
+          display: flex;
+          flex-direction: column;
+          gap: 14px;
+          left: 0;
+          position: absolute;
+          top: 0;
+          width: 1120px;
+      }
 
-    .desktop-anatomical-material-for-education-and-research .overlap-group {
-      height: 355px;
-      position: relative;
-      width: 1120px;
-    }
+      .desktop-anatomical-material-for-education-and-research .header-3 {
+          line-height: 40px;
+          text-align: center;
+          white-space: nowrap;
+      }
 
-    .desktop-anatomical-material-for-education-and-research .type-header3 {
-      align-items: flex-start;
-      display: flex;
-      flex-direction: column;
-      gap: 14px;
-      left: 0;
-      position: absolute;
-      top: 0;
-      width: 1120px;
-    }
+      .desktop-anatomical-material-for-education-and-research .paragraph-2 {
+          line-height: 26px;
+          text-align: center;
+      }
 
-    .desktop-anatomical-material-for-education-and-research .header-3 {
-      line-height: 40px;
-      text-align: center;
-      white-space: nowrap;
-    }
+      .desktop-anatomical-material-for-education-and-research .back-to-top {
+          align-items: flex-start;
+          cursor: pointer;
+          display: flex;
+          height: 47px;
+          left: 1013px;
+          min-width: 107px;
+          position: absolute;
+          top: 308px;
+      }
 
-    .desktop-anatomical-material-for-education-and-research .paragraph-2 {
-      line-height: 26px;
-      text-align: center;
-    }
+      .desktop-anatomical-material-for-education-and-research .back-to-top-1 {
+          height: 47px;
+          letter-spacing: 0;
+          line-height: 26px;
+          margin-top: -1px;
+          text-align: center;
+          width: 107px;
+      }
 
-    .desktop-anatomical-material-for-education-and-research .back-to-top {
-      align-items: flex-start;
-      cursor: pointer;
-      display: flex;
-      height: 47px;
-      left: 1013px;
-      min-width: 107px;
-      position: absolute;
-      top: 308px;
-    }
+      .desktop-anatomical-material-for-education-and-research .header-4 {
+          align-self: stretch;
+          letter-spacing: 0;
+          margin-top: -1.00px;
+      }
 
-    .desktop-anatomical-material-for-education-and-research .back-to-top-1 {
-      height: 47px;
-      letter-spacing: 0;
-      line-height: 26px;
-      margin-top: -1px;
-      text-align: center;
-      width: 107px;
-    }
-
-    .desktop-anatomical-material-for-education-and-research .screenshot-2022-10-03-204313-2 {
-      height: 327px;
-      object-fit: cover;
-      width: 1440px;
-    }
-
-    .desktop-anatomical-material-for-education-and-research .header-4 {
-      align-self: stretch;
-      letter-spacing: 0;
-      margin-top: -1.00px;
-    }
-
-    .desktop-anatomical-material-for-education-and-research .paragraph-3 {
-      align-self: stretch;
-      letter-spacing: 0;
-    }
-
-    @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
-    @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,300italic");
+      .desktop-anatomical-material-for-education-and-research .paragraph-3 {
+          align-self: stretch;
+          letter-spacing: 0;
+      }
 
 
-    p {
-      margin: 0;
-    }
+      p {
+          margin: 0;
+      }
 
-    .screen a {
-      display: contents;
-      text-decoration: none;
-    }
+      .screen a {
+          display: contents;
+          text-decoration: none;
+      }
 
-    .container-center-horizontal {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      pointer-events: none;
-      width: 100%;
-    }
+      .container-center-horizontal {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          pointer-events: none;
+          width: 100%;
+      }
 
-    .container-center-horizontal>* {
-      flex-shrink: 0;
-      pointer-events: auto;
-    }
+      .container-center-horizontal > * {
+          flex-shrink: 0;
+          pointer-events: auto;
+      }
 
-    .align-self-flex-end {
-      align-self: flex-end;
-    }
+      .valign-text-middle {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+      }
 
-    .valign-text-middle {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
+      * {
+          box-sizing: border-box;
+      }
 
-    * {
-      box-sizing: border-box;
-    }
+      :root {
+          --black: #000000;
+          --blue: #5970af;
+          --green: #2f8292;
+          --light-blue: #a1a7ca;
+          --light-green: #aad4d1;
+          --light-pink: #c699b6;
+          --main-headers: #012045;
+          --pink: #965c88;
+          --surface: #ffffff;
+          --unselected: #dee2f8;
 
-    .ubc {
-      align-items: flex-start;
-      background-color: var(--surface);
-      display: flex;
-      width: 1440px;
-    }
+          --font-size-l: 20px;
+          --font-size-m: 18px;
+          --font-size-s: 14px;
+          --font-size-xl: 28px;
+          --font-size-xxl: 32px;
+          --font-size-xxxl: 40px;
+          --font-size-xxxxl: 50px;
 
-    .contact {
-      display: flex;
-      flex-direction: column;
-    }
+          --font-family-open_sans: "Open Sans", Helvetica;
+      }
 
-    :root {
-      --black: #000000;
-      --blue: #5970af;
-      --green: #2f8292;
-      --light-blue: #a1a7ca;
-      --light-green: #aad4d1;
-      --light-pink: #c699b6;
-      --main-headers: #012045;
-      --pink: #965c88;
-      --surface: #ffffff;
-      --unselected: #dee2f8;
+      .opensans-normal-black-18px {
+          color: var(--black);
+          font-family: var(--font-family-open_sans);
+          font-size: var(--font-size-m);
+          font-style: normal;
+          font-weight: 400;
+      }
 
-      --font-size-l: 20px;
-      --font-size-m: 18px;
-      --font-size-s: 14px;
-      --font-size-xl: 28px;
-      --font-size-xxl: 32px;
-      --font-size-xxxl: 40px;
-      --font-size-xxxxl: 50px;
+      .opensans-bold-magic-potion-32px {
+          color: var(--main-headers);
+          font-family: var(--font-family-open_sans);
+          font-size: var(--font-size-xxl);
+          font-style: normal;
+          font-weight: 700;
+      }
 
-      --font-family-open_sans: "Open Sans", Helvetica;
-    }
+      .opensans-bold-magic-potion-40px {
+          color: var(--main-headers);
+          font-family: var(--font-family-open_sans);
+          font-size: var(--font-size-xxxl);
+          font-style: normal;
+          font-weight: 700;
+      }
 
-    .opensans-normal-black-18px {
-      color: var(--black);
-      font-family: var(--font-family-open_sans);
-      font-size: var(--font-size-m);
-      font-style: normal;
-      font-weight: 400;
-    }
+      .opensans-light-black-32px {
+          color: var(--black);
+          font-family: var(--font-family-open_sans);
+          font-size: var(--font-size-xxl);
+          font-style: normal;
+          font-weight: 300;
+      }
 
-    .opensans-bold-magic-potion-32px {
-      color: var(--main-headers);
-      font-family: var(--font-family-open_sans);
-      font-size: var(--font-size-xxl);
-      font-style: normal;
-      font-weight: 700;
-    }
-
-    .opensans-bold-white-18px {
-      color: var(--surface);
-      font-family: var(--font-family-open_sans);
-      font-size: var(--font-size-m);
-      font-style: normal;
-      font-weight: 700;
-    }
-
-    .opensans-bold-black-18px {
-      color: var(--black);
-      font-family: var(--font-family-open_sans);
-      font-size: var(--font-size-m);
-      font-style: normal;
-      font-weight: 700;
-    }
-
-    .opensans-bold-magic-potion-40px {
-      color: var(--main-headers);
-      font-family: var(--font-family-open_sans);
-      font-size: var(--font-size-xxxl);
-      font-style: normal;
-      font-weight: 700;
-    }
-
-    .opensans-light-black-32px {
-      color: var(--black);
-      font-family: var(--font-family-open_sans);
-      font-size: var(--font-size-xxl);
-      font-style: normal;
-      font-weight: 300;
-    }
-
-    .opensans-bold-magic-potion-50px {
-      color: var(--main-headers);
-      font-family: var(--font-family-open_sans);
-      font-size: var(--font-size-xxxxl);
-      font-style: normal;
-      font-weight: 700;
-    }
-
-    .opensans-light-black-28px {
-      color: var(--black);
-      font-family: var(--font-family-open_sans);
-      font-size: var(--font-size-xl);
-      font-style: italic;
-      font-weight: 300;
-    }
-
-    .opensans-bold-magic-potion-70px {
-      color: var(--main-headers);
-      font-family: var(--font-family-open_sans);
-      font-size: 70px;
-      font-style: normal;
-      font-weight: 700;
-    }
-
-    .opensans-bold-magic-potion-20px {
-      color: var(--main-headers);
-      font-family: var(--font-family-open_sans);
-      font-size: var(--font-size-l);
-      font-style: normal;
-      font-weight: 700;
-    }
-
-    .opensans-normal-white-14px {
-      color: var(--surface);
-      font-family: var(--font-family-open_sans);
-      font-size: var(--font-size-s);
-      font-style: normal;
-      font-weight: 400;
-    }
-
-    .opensans-bold-white-90px {
-      color: var(--surface);
-      font-family: var(--font-family-open_sans);
-      font-size: 90px;
-      font-style: normal;
-      font-weight: 700;
-    }
-
-    body {
-      margin: 0;
-    }
+      body {
+          margin: 0;
+      }
   </style>
 </head>
 
 <body>
 
-  <input type="hidden" id="anPageName" name="page" value="desktop-anatomical-material-for-education-and-research" />
-  <div class="container-center-horizontal">
-    <div class="desktop-anatomical-material-for-education-and-research screen">
-      <div class="anatomical-material" id="anatomical-material-">
-        <div class="tion">
-          <p class="paragraph-1 paragraph-3 opensans-light-black-32px">
-            Please read the information below regarding our policies for anatomical education &amp; research. Links to
-            downloadable (pdf) application forms for educational and research are located at the bottom of the page,
-            as well as a downloadable version of the departmental policies.
+<input type="hidden" id="anPageName" name="page" value="desktop-anatomical-material-for-education-and-research"/>
+<div class="container-center-horizontal">
+  <div class="desktop-anatomical-material-for-education-and-research screen">
+    <div class="anatomical-material" id="anatomical-material-">
+      <div class="tion">
+        <p class="paragraph-1 paragraph-3 opensans-light-black-32px">
+          Please read the information below regarding our policies for anatomical education &amp; research. Links to
+          downloadable (pdf) application forms for educational and research are located at the bottom of the page,
+          as well as a downloadable version of the departmental policies.
+        </p>
+      </div>
+    </div>
+    <div class="policies-on-the-use">
+      <div class="overlap-group2">
+        <div class="policies-on-the-use-1">
+          <p class="header-2 header-4 opensans-bold-magic-potion-32px">
+            Policies on the Use of Anatomical Material for Teaching and Research
           </p>
-        </div>
-      </div>
-      <div class="policies-on-the-use">
-        <div class="overlap-group2">
-          <div class="policies-on-the-use-1">
-            <p class="header-2 header-4 opensans-bold-magic-potion-32px">
-              Policies on the Use of Anatomical Material for Teaching and Research
-            </p>
-            <p class="paragraph opensans-normal-black-18px">
-              These are the policies for access to donor bodies bequeathed to the Department of Cellular &amp;
-              Physiological Sciences at the University of British Columbia.<br /><br />The donation of one’s body to
-              the University of British Columbia is considered a unique bequest that an individual makes at their time
-              of death. It is a generous decision, made to further education and research in our community. Under no
-              circumstances can this gift be commercialized either directly or indirectly. The bodies gifted to UBC
-              are made available to further research and teaching activities within the faculty. There is an internal
-              charge to the unit requesting access on a cost-recovery basis to ensure the viability of the Body
-              Donation Program.
-            </p>
-          </div>
-        </div>
-        <div class="heart-illustration-blue-background">
-          <img class="heart_w__bg2-1"
-            src="https://med-fom-cell-phys.sites.olt.ubc.ca/files/2023/02/heart-w-bg-2-1@2x.png"
-            alt="heart_w__bg(2) 1" />
-        </div>
-      </div>
-      <div class="universal-precautions">
-        <div class="tion">
-          <div class="header opensans-bold-magic-potion-40px">Universal Precautions</div>
           <p class="paragraph opensans-normal-black-18px">
-            Infectious diseases are a potential threat for everyone involved in the handling and preparation of human
-            remains. Although the Department has adopted policies to reduce risk wherever possible, it is important to
-            note there is still the potential for contact with infectious diseases and appropriate precautions should
-            be taken before handling the donor bodies.
+            These are the policies for access to donor bodies bequeathed to the Department of Cellular &amp;
+            Physiological Sciences at the University of British Columbia.<br/><br/>The donation of one’s body to
+            the University of British Columbia is considered a unique bequest that an individual makes at their time
+            of death. It is a generous decision, made to further education and research in our community. Under no
+            circumstances can this gift be commercialized either directly or indirectly. The bodies gifted to UBC
+            are made available to further research and teaching activities within the faculty. There is an internal
+            charge to the unit requesting access on a cost-recovery basis to ensure the viability of the Body
+            Donation Program.
           </p>
         </div>
       </div>
-      <div class="your-application">
-        <div class="tion">
-          <div class="header opensans-bold-magic-potion-40px">Your Application</div>
+      <div class="heart-illustration-blue-background">
+        <img class="heart_w__bg2-1"
+             src="https://med-fom-cell-phys.sites.olt.ubc.ca/files/2023/02/heart-w-bg-2-1@2x.png"
+             alt="heart_w__bg(2) 1"/>
+      </div>
+    </div>
+    <div class="universal-precautions">
+      <div class="tion">
+        <div class="header opensans-bold-magic-potion-40px">Universal Precautions</div>
+        <p class="paragraph opensans-normal-black-18px">
+          Infectious diseases are a potential threat for everyone involved in the handling and preparation of human
+          remains. Although the Department has adopted policies to reduce risk wherever possible, it is important to
+          note there is still the potential for contact with infectious diseases and appropriate precautions should
+          be taken before handling the donor bodies.
+        </p>
+      </div>
+    </div>
+    <div class="your-application">
+      <div class="tion">
+        <div class="header opensans-bold-magic-potion-40px">Your Application</div>
+        <p class="paragraph opensans-normal-black-18px">
+          Workshops and research projects that request access to donated bodies must be affiliated with, and run by,
+          a UBC Department or by UBC Continuing Professional Development on behalf of a UBC unit. Applications that
+          do not fulfill this criterion will be rejected.<br/><br/>The number of donor bodies we receive at any
+          given time is highly variable. We recommend that you plan ahead and submit your application at least one
+          year, and no less than six months in advance of your anticipated need. Since the number of donations
+          varies from year to year, we may not be able to meet your request in whole or in part.<br/><br/>Your
+          request must fall under one of these two scenarios:<br/><br/>You wish to use donor bodies provided by
+          the Department onsite in the Department of Cellular &amp; Physiological Sciences. To coordinate your
+          request with scheduled classes we strongly suggest that you file an application no less than one year in
+          advance.<br/>&nbsp;&nbsp;&nbsp;&nbsp;You wish to use donor bodies provided by the Department offsite at
+          one of the following locations: Vancouver General Hospital Simulation Centre, Centre for Hip Health and
+          Mobility and Jack Bell.<br/><br/>The Department insists that the donor bodies are handled in a dignified
+          manner and are treated with respect, and in the spirit in which they were donated. The donors’ remains
+          must be returned to the Department for disposal in accordance with the donation grant. Timing of the
+          return will be&nbsp;&nbsp;determined in discussion with the Program Manager.
+        </p>
+      </div>
+    </div>
+    <div class="please-note-the-following">
+      <div class="overlap-group1">
+        <div class="please-note-the-following-1">
+          <div class="header opensans-bold-magic-potion-40px">Please Note the Following</div>
           <p class="paragraph opensans-normal-black-18px">
-            Workshops and research projects that request access to donated bodies must be affiliated with, and run by,
-            a UBC Department or by UBC Continuing Professional Development on behalf of a UBC unit. Applications that
-            do not fulfill this criterion will be rejected.<br /><br />The number of donor bodies we receive at any
-            given time is highly variable. We recommend that you plan ahead and submit your application at least one
-            year, and no less than six months in advance of your anticipated need. Since the number of donations
-            varies from year to year, we may not be able to meet your request in whole or in part.<br /><br />Your
-            request must fall under one of these two scenarios:<br /><br />You wish to use donor bodies provided by
-            the Department onsite in the Department of Cellular &amp; Physiological Sciences. To coordinate your
-            request with scheduled classes we strongly suggest that you file an application no less than one year in
-            advance.<br />&nbsp;&nbsp;&nbsp;&nbsp;You wish to use donor bodies provided by the Department offsite at
-            one of the following locations: Vancouver General Hospital Simulation Centre, Centre for Hip Health and
-            Mobility and Jack Bell.<br /><br />The Department insists that the donor bodies are handled in a dignified
-            manner and are treated with respect, and in the spirit in which they were donated. The donors’ remains
-            must be returned to the Department for disposal in accordance with the donation grant. Timing of the
-            return will be&nbsp;&nbsp;determined in discussion with the Program Manager.
+            All donor bodies must be returned to the Department of Cellular &amp; Physiological Sciences within 6
+            months for cremation.<br/><br/>Any requests to use space in the Department of Cellular &amp;
+            Physiological Sciences must be made one year in advance, to provide adequate time to schedule around the
+            undergraduate medical course and other courses held in the Department.
           </p>
-        </div>
-      </div>
-      <div class="please-note-the-following">
-        <div class="overlap-group1">
-          <div class="please-note-the-following-1">
-            <div class="header opensans-bold-magic-potion-40px">Please Note the Following</div>
-            <p class="paragraph opensans-normal-black-18px">
-              All donor bodies must be returned to the Department of Cellular &amp; Physiological Sciences within 6
-              months for cremation.<br /><br />Any requests to use space in the Department of Cellular &amp;
-              Physiological Sciences must be made one year in advance, to provide adequate time to schedule around the
-              undergraduate medical course and other courses held in the Department.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="application-forms">
-        <div class="application-forms-1 valign-text-middle">Application Forms</div>
-        <div class="bdp-research">
-          <p class="button-text valign-text-middle opensans-bold-magic-potion-32px">
-            <span><a rel="noopener" href="https://med-fom-cell-phys.sites.olt.ubc.ca/files/2021/04/BDP-Research.pdf"
-                target="_blank"><span class="span opensans-bold-magic-potion-32px">BDP Research (updated April
-                  2021)</span></a>
-            </span>
-          </p>
-        </div>
-        <div class="bdp-surgery-education">
-          <p class="button-text valign-text-middle opensans-bold-magic-potion-32px">
-            <span><a rel="noopener"
-                href="https://med-fom-cell-phys.sites.olt.ubc.ca/files/2021/06/BDP-SurgeryEducation-.pdf"
-                target="_blank"><span class="span opensans-bold-magic-potion-32px">BDP Surgery Education (updated April
-                  2021)</span></a>
-            </span>
-          </p>
-        </div>
-      </div>
-      <div class="return-address">
-        <div class="overlap-group">
-          <div class="type-header3">
-            <p class="header-3 header-4 opensans-bold-magic-potion-32px">
-              Please fully complete the&nbsp;&nbsp;appropriate form and return it via:
-            </p>
-            <p class="paragraph-2 paragraph-3 opensans-normal-black-18px">
-              <br />FAX: (604) 827-4209<br /><br />EMAIL ATTACHMENT:
-              body.program@ubc.ca<br /><br />MAIL:&nbsp;&nbsp;Anatomical
-              Committee<br />Dept of Cellular &amp; Physiological Sciences<br />2350 Health Sciences
-              Mall<br />University
-              of British Columbia<br />Vancouver, BC V6T 1Z3
-            </p>
-          </div>
-          <a href="#anatomical-material-">
-            <div class="back-to-top">
-              <div class="back-to-top-1 valign-text-middle opensans-normal-black-18px">Back to Top</div>
-            </div>
-          </a>
         </div>
       </div>
     </div>
+    <div class="application-forms">
+      <div class="application-forms-1 valign-text-middle">Application Forms</div>
+      <div class="bdp-research">
+        <p class="button-text valign-text-middle opensans-bold-magic-potion-32px">
+            <span><a rel="noopener" href="https://med-fom-cell-phys.sites.olt.ubc.ca/files/2021/04/BDP-Research.pdf"
+                     target="_blank"><span class="span opensans-bold-magic-potion-32px">BDP Research (updated April
+                  2021)</span></a>
+            </span>
+        </p>
+      </div>
+      <div class="bdp-surgery-education">
+        <p class="button-text valign-text-middle opensans-bold-magic-potion-32px">
+            <span><a rel="noopener"
+                     href="https://med-fom-cell-phys.sites.olt.ubc.ca/files/2021/06/BDP-SurgeryEducation-.pdf"
+                     target="_blank"><span class="span opensans-bold-magic-potion-32px">BDP Surgery Education (updated April
+                  2021)</span></a>
+            </span>
+        </p>
+      </div>
+    </div>
+    <div class="return-address">
+      <div class="overlap-group">
+        <div class="type-header3">
+          <p class="header-3 header-4 opensans-bold-magic-potion-32px">
+            Please fully complete the&nbsp;&nbsp;appropriate form and return it via:
+          </p>
+          <p class="paragraph-2 paragraph-3 opensans-normal-black-18px">
+            <br/>FAX: (604) 827-4209<br/><br/>EMAIL ATTACHMENT:
+            body.program@ubc.ca<br/><br/>MAIL:&nbsp;&nbsp;Anatomical
+            Committee<br/>Dept of Cellular &amp; Physiological Sciences<br/>2350 Health Sciences
+            Mall<br/>University
+            of British Columbia<br/>Vancouver, BC V6T 1Z3
+          </p>
+        </div>
+        <a href="#anatomical-material-">
+          <div class="back-to-top">
+            <div class="back-to-top-1 valign-text-middle opensans-normal-black-18px">Back to Top</div>
+          </div>
+        </a>
+      </div>
+    </div>
   </div>
+</div>
 </body>
 
 </html>

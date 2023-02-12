@@ -1,658 +1,548 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>Our Stories</title>
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width" />
-  <meta name="og:type" content="website" />
-  <meta name="twitter:card" content="photo" />
-  <link rel="stylesheet" type="text/css" href="css/desktop-main-page.css" />
+  <title>Our Stories</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width"/>
+  <meta name="og:type" content="website"/>
+  <meta name="twitter:card" content="photo"/>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="css/styleguide.css" />
-  <link rel="stylesheet" type="text/css" href="css/globals.css" />
   <style>
-    /* screen - desktop-our-stories */
-
-    p {
-      margin: 0;
-    }
-
-    .desktop-our-stories {
-      align-items: flex-start;
-      border: 1px none;
-      display: flex;
-      flex-direction: column;
-      width: 1440px;
-    }
-
-    .desktop-our-stories .screenshot-2022-10-03-194008-1 {
-      height: 300px;
-      object-fit: cover;
-      width: 1440px;
-    }
-
-    .desktop-our-stories .our-stories-header {
-      align-items: flex-start;
-      background-color: var(--surface);
-      display: flex;
-      height: 127px;
-      padding: 23px 160px;
-      width: 1440px;
-    }
-
-    .desktop-our-stories .overlap-group {
-      height: 152px;
-      position: relative;
-      width: 1120px;
-    }
-
-    .desktop-our-stories .type-header2 {
-      align-items: flex-start;
-      display: flex;
-      flex-direction: column;
-      gap: 14px;
-      left: 0;
-      position: absolute;
-      top: 0;
-      width: 1120px;
-    }
-
-    .desktop-our-stories .header {
-      align-self: stretch;
-      letter-spacing: 0;
-      line-height: 58px;
-      margin-top: -1.00px;
-      white-space: nowrap;
-    }
-
-    .desktop-our-stories .paragraph {
-      align-self: stretch;
-      letter-spacing: 0;
-      line-height: 40px;
-    }
-
-    .desktop-our-stories .audio-icon-no-interaction {
-      align-items: flex-start;
-      background-color: var(--light-blue);
-      border: 4px solid;
-      border-color: var(--blue);
-      border-radius: 20px;
-      display: flex;
-      height: 40px;
-      left: 74px;
-      min-width: 40px;
-      padding: 4.8px 9.7px;
-      position: absolute;
-      top: 72px;
-    }
-
-    .desktop-our-stories .polygon-2 {
-      height: 23px;
-      width: 19px;
-    }
-
-    .desktop-our-stories .x-interview {
-      align-items: center;
-      background-color: var(--surface);
-      display: flex;
-      gap: 32px;
-      height: 783px;
-      padding: 0 160px;
-      width: 1440px;
-    }
-
-    .desktop-our-stories .flex-col {
-      align-items: flex-start;
-      display: flex;
-      flex-direction: column;
-      gap: 23px;
-      min-height: 687px;
-      width: 544px;
-    }
-
-    .desktop-our-stories .kate-fitzsimmons {
-      background-image: url(https://med-fom-cell-phys.sites.olt.ubc.ca/files/2023/02/kate-1-1.png);
-      background-position: 50% 50%;
-      background-size: cover;
-      height: 544px;
-      width: 544px;
-    }
-
-    .desktop-our-stories .play-audio-with-text {
-      align-items: flex-start;
-      display: flex;
-      gap: 23px;
-      min-width: 544px;
-    }
-
-    .desktop-our-stories .play-pause-icon {
-      align-items: flex-start;
-      background-color: var(--light-blue);
-      border: 4px solid;
-      border-color: var(--blue);
-      border-radius: 60px;
-      display: flex;
-      height: 120px;
-      justify-content: flex-end;
-      min-width: 120px;
-      padding: 22.5px 25.7px;
-      visibility: hidden;
-    }
-
-    .desktop-our-stories .polygon-1 {
-      height: 68px;
-      width: 57px;
-    }
-
-    .desktop-our-stories .click-here-to-play-full-interview {
-      height: 120px;
-      letter-spacing: 0;
-      line-height: 40px;
-      margin-top: -1px;
-      width: 401px;
-    }
-
-    .desktop-our-stories .flex-col-1 {
-      align-items: center;
-      gap: 44px;
-      margin-bottom: 20.0px;
-      min-height: 667px;
-    }
-
-    .desktop-our-stories .quote-1 {
-      border-color: var(--light-green);
-    }
-
-    .desktop-our-stories .it-was-really-amazi {
-      height: 543px;
-      letter-spacing: 0;
-      line-height: 36px;
-      margin-top: -5px;
-      text-align: center;
-      width: 448px;
-    }
-
-    .desktop-our-stories .transcript-download-button {
-      align-items: flex-start;
-      background-image: url(https://med-fom-cell-phys.sites.olt.ubc.ca/files/2023/02/rectangle-48.png);
-      background-size: 100% 100%;
-      display: flex;
-      min-width: 352px;
-      padding: 0 49px;
-    }
-
-    .desktop-our-stories .button-text {
-      height: 80px;
-      letter-spacing: 0;
-      line-height: 26px;
-      margin-top: -1px;
-      text-align: center;
-      width: 254px;
-    }
-
-    .desktop-our-stories .quote {
-      align-items: flex-start;
-      background-color: var(--surface);
-      border: 4px solid;
-      border-color: var(--light-blue);
-      border-radius: 10px;
-      display: flex;
-      min-width: 544px;
-      padding: 0 44px;
-    }
-
-    .desktop-our-stories .for-many-people-my {
-      height: 543px;
-      letter-spacing: 0;
-      line-height: 36px;
-      margin-top: -5px;
-      text-align: center;
-      width: 448px;
-    }
-
-    .desktop-our-stories .flex-col-2 {
-      align-items: flex-start;
-      gap: 22px;
-      min-height: 687px;
-    }
-
-    .desktop-our-stories .army-alam {
-      background-image: url(https://med-fom-cell-phys.sites.olt.ubc.ca/files/2023/02/army-1-1.png);
-      background-position: 50% 50%;
-      background-size: cover;
-      height: 545px;
-      width: 544px;
-    }
-
-    .desktop-our-stories .flex-col-3 {
-      align-items: flex-start;
-      gap: 24px;
-      min-height: 687px;
-    }
-
-    .desktop-our-stories .dr-olusegun-oyedele {
-      background-image: url(https://med-fom-cell-phys.sites.olt.ubc.ca/files/2023/02/segun-1-1.png);
-      background-position: 50% 50%;
-      background-size: cover;
-      height: 543px;
-      width: 544px;
-    }
-
-    .desktop-our-stories .quote-2 {
-      border-color: var(--light-pink);
-    }
-
-    .desktop-our-stories .if-i-could-sum-up-t {
-      color: var(--black);
-      font-family: var(--font-family-open_sans);
-      font-size: var(--font-size-xxxl);
-      font-style: italic;
-      font-weight: 300;
-      height: 543px;
-      letter-spacing: 0;
-      line-height: 48px;
-      margin-top: -5px;
-      text-align: center;
-      width: 448px;
-    }
-
-    .desktop-our-stories .i-would-like-people {
-      height: 543px;
-      letter-spacing: 0;
-      line-height: 36px;
-      margin-top: -5px;
-      text-align: center;
-      width: 448px;
-    }
-
-    .desktop-our-stories .click-here-to-download-transcript {
-      height: 80px;
-      letter-spacing: 0;
-      line-height: 26px;
-      margin-top: -1px;
-      text-align: center;
-      width: 254px;
-    }
-
-    .desktop-our-stories .matt-tinney {
-      background-image: url(https://med-fom-cell-phys.sites.olt.ubc.ca/files/2023/02/mat-1.png);
-      background-position: 50% 50%;
-      background-size: cover;
-      height: 544px;
-      width: 544px;
-    }
-
-    .desktop-our-stories .back-to-top {
-      align-items: center;
-      background-color: var(--surface);
-      display: flex;
-      height: 95px;
-      padding: 0 160px;
-      width: 1440px;
-    }
-
-    .desktop-our-stories .back-to-top-1 {
-      align-items: flex-start;
-      cursor: pointer;
-      display: flex;
-      margin-left: 1013px;
-      min-width: 107px;
-    }
-
-    .desktop-our-stories .back-to-top-2 {
-      height: 47px;
-      letter-spacing: 0;
-      line-height: 26px;
-      margin-top: -1px;
-      text-align: center;
-      width: 107px;
-    }
-
-    .desktop-our-stories .screenshot-2022-10-03-204313-2 {
-      height: 327px;
-      object-fit: cover;
-      width: 1440px;
-    }
-
-    .desktop-our-stories .button-text-3 {
-      height: 80px;
-      letter-spacing: 0;
-      line-height: 26px;
-      margin-top: -1px;
-      text-align: center;
-      width: 254px;
-    }
-
-    .desktop-our-stories .flex-col-4 {
-      display: flex;
-      flex-direction: column;
-      width: 544px;
-    }
-
-    .desktop-our-stories .quote-3 {
-      align-items: flex-start;
-      background-color: var(--surface);
-      border: 4px solid;
-      border-radius: 10px;
-      display: flex;
-      min-width: 544px;
-      padding: 0 44px;
-    }
-
-
-    @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
-    @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,300italic");
-
-
-
-    .screen a {
-      display: contents;
-      text-decoration: none;
-    }
-
-    .container-center-horizontal {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      pointer-events: none;
-      width: 100%;
-    }
-
-    .container-center-horizontal>* {
-      flex-shrink: 0;
-      pointer-events: auto;
-    }
-
-    .align-self-flex-end {
-      align-self: flex-end;
-    }
-
-    .valign-text-middle {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    .ubc {
-      align-items: flex-start;
-      background-color: var(--surface);
-      display: flex;
-      width: 1440px;
-    }
-
-    .contact {
-      display: flex;
-      flex-direction: column;
-    }
-
-    :root {
-      --black: #000000;
-      --blue: #5970af;
-      --green: #2f8292;
-      --light-blue: #a1a7ca;
-      --light-green: #aad4d1;
-      --light-pink: #c699b6;
-      --main-headers: #012045;
-      --pink: #965c88;
-      --surface: #ffffff;
-      --unselected: #dee2f8;
-
-      --font-size-l: 20px;
-      --font-size-m: 18px;
-      --font-size-s: 14px;
-      --font-size-xl: 28px;
-      --font-size-xxl: 32px;
-      --font-size-xxxl: 40px;
-      --font-size-xxxxl: 50px;
-
-      --font-family-open_sans: "Open Sans", Helvetica;
-    }
-
-    .opensans-normal-black-18px {
-      color: var(--black);
-      font-family: var(--font-family-open_sans);
-      font-size: var(--font-size-m);
-      font-style: normal;
-      font-weight: 400;
-    }
-
-    .opensans-bold-magic-potion-32px {
-      color: var(--main-headers);
-      font-family: var(--font-family-open_sans);
-      font-size: var(--font-size-xxl);
-      font-style: normal;
-      font-weight: 700;
-    }
-
-    .opensans-bold-white-18px {
-      color: var(--surface);
-      font-family: var(--font-family-open_sans);
-      font-size: var(--font-size-m);
-      font-style: normal;
-      font-weight: 700;
-    }
-
-    .opensans-bold-black-18px {
-      color: var(--black);
-      font-family: var(--font-family-open_sans);
-      font-size: var(--font-size-m);
-      font-style: normal;
-      font-weight: 700;
-    }
-
-    .opensans-bold-magic-potion-40px {
-      color: var(--main-headers);
-      font-family: var(--font-family-open_sans);
-      font-size: var(--font-size-xxxl);
-      font-style: normal;
-      font-weight: 700;
-    }
-
-    .opensans-light-black-32px {
-      color: var(--black);
-      font-family: var(--font-family-open_sans);
-      font-size: var(--font-size-xxl);
-      font-style: normal;
-      font-weight: 300;
-    }
-
-    .opensans-bold-magic-potion-50px {
-      color: var(--main-headers);
-      font-family: var(--font-family-open_sans);
-      font-size: var(--font-size-xxxxl);
-      font-style: normal;
-      font-weight: 700;
-    }
-
-    .opensans-light-black-28px {
-      color: var(--black);
-      font-family: var(--font-family-open_sans);
-      font-size: var(--font-size-xl);
-      font-style: italic;
-      font-weight: 300;
-    }
-
-    .opensans-bold-magic-potion-70px {
-      color: var(--main-headers);
-      font-family: var(--font-family-open_sans);
-      font-size: 70px;
-      font-style: normal;
-      font-weight: 700;
-    }
-
-    .opensans-bold-magic-potion-20px {
-      color: var(--main-headers);
-      font-family: var(--font-family-open_sans);
-      font-size: var(--font-size-l);
-      font-style: normal;
-      font-weight: 700;
-    }
-
-    .opensans-normal-white-14px {
-      color: var(--surface);
-      font-family: var(--font-family-open_sans);
-      font-size: var(--font-size-s);
-      font-style: normal;
-      font-weight: 400;
-    }
-
-    .opensans-bold-white-90px {
-      color: var(--surface);
-      font-family: var(--font-family-open_sans);
-      font-size: 90px;
-      font-style: normal;
-      font-weight: 700;
-    }
-
-    body {
-      margin: 0;
-    }
+      @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+      @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,300italic"); /* screen - desktop-our-stories */
+
+      p {
+          margin: 0;
+      }
+
+      .desktop-our-stories {
+          align-items: flex-start;
+          border: 1px none;
+          display: flex;
+          flex-direction: column;
+          width: 1440px;
+      }
+
+      .desktop-our-stories .our-stories-header {
+          align-items: flex-start;
+          background-color: var(--surface);
+          display: flex;
+          height: 127px;
+          padding: 23px 160px;
+          width: 1440px;
+      }
+
+      .desktop-our-stories .overlap-group {
+          height: 152px;
+          position: relative;
+          width: 1120px;
+      }
+
+      .desktop-our-stories .type-header2 {
+          align-items: flex-start;
+          display: flex;
+          flex-direction: column;
+          gap: 14px;
+          left: 0;
+          position: absolute;
+          top: 0;
+          width: 1120px;
+      }
+
+      .desktop-our-stories .paragraph {
+          align-self: stretch;
+          letter-spacing: 0;
+          line-height: 40px;
+      }
+
+      .desktop-our-stories .polygon-2 {
+          height: 23px;
+          width: 19px;
+      }
+
+      .desktop-our-stories .x-interview {
+          align-items: center;
+          background-color: var(--surface);
+          display: flex;
+          gap: 32px;
+          height: 783px;
+          padding: 0 160px;
+          width: 1440px;
+      }
+
+      .desktop-our-stories .flex-col {
+          align-items: flex-start;
+          display: flex;
+          flex-direction: column;
+          gap: 23px;
+          min-height: 687px;
+          width: 544px;
+      }
+
+      .desktop-our-stories .kate-fitzsimmons {
+          background-image: url(https://med-fom-cell-phys.sites.olt.ubc.ca/files/2023/02/kate-1-1.png);
+          background-position: 50% 50%;
+          background-size: cover;
+          height: 544px;
+          width: 544px;
+      }
+
+      .desktop-our-stories .play-audio-with-text {
+          align-items: flex-start;
+          display: flex;
+          gap: 23px;
+          min-width: 544px;
+      }
+
+      .desktop-our-stories .play-pause-icon {
+          align-items: flex-start;
+          background-color: var(--light-blue);
+          border: 4px solid;
+          border-color: var(--blue);
+          border-radius: 60px;
+          display: flex;
+          height: 120px;
+          justify-content: flex-end;
+          min-width: 120px;
+          padding: 23px 26px;
+          visibility: hidden;
+      }
+
+      .desktop-our-stories .polygon-1 {
+          height: 68px;
+          width: 57px;
+      }
+
+      .desktop-our-stories .click-here-to-play-full-interview {
+          height: 120px;
+          letter-spacing: 0;
+          line-height: 40px;
+          margin-top: -1px;
+          width: 401px;
+      }
+
+      .desktop-our-stories .flex-col-1 {
+          align-items: center;
+          gap: 44px;
+          margin-bottom: 20px;
+          min-height: 667px;
+      }
+
+      .desktop-our-stories .quote-1 {
+          border-color: var(--light-green);
+      }
+
+      .desktop-our-stories .it-was-really-amazi {
+          height: 543px;
+          letter-spacing: 0;
+          line-height: 36px;
+          margin-top: -5px;
+          text-align: center;
+          width: 448px;
+      }
+
+      .desktop-our-stories .transcript-download-button {
+          align-items: flex-start;
+          background-image: url(https://med-fom-cell-phys.sites.olt.ubc.ca/files/2023/02/rectangle-48.png);
+          background-size: 100% 100%;
+          display: flex;
+          min-width: 352px;
+          padding: 0 49px;
+      }
+
+      .desktop-our-stories .button-text {
+          height: 80px;
+          letter-spacing: 0;
+          line-height: 26px;
+          margin-top: -1px;
+          text-align: center;
+          width: 254px;
+      }
+
+      .desktop-our-stories .quote {
+          align-items: flex-start;
+          background-color: var(--surface);
+          border: 4px solid;
+          border-color: var(--light-blue);
+          border-radius: 10px;
+          display: flex;
+          min-width: 544px;
+          padding: 0 44px;
+      }
+
+      .desktop-our-stories .for-many-people-my {
+          height: 543px;
+          letter-spacing: 0;
+          line-height: 36px;
+          margin-top: -5px;
+          text-align: center;
+          width: 448px;
+      }
+
+      .desktop-our-stories .flex-col-2 {
+          align-items: flex-start;
+          gap: 22px;
+          min-height: 687px;
+      }
+
+      .desktop-our-stories .army-alam {
+          background-image: url(https://med-fom-cell-phys.sites.olt.ubc.ca/files/2023/02/army-1-1.png);
+          background-position: 50% 50%;
+          background-size: cover;
+          height: 545px;
+          width: 544px;
+      }
+
+      .desktop-our-stories .flex-col-3 {
+          align-items: flex-start;
+          gap: 24px;
+          min-height: 687px;
+      }
+
+      .desktop-our-stories .dr-olusegun-oyedele {
+          background-image: url(https://med-fom-cell-phys.sites.olt.ubc.ca/files/2023/02/segun-1-1.png);
+          background-position: 50% 50%;
+          background-size: cover;
+          height: 543px;
+          width: 544px;
+      }
+
+      .desktop-our-stories .quote-2 {
+          border-color: var(--light-pink);
+      }
+
+      .desktop-our-stories .if-i-could-sum-up-t {
+          color: var(--black);
+          font-family: var(--font-family-open_sans);
+          font-size: var(--font-size-xxxl);
+          font-style: italic;
+          font-weight: 300;
+          height: 543px;
+          letter-spacing: 0;
+          line-height: 48px;
+          margin-top: -5px;
+          text-align: center;
+          width: 448px;
+      }
+
+      .desktop-our-stories .i-would-like-people {
+          height: 543px;
+          letter-spacing: 0;
+          line-height: 36px;
+          margin-top: -5px;
+          text-align: center;
+          width: 448px;
+      }
+
+      .desktop-our-stories .click-here-to-download-transcript {
+          height: 80px;
+          letter-spacing: 0;
+          line-height: 26px;
+          margin-top: -1px;
+          text-align: center;
+          width: 254px;
+      }
+
+      .desktop-our-stories .matt-tinney {
+          background-image: url(https://med-fom-cell-phys.sites.olt.ubc.ca/files/2023/02/mat-1.png);
+          background-position: 50% 50%;
+          background-size: cover;
+          height: 544px;
+          width: 544px;
+      }
+
+      .desktop-our-stories .back-to-top {
+          align-items: center;
+          background-color: var(--surface);
+          display: flex;
+          height: 95px;
+          padding: 0 160px;
+          width: 1440px;
+      }
+
+      .desktop-our-stories .back-to-top-1 {
+          align-items: flex-start;
+          cursor: pointer;
+          display: flex;
+          margin-left: 1013px;
+          min-width: 107px;
+      }
+
+      .desktop-our-stories .back-to-top-2 {
+          height: 47px;
+          letter-spacing: 0;
+          line-height: 26px;
+          margin-top: -1px;
+          text-align: center;
+          width: 107px;
+      }
+
+      .desktop-our-stories .button-text-3 {
+          height: 80px;
+          letter-spacing: 0;
+          line-height: 26px;
+          margin-top: -1px;
+          text-align: center;
+          width: 254px;
+      }
+
+      .desktop-our-stories .flex-col-4 {
+          display: flex;
+          flex-direction: column;
+          width: 544px;
+      }
+
+      .desktop-our-stories .quote-3 {
+          align-items: flex-start;
+          background-color: var(--surface);
+          border: 4px solid;
+          border-radius: 10px;
+          display: flex;
+          min-width: 544px;
+          padding: 0 44px;
+      }
+
+
+      .screen a {
+          display: contents;
+          text-decoration: none;
+      }
+
+      .container-center-horizontal {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          pointer-events: none;
+          width: 100%;
+      }
+
+      .container-center-horizontal > * {
+          flex-shrink: 0;
+          pointer-events: auto;
+      }
+
+      .valign-text-middle {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+      }
+
+      * {
+          box-sizing: border-box;
+      }
+
+      :root {
+          --black: #000000;
+          --blue: #5970af;
+          --green: #2f8292;
+          --light-blue: #a1a7ca;
+          --light-green: #aad4d1;
+          --light-pink: #c699b6;
+          --main-headers: #012045;
+          --pink: #965c88;
+          --surface: #ffffff;
+          --unselected: #dee2f8;
+
+          --font-size-l: 20px;
+          --font-size-m: 18px;
+          --font-size-s: 14px;
+          --font-size-xl: 28px;
+          --font-size-xxl: 32px;
+          --font-size-xxxl: 40px;
+          --font-size-xxxxl: 50px;
+
+          --font-family-open_sans: "Open Sans", Helvetica;
+      }
+
+      .opensans-normal-black-18px {
+          color: var(--black);
+          font-family: var(--font-family-open_sans);
+          font-size: var(--font-size-m);
+          font-style: normal;
+          font-weight: 400;
+      }
+
+      .opensans-bold-magic-potion-32px {
+          color: var(--main-headers);
+          font-family: var(--font-family-open_sans);
+          font-size: var(--font-size-xxl);
+          font-style: normal;
+          font-weight: 700;
+      }
+
+      .opensans-bold-black-18px {
+          color: var(--black);
+          font-family: var(--font-family-open_sans);
+          font-size: var(--font-size-m);
+          font-style: normal;
+          font-weight: 700;
+      }
+
+      .opensans-light-black-32px {
+          color: var(--black);
+          font-family: var(--font-family-open_sans);
+          font-size: var(--font-size-xxl);
+          font-style: normal;
+          font-weight: 300;
+      }
+
+      .opensans-light-black-28px {
+          color: var(--black);
+          font-family: var(--font-family-open_sans);
+          font-size: var(--font-size-xl);
+          font-style: italic;
+          font-weight: 300;
+      }
+
+      body {
+          margin: 0;
+      }
   </style>
 </head>
 
 <body>
-  <input type="hidden" id="anPageName" name="page" value="desktop-our-stories" />
-  <div class="container-center-horizontal">
-    <div class="desktop-our-stories screen">
-      <div class="our-stories-header" id="our-stories-header">
-        <div class="overlap-group">
-          <div class="type-header2">
-            <p class="paragraph opensans-light-black-32px">
-              Click
-              <img class="polygon-2" src="https://med-fom-cell-phys.sites.olt.ubc.ca/files/2023/02/polygon-2.png"
-                alt="Polygon 2" /> to listen to interviews from those directly impacted by the
-              UBC Body Donation Program.
-            </p>
-          </div>
+<input type="hidden" id="anPageName" name="page" value="desktop-our-stories"/>
+<div class="container-center-horizontal">
+  <div class="desktop-our-stories screen">
+    <div class="our-stories-header" id="our-stories-header">
+      <div class="overlap-group">
+        <div class="type-header2">
+          <p class="paragraph opensans-light-black-32px">
+            Click
+            <img class="polygon-2" src="https://med-fom-cell-phys.sites.olt.ubc.ca/files/2023/02/polygon-2.png"
+                 alt="Polygon 2"/> to listen to interviews from those directly impacted by the
+            UBC Body Donation Program.
+          </p>
         </div>
-      </div>
-      <div class="x-interview">
-        <div class="flex-col">
-          <div class="kate-fitzsimmons"></div>
-          <div class="play-audio-with-text">
-            <div class="play-pause-icon"><img class="polygon-1"
-                src="https://med-fom-cell-phys.sites.olt.ubc.ca/files/2023/02/polygon-1-2.png" alt="Polygon 1" /></div>
-            <p class="click-here-to-play-full-interview valign-text-middle opensans-bold-magic-potion-32px">
-              Kate Fitzsimmons<br />2nd Year UBC Medical Student
-            </p>
-          </div>
-        </div>
-        <div class="flex-col-1 flex-col-4">
-          <div class="quote-1 quote-3">
-            <p class="it-was-really-amazi valign-text-middle opensans-light-black-28px">
-              “It was really amazing to me that the last people to spend time with my grandparents would have been my
-              now called colleagues. And knowing who they are and what they are like, there are very few people that I
-              would trust or want to be the last people to see my grandparents.”
-            </p>
-          </div>
-          <div class="transcript-download-button">
-            <a href="https://med-fom-cell-phys.sites.olt.ubc.ca/files/2023/02/Full-Interview-Kate-Fitzsimmons.mp3">
-              <p class="button-text valign-text-middle opensans-bold-black-18px">
-                Click here to download full transcript
-              </p>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="x-interview">
-        <div class="flex-col-1 flex-col-4">
-          <div class="quote">
-            <p class="for-many-people-my valign-text-middle opensans-light-black-28px">
-              “For many people, myself included, this is the first time you are interacting with a patient, with a
-              body, with someone that has a history of experiences, and has lived a long life. I think you learn a lot
-              in that process on how to be respectful to those individuals, how to be respectful with your peers, and
-              I think that&#39;s the first moment, at least in Medical school, where I have a heightened
-              responsibility in society.“
-            </p>
-          </div>
-          <div class="transcript-download-button">
-            <a href="https://med-fom-cell-phys.sites.olt.ubc.ca/files/2023/02/Full-Interview-Army-Alam.mp3">
-              <p class="button-text-3 valign-text-middle opensans-bold-black-18px">Click here
-                to download transcript</p>
-            </a>
-          </div>
-        </div>
-        <div class="flex-col-2 flex-col-4">
-          <div class="army-alam"></div>
-          <div class="play-audio-with-text">
-            <div class="play-pause-icon"><img class="polygon-1"
-                src="https://med-fom-cell-phys.sites.olt.ubc.ca/files/2023/02/polygon-1-2.png" alt="Polygon 1" /></div>
-            <p class="click-here-to-play-full-interview valign-text-middle opensans-bold-magic-potion-32px">
-              Army Alam<br />4th Year UBC Medical Student
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="x-interview">
-        <div class="flex-col-3 flex-col-4">
-          <div class="dr-olusegun-oyedele"></div>
-          <div class="play-audio-with-text">
-            <div class="play-pause-icon"><img class="polygon-1"
-                src="https://med-fom-cell-phys.sites.olt.ubc.ca/files/2023/02/polygon-1-2.png" alt="Polygon 1" /></div>
-            <p class="click-here-to-play-full-interview valign-text-middle opensans-bold-magic-potion-32px">
-              Dr.Olusegun Oyedele<br />Associate Professor of Teaching
-            </p>
-          </div>
-        </div>
-        <div class="flex-col-1 flex-col-4">
-          <div class="quote-2 quote-3">
-            <p class="if-i-could-sum-up-t valign-text-middle">
-              “If I could sum up the Body Donation Program in one word... I would say legacy. I think that&#39;s one
-              word that I would use because it&#39;s almost profound. Profound how death results in life.”
-            </p>
-          </div>
-          <div class="transcript-download-button">
-            <a
-              href="https://med-fom-cell-phys.sites.olt.ubc.ca/files/2023/02/Full-Interview-Dr.-Olusegun-Oyedele.mp3.zip">
-              <p class="button-text-3 valign-text-middle opensans-bold-black-18px">
-                Click here to download transcript
-              </p>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="x-interview">
-        <div class="flex-col-1 flex-col-4">
-          <div class="quote">
-            <p class="i-would-like-people valign-text-middle opensans-light-black-28px">
-              “I would like people to know that we&#39;re here for you. If it&#39;s something that you might consider
-              for yourself, you think you might like to give back in that way, you probably have some questions about
-              how that works, and what happens with your body, and I want people to be reassured.
-            </p>
-          </div>
-          <div class="transcript-download-button">
-            <a href="https://med-fom-cell-phys.sites.olt.ubc.ca/files/2023/02/Full-Interview-Matt-Tinney.mp3">
-              <p class="click-here-to-download-transcript valign-text-middle opensans-bold-black-18px">
-                Click here to download transcript
-              </p>
-            </a>
-          </div>
-        </div>
-        <div class="flex-col">
-          <div class="matt-tinney"></div>
-          <div class="play-audio-with-text">
-            <div class="play-pause-icon"><img class="polygon-1"
-                src="https://med-fom-cell-phys.sites.olt.ubc.ca/files/2023/02/polygon-1-1.png" alt="Polygon 1" /></div>
-            <p class="click-here-to-play-full-interview valign-text-middle opensans-bold-magic-potion-32px">
-              Matt Tinney<br />Manager Gross Anatomy Lab
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="back-to-top">
-        <a href="#our-stories-header">
-          <div class="back-to-top-1">
-            <div class="back-to-top-2 valign-text-middle opensans-normal-black-18px">Back to Top</div>
-          </div>
-        </a>
       </div>
     </div>
+    <div class="x-interview">
+      <div class="flex-col">
+        <div class="kate-fitzsimmons"></div>
+        <div class="play-audio-with-text">
+          <div class="play-pause-icon"><img class="polygon-1"
+                                            src="https://med-fom-cell-phys.sites.olt.ubc.ca/files/2023/02/polygon-1-2.png"
+                                            alt="Polygon 1"/></div>
+          <p class="click-here-to-play-full-interview valign-text-middle opensans-bold-magic-potion-32px">
+            Kate Fitzsimmons<br/>2nd Year UBC Medical Student
+          </p>
+        </div>
+      </div>
+      <div class="flex-col-1 flex-col-4">
+        <div class="quote-1 quote-3">
+          <p class="it-was-really-amazi valign-text-middle opensans-light-black-28px">
+            “It was really amazing to me that the last people to spend time with my grandparents would have been my
+            now called colleagues. And knowing who they are and what they are like, there are very few people that I
+            would trust or want to be the last people to see my grandparents.”
+          </p>
+        </div>
+        <div class="transcript-download-button">
+          <a href="https://med-fom-cell-phys.sites.olt.ubc.ca/files/2023/02/Full-Interview-Kate-Fitzsimmons.mp3">
+            <p class="button-text valign-text-middle opensans-bold-black-18px">
+              Click here to download full transcript
+            </p>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="x-interview">
+      <div class="flex-col-1 flex-col-4">
+        <div class="quote">
+          <p class="for-many-people-my valign-text-middle opensans-light-black-28px">
+            “For many people, myself included, this is the first time you are interacting with a patient, with a
+            body, with someone that has a history of experiences, and has lived a long life. I think you learn a lot
+            in that process on how to be respectful to those individuals, how to be respectful with your peers, and
+            I think that&#39;s the first moment, at least in Medical school, where I have a heightened
+            responsibility in society.“
+          </p>
+        </div>
+        <div class="transcript-download-button">
+          <a href="https://med-fom-cell-phys.sites.olt.ubc.ca/files/2023/02/Full-Interview-Army-Alam.mp3">
+            <p class="button-text-3 valign-text-middle opensans-bold-black-18px">Click here
+              to download transcript</p>
+          </a>
+        </div>
+      </div>
+      <div class="flex-col-2 flex-col-4">
+        <div class="army-alam"></div>
+        <div class="play-audio-with-text">
+          <div class="play-pause-icon"><img class="polygon-1"
+                                            src="https://med-fom-cell-phys.sites.olt.ubc.ca/files/2023/02/polygon-1-2.png"
+                                            alt="Polygon 1"/></div>
+          <p class="click-here-to-play-full-interview valign-text-middle opensans-bold-magic-potion-32px">
+            Army Alam<br/>4th Year UBC Medical Student
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="x-interview">
+      <div class="flex-col-3 flex-col-4">
+        <div class="dr-olusegun-oyedele"></div>
+        <div class="play-audio-with-text">
+          <div class="play-pause-icon"><img class="polygon-1"
+                                            src="https://med-fom-cell-phys.sites.olt.ubc.ca/files/2023/02/polygon-1-2.png"
+                                            alt="Polygon 1"/></div>
+          <p class="click-here-to-play-full-interview valign-text-middle opensans-bold-magic-potion-32px">
+            Dr.Olusegun Oyedele<br/>Associate Professor of Teaching
+          </p>
+        </div>
+      </div>
+      <div class="flex-col-1 flex-col-4">
+        <div class="quote-2 quote-3">
+          <p class="if-i-could-sum-up-t valign-text-middle">
+            “If I could sum up the Body Donation Program in one word... I would say legacy. I think that&#39;s one
+            word that I would use because it&#39;s almost profound. Profound how death results in life.”
+          </p>
+        </div>
+        <div class="transcript-download-button">
+          <a
+                  href="https://med-fom-cell-phys.sites.olt.ubc.ca/files/2023/02/Full-Interview-Dr.-Olusegun-Oyedele.mp3.zip">
+            <p class="button-text-3 valign-text-middle opensans-bold-black-18px">
+              Click here to download transcript
+            </p>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="x-interview">
+      <div class="flex-col-1 flex-col-4">
+        <div class="quote">
+          <p class="i-would-like-people valign-text-middle opensans-light-black-28px">
+            “I would like people to know that we&#39;re here for you. If it&#39;s something that you might consider
+            for yourself, you think you might like to give back in that way, you probably have some questions about
+            how that works, and what happens with your body, and I want people to be reassured.
+          </p>
+        </div>
+        <div class="transcript-download-button">
+          <a href="https://med-fom-cell-phys.sites.olt.ubc.ca/files/2023/02/Full-Interview-Matt-Tinney.mp3">
+            <p class="click-here-to-download-transcript valign-text-middle opensans-bold-black-18px">
+              Click here to download transcript
+            </p>
+          </a>
+        </div>
+      </div>
+      <div class="flex-col">
+        <div class="matt-tinney"></div>
+        <div class="play-audio-with-text">
+          <div class="play-pause-icon"><img class="polygon-1"
+                                            src="https://med-fom-cell-phys.sites.olt.ubc.ca/files/2023/02/polygon-1-1.png"
+                                            alt="Polygon 1"/></div>
+          <p class="click-here-to-play-full-interview valign-text-middle opensans-bold-magic-potion-32px">
+            Matt Tinney<br/>Manager Gross Anatomy Lab
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="back-to-top">
+      <a href="#our-stories-header">
+        <div class="back-to-top-1">
+          <div class="back-to-top-2 valign-text-middle opensans-normal-black-18px">Back to Top</div>
+        </div>
+      </a>
+    </div>
   </div>
+</div>
 </body>
 
 </html>
