@@ -137,12 +137,12 @@
         height: 1829px;
         min-width: 1440px;
         position: relative;
+        margin-bottom: 92px;
     }
 
     .desktop-main-page .about-the-program-why-donate-1 {
         align-items: flex-end;
         display: flex;
-        height: 1706px;
         left: 158px;
         min-width: 1122px;
         position: absolute;
@@ -196,28 +196,60 @@
     }
 
     .tab button.active {
-        flex: 1;
         background-color: var(--surface);
         border: 4px solid var(--blue);
         border-bottom-width: 0;
-        border-radius: 10px 10px 0 0;
         color: var(--main-headers);
-        font-family: var(--font-family-open_sans);
+    }
+
+    .students {
+        width: 992px;
+        height: 339px;
+        margin-top: 25px;
+        background-image: url(https://med-fom-cell-phys.sites.olt.ubc.ca/files/2023/02/1000s-of-Students-Infographic.png);
+        background-size: cover;
+    }
+
+    .people {
+        width: 384px;
+        height: 384px;
+        background-image: url(https://med-fom-cell-phys.sites.olt.ubc.ca/files/2023/02/People-Illustration.png);
+        background-size: cover;
+    }
+
+    .from-death {
+        display: flex;
+        gap: 64px;
+        margin-top: 20px;
+    }
+
+    .from-death-text {
+        width: 480px;
+    }
+
+    .from-death span.title {
+        display: inline;
         font-size: var(--font-size-xxl);
         font-weight: 700;
-        justify-content: center;
-        padding: 10px 16px;
-        text-align: center;
+    }
+
+    .tab-content {
+        background-color: var(--surface);
+        border: 4px solid;
+        border-color: var(--blue);
+        border-radius: 0 0 10px 10px;
+        left: 0;
+        position: absolute;
+        top: 71px;
+        width: 1120px;
+        padding: 0 65px;
+        display: block;
     }
 
     .desktop-main-page .our-team {
         align-items: center;
         display: flex;
         flex-direction: column;
-        left: 65px;
-        min-height: 518px;
-        position: absolute;
-        top: 1142px;
         width: 990px;
     }
 
@@ -226,8 +258,6 @@
         display: flex;
         flex-direction: column;
         gap: 14px;
-        height: 167px;
-        width: 990px;
     }
 
     .desktop-main-page .header {
@@ -238,27 +268,64 @@
         white-space: nowrap;
     }
 
-    .desktop-main-page .as-the-custodian-of {
+    .tab-content h1 {
+        align-self: stretch;
         letter-spacing: 0;
-        line-height: 26px;
-        margin-right: 1px;
-        margin-top: 23px;
-        min-height: 54px;
-        text-align: center;
-        width: 735px;
+        line-height: 48px;
+        margin-top: 24px;
+        white-space: nowrap;
+        color: var(--main-headers);
+        font-family: var(--font-family-open_sans);
+        font-size: var(--font-size-xxxl);
+        font-style: normal;
+        font-weight: 700;
+        margin-bottom: 0;
     }
 
-    .desktop-main-page .matt-tinney-quote {
-        align-items: flex-end;
-        background-color: var(--light-pink);
-        border-radius: 10px;
+    .tab-content p, #delete-me {
+        align-self: stretch;
+        letter-spacing: 0;
+        line-height: 26px;
+        color: var(--black);
+        font-family: var(--font-family-open_sans);
+        font-size: var(--font-size-m);
+        font-style: normal;
+        font-weight: 400;
+        margin-top: 14px;
+    }
+
+    .desktop-main-page p.centered {
+        padding: 24px 126px;
+        text-align: center;
+    }
+
+
+    .img-box {
+        margin-top: 24px;
         display: flex;
-        height: 249px;
-        justify-content: flex-end;
-        margin-right: 2px;
-        margin-top: 25px;
-        min-width: 992px;
-        padding: 20px 32px;
+        gap: 32px;
+    }
+
+    .desktop-main-page .surgical-training-infographic-1 {
+        background-image: url(https://med-fom-cell-phys.sites.olt.ubc.ca/files/2023/02/surgical-training-infographic-1@2x.png);
+        background-size: cover;
+        width: 449px;
+        height: 262px;
+        padding-right: 30px;
+    }
+
+    .desktop-main-page .indefinite-donation-infographics-1 {
+        background-image: url(https://med-fom-cell-phys.sites.olt.ubc.ca/files/2023/02/indefinite-donation-infographics-1@2x.png);
+        background-size: cover;
+        width: 479px;
+        height: 288px;
+    }
+
+    .desktop-main-page .the-memorial-service {
+        align-items: flex-start;
+        display: flex;
+        gap: 32px;
+        padding-top: 24px;
     }
 
     .desktop-main-page .overlap-group-1 {
@@ -288,19 +355,52 @@
         width: 31px;
     }
 
-    .desktop-main-page .i-would-like-people {
+    .desktop-main-page .quote-block {
+        align-items: flex-start;
+        background-color: var(--light-pink);
         color: var(--black);
         font-family: var(--font-family-open_sans);
-        font-size: var(--font-size-xl);
         font-weight: 300;
-        left: 0;
-        letter-spacing: 0;
-        line-height: 28px;
-        position: absolute;
         text-align: center;
-        top: 0;
-        width: 924px;
+        font-style: italic;
+        letter-spacing: 0;
+        border-radius: 10px;
+        display: flex;
+        gap: 15px;
+        margin-right: 2px;
+        margin-top: 25px;
+        min-width: 992px;
+        padding: 24px 34px;
+        flex-direction: column;
+        margin-bottom: 51px;
     }
+
+    .desktop-main-page .quote-block.lighter {
+        background-color: var(--lighter-pink);
+    }
+
+    .desktop-main-page .quote-block > p {
+        color: var(--black);
+        font-family: var(--font-family-open_sans);
+        font-weight: 300;
+        text-align: center;
+        font-style: italic;
+        letter-spacing: 0;
+        margin-top: 0px;
+    }
+
+    .desktop-main-page p.quote-text {
+        align-self: stretch;
+        font-size: var(--font-size-xl);
+        line-height: 28px;
+    }
+
+    .desktop-main-page p.quotee {
+        align-self: stretch;
+        font-size: var(--font-size-m);
+        line-height: 26px;
+    }
+
 
     .desktop-main-page .span {
         line-height: 36px;
@@ -310,17 +410,6 @@
         font-size: var(--font-size-m);
         font-style: italic;
         line-height: 26px;
-    }
-
-    .desktop-main-page .the-memorial-service {
-        align-items: flex-end;
-        display: flex;
-        gap: 32px;
-        height: 296px;
-        left: 63px;
-        min-width: 992px;
-        position: absolute;
-        top: 822px;
     }
 
     .desktop-main-page .type-header3-1 {
@@ -339,6 +428,7 @@
         height: 260px;
         margin-bottom: 6px;
         width: 385px;
+        margin-top: 54px;
     }
 
     .desktop-main-page .ubc-faculty-student {
@@ -351,44 +441,11 @@
         width: 992px;
     }
 
-    .desktop-main-page .surgical-training-infographic-1 {
-        background-image: url(https://med-fom-cell-phys.sites.olt.ubc.ca/files/2023/02/surgical-training-infographic-1@2x.png);
-        background-position: 50% 50%;
-        background-size: cover;
-        height: 262px;
-        left: 576px;
-        position: absolute;
-        top: 391px;
-        width: 449px;
-    }
-
-    .desktop-main-page .indefinite-donation-infographics-1 {
-        background-image: url(https://med-fom-cell-phys.sites.olt.ubc.ca/files/2023/02/indefinite-donation-infographics-1@2x.png);
-        background-position: 50% 50%;
-        background-size: cover;
-        height: 288px;
-        left: 65px;
-        position: absolute;
-        top: 391px;
-        width: 479px;
-    }
-
-    .desktop-main-page .the-ubc-body-donation-program {
-        align-items: flex-start;
-        display: flex;
-        flex-direction: column;
-        gap: 14px;
-        left: 65px;
-        position: absolute;
-        top: 97px;
-        width: 992px;
-    }
-
     .desktop-main-page .back-to-top-1 {
         height: 47px;
         left: 1171px;
         position: absolute;
-        top: 1758px;
+        top: 1880px;
     }
 
     .desktop-main-page .back-to-top {
@@ -912,6 +969,7 @@
         --light-blue: #a1a7ca;
         --light-green: #aad4d1;
         --light-pink: #c699b6;
+        --lighter-pink: #DBAFCD;
         --main-headers: #012045;
         --pink: #965c88;
         --surface: #ffffff;
@@ -1040,7 +1098,7 @@
       <p class="header-2 header-4 opensans-bold-magic-potion-40px">
         Together, with every learner taught, and research advancement made, we can make a difference
       </p>
-      <p class="paragraph opensans-normal-black-18px">
+      <p id="delete-me">
         The body is the greatest teacher, and it has a story to tell. It teaches students an incredible lesson about
         life that a textbook can never replace. Students always remember that remarkable moment in the anatomy lab,
         beginning with their very first donor, when they learned to respect and honour the human body.<br/><br/>You
@@ -1055,87 +1113,134 @@
     <div class="about-the-program-why-donate-1">
       <div class="overlap-group2">
         <div class="tab">
-          <button class="tab-link active" onclick="openTab(this, 'about')">
+          <button class="tab-link" onclick="openAboutTab()">
             About the Program
           </button>
-          <button class="tab-link" onclick="openTab(this, 'donate')">
+          <button class="tab-link" onclick="openDonateTab()">
             Why Donate?
           </button>
         </div>
         <div id="about" class="tab-content">
-
-        </div>
-
-        <div id="donate" class="tab-content">
-          DONATE NOW.
-        </div>
-        <div class="background-box"></div>
-        <div class="our-team">
-          <div class="our-team-1">
-            <div class="header opensans-bold-magic-potion-40px">Our Team</div>
-            <p class="paragraph opensans-normal-black-18px">
-              Respect and dignity are the core principles, understood and reflected, by all members of the Body
-              Donation Program team. Beginning with your enrollment, you can be assured that you will be shown the
-              highest degree of care by UBC. Faculty and students embody these principles throughout the educational
-              process, resulting in graduates who will honor commitments made when first working with donor bodies
-              in the anatomy lab.
+          <div class="the-ubc-body-donation-program">
+            <h1>The UBC Body Donation Program</h1>
+            <p>
+              Since 1950, the UBC Body Donation Program, rooted from the start in respect and dignity for the donors,
+              provides learners and health care professionals with an extraordinary learning experience. We train more
+              than 1,000 individuals each year, each of whom will have a positive impact on the health and well-being
+              of many thousands in the coming decades.<br/><br/>Individuals who wish to make a significant
+              contribution to the program can choose to donate indefinitely, a portion of their body may be retained
+              to benefit all students of anatomy for years to come. You can be assured that your donation will be
+              handled with the same care and respect that everyone deserves from their health care professionals.
             </p>
           </div>
-          <p class="as-the-custodian-of opensans-normal-black-18px">
-            As the custodian of the donations, the University ensures that the anonymity, confidentiality and
-            dignity of our donors is upheld.
+          <div class="img-box">
+            <div class="indefinite-donation-infographics-1"></div>
+            <div class="surgical-training-infographic-1"></div>
+          </div>
+          <p>
+            UBC Faculty, students, and trained clinicians use donations for examination and dissection, surgical
+            training sessions such as: plastic surgery, orthopedics, gynecology, and emergency medicine,
+            and&nbsp;medical research. Upon consent donors also agree to providing specimens for tissue
+            sampling, serology testing, and medical imaging of anatomical material. The UBC Body Donation Program does
+            not perform autopsiesor disease specific research.
           </p>
-          <div class="matt-tinney-quote">
-            <div class="overlap-group-1">
-              <div class="play-pause-icon"><img class="polygon-1"
-                                                src="https://med-fom-cell-phys.sites.olt.ubc.ca/files/2023/02/polygon-1.png"
-                                                alt="Polygon 1"/>
-              </div>
-              <p class="i-would-like-people">
-                  <span class="span opensans-light-black-28px">“I would like people to know that we&#39;re here for you.
-                    If it&#39;s something that you might
-                    consider for yourself, you think you might like to give back in that way, you probably have some
-                    questions about how that works, and what happens with your body, and I want people to be
-                    reassured.”<br/></span><span class="span-1"><br/>Matt Tinney, Manager, Gross Anatomy Lab, Body
-                    Donation Program</span>
+          <div class="the-memorial-service">
+            <div class="type-header3-1">
+              <h1>The Memorial Service</h1>
+              <p>
+                Students express their appreciation of the special privilege granted to them by hosting a beautiful
+                memorial ceremony in the fall of every year. Including musical performances and words of gratitude,
+                family members and loved ones are invited to honour the donor and share fond memories with speeches
+                and unforgettable stories. Favorite pictures and treasured belongings of the donor can be displayed in
+                the memory hall for all guests to view. Invitations to the ceremony, held at the Life Sciences Centre
+                at UBC, are sent to close family members and next of kin in early August.
+              </p>
+            </div>
+            <div class="memorial-illustration"></div>
+          </div>
+          <div class="our-team">
+            <div class="our-team-1">
+              <h1>Our Team</h1>
+              <p>
+                Respect and dignity are the core principles, understood and reflected, by all members of the Body
+                Donation Program team. Beginning with your enrollment, you can be assured that you will be shown the
+                highest degree of care by UBC. Faculty and students embody these principles throughout the educational
+                process, resulting in graduates who will honor commitments made when first working with donor bodies
+                in the anatomy lab.
               </p>
             </div>
           </div>
-        </div>
-        <div class="the-memorial-service">
-          <div class="type-header3-1">
-            <div class="header opensans-bold-magic-potion-40px">The Memorial Service</div>
-            <p class="paragraph opensans-normal-black-18px">
-              Students express their appreciation of the special privilege granted to them by hosting a beautiful
-              memorial ceremony in the fall of every year. Including musical performances and words of gratitude,
-              family members and loved ones are invited to honour the donor and share fond memories with speeches
-              and unforgettable stories. Favorite pictures and treasured belongings of the donor can be displayed in
-              the memory hall for all guests to view. Invitations to the ceremony, held at the Life Sciences Centre
-              at UBC, are sent to close family members and next of kin in early August.
+          <p class="centered">
+            As the custodian of the donations, the University ensures that the anonymity, confidentiality and
+            dignity of our donors is upheld.
+          </p>
+          <div class="quote-block">
+            <!--
+            <div class="play-pause-icon"><img class="polygon-1"
+                                              src="https://med-fom-cell-phys.sites.olt.ubc.ca/files/2023/02/polygon-1.png"
+                                              alt="Polygon 1"/>
+            </div>
+            -->
+            <p class="quote-text">
+              “I would like people to know that we're here for you. If it's something that you might consider for
+              yourself, you think you might like to give back in that way, you probably have some questions about how
+              that works, and what happens with your body, and I want people to be reassured.”
+            </p>
+            <br>
+            <p class="quotee">
+              Matt Tinney, Manager, Gross Anatomy Lab, Body Donation Program
             </p>
           </div>
-          <div class="memorial-illustration"></div>
         </div>
-        <p class="ubc-faculty-student valign-text-middle opensans-normal-black-18px">
-          UBC Faculty, students, and trained clinicians use donations for examination and dissection, surgical
-          training sessions such as: plastic surgery, orthopedics, gynecology, and emergency medicine,
-          and&nbsp;&nbsp;medical research. Upon consent donors also agree to providing specimens for tissue
-          sampling, serology testing, and medical imaging of anatomical material. The UBC Body Donation Program does
-          not perform autopsiesor disease specific research.
-        </p>
-        <div class="surgical-training-infographic-1"></div>
-        <div class="indefinite-donation-infographics-1"></div>
-        <div class="the-ubc-body-donation-program">
-          <p class="header opensans-bold-magic-potion-40px">The UBC Body Donation Program</p>
-          <p class="paragraph opensans-normal-black-18px">
-            Since 1950, the UBC Body Donation Program, rooted from the start in respect and dignity for the donors,
-            provides learners and health care professionals with an extraordinary learning experience. We train more
-            than 1,000 individuals each year, each of whom will have a positive impact on the health and well-being
-            of many thousands in the coming decades.<br/><br/>Individuals who wish to make a significant
-            contribution to the program can choose to donate indefinitely, a portion of their body may be retained
-            to benefit all students of anatomy for years to come. You can be assured that your donation will be
-            handled with the same care and respect that everyone deserves from their health care professionals.
+        <div id="donate" class="tab-content">
+          <h1>
+            Your Donation is an Incredible Gift to Education <br>
+            and the Health of the Community
+          </h1>
+          <p>
+            Learning from human specimens makes a significant educational impact on students training to be healthcare
+            professionals. Students develop a strong skill set and hands on anatomical training from which essential
+            knowledge about the human body grows. Nine out of ten UBC MD graduates who completed their residency at UBC
+            end up practicing in BC, giving back to our local communities.
           </p>
+          <div class="students"></div>
+          <div class="from-death">
+            <div class="people"></div>
+            <p class="from-death-text">
+              <span class="title">From death comes life.</span> Body donors provide a service to future generations
+              that carries on long after they have passed. Their thoughtful choice provides students and practicing
+              health care professionals with an invaluable experience that can not be replicated by a video or
+              captured in a text book.
+              <br><br>
+              Those who learn from our donors are grateful for the unique opportunity they have to work with a human
+              body. They are aware of the obligation to conduct themselves in a professional manner and those who
+              donate their bodies to the medical school can be assured that all human remains are handled with the
+              dignity and respect that should be afforded to anyone.
+            </p>
+          </div>
+
+          <div class="quote-block lighter">
+            <p class="quote-text">
+              “Someone who has died can then live on, in the hands and in the heart of our students, as they go about
+              practicing their medicine over many years. I would say that our donors actually create legacy with that
+              donation.”
+            </p>
+            <br>
+            <p class="quotee">
+              Dr.Olusegun Oyedele Associate Professor of Teaching
+            </p>
+          </div>
+          <div class="quote-block lighter">
+            <p class="quote-text">
+              “It was really amazing to me that the last people to spend time with my grandparents would have been my
+              now called colleagues. And knowing who they are and what they are like, there are very few people that I
+              would trust or want to be the last people to see my grandparents.”
+            </p>
+            <br>
+            <p class="quotee">
+              Kate Fitzsimmons, 2nd Year UBC Medical Student, Family member of Donor
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -1303,24 +1408,24 @@
   </div>
 </div>
 <script>
-    function openTab(tab, tabName) {
-        let tabContent, tabLinks;
-        // Get all elements with class="tabContent" and hide them
-        tabContent = document.getElementsByClassName("tab-content");
-        tabContent[0].style.display = "none";
-        tabContent[1].style.display = "none";
-        /*tabContent.forEach((content) => {
-            content.style.display = "none";
-        });*/
+    const aboutTabContent = document.getElementById("about");
+    const donateTabContent = document.getElementById("donate");
+    let tabList = document.getElementsByClassName("tab-link");
+    const aboutTab = tabList[0];
+    const donateTab = tabList[1];
+    openAboutTab();
 
-        // Get all elements with class="tabLinks" and remove the class "active"
-        tabLinks = document.getElementsByClassName("tab-link");
-        tabLinks[0].classList.remove("active");
-        tabLinks[1].classList.remove("active");
-        // tabLinks.forEach((tab) => tab.classList.remove("active"));
+    function openAboutTab() {
+        aboutTabContent.style.display = "block";
+        donateTabContent.style.display = "none";
+        aboutTab.classList.add("active");
+        donateTab.classList.remove("active");
+    }
 
-        // Show the current tab, and add an "active" class to the button that opened the tab
-        document.getElementById(tabName).style.display = "block";
-        tab.classList.add("active");
+    function openDonateTab() {
+        aboutTabContent.style.display = "none";
+        donateTabContent.style.display = "block";
+        aboutTab.classList.remove("active");
+        donateTab.classList.add("active");
     }
 </script>
