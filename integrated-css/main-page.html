@@ -443,9 +443,9 @@
 
     .desktop-main-page .back-to-top-1 {
         height: 47px;
-        left: 1171px;
         position: absolute;
-        top: 1880px;
+        left: 1100px;
+        bottom: -60px;
     }
 
     .desktop-main-page .back-to-top {
@@ -1413,6 +1413,7 @@
     let tabList = document.getElementsByClassName("tab-link");
     const aboutTab = tabList[0];
     const donateTab = tabList[1];
+    const surroundingDiv = document.getElementById("about-the-program-why-donate");
     openAboutTab();
 
     function openAboutTab() {
@@ -1420,6 +1421,7 @@
         donateTabContent.style.display = "none";
         aboutTab.classList.add("active");
         donateTab.classList.remove("active");
+        surroundingDiv.style.height = 1829 + "px";
     }
 
     function openDonateTab() {
@@ -1427,5 +1429,6 @@
         donateTabContent.style.display = "block";
         aboutTab.classList.remove("active");
         donateTab.classList.add("active");
+        surroundingDiv.style.height = 1670 + "px";
     }
 </script>
