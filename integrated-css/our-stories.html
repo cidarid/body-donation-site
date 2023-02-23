@@ -377,6 +377,7 @@
         <img src="https://med-fom-cell-phys.sites.olt.ubc.ca/files/2023/02/kate-1-1.png"
              alt="Drawing of Kate Fitzsimmons smiling"/>
         <div class="play-audio-with-text">
+          <audio src="https://med-fom-cell-phys.sites.olt.ubc.ca/files/2023/02/Full-Interview-Kate-Fitzsimmons.mp3"></audio>
           <button class="play-pause-icon" onclick="togglePlay(this)"></button>
           <p class="click-here-to-play-full-interview valign-text-middle opensans-bold-magic-potion-32px">
             Kate Fitzsimmons<br/>2nd Year UBC Medical Student
@@ -420,6 +421,7 @@
       <div class="flex-col">
         <img src="https://med-fom-cell-phys.sites.olt.ubc.ca/files/2023/02/army-1-1.png" alt="Drawing of Army Alam">
         <div class="play-audio-with-text">
+          <audio src="https://med-fom-cell-phys.sites.olt.ubc.ca/files/2023/02/Full-Interview-Army-Alam.mp3"></audio>
           <button class="play-pause-icon" onclick="togglePlay(this)"></button>
           <p class="click-here-to-play-full-interview valign-text-middle opensans-bold-magic-potion-32px">
             Army Alam<br/>4th Year UBC Medical Student
@@ -431,6 +433,7 @@
       <div class="flex-col">
         <img src="https://med-fom-cell-phys.sites.olt.ubc.ca/files/2023/02/segun-1-1.png" alt="Drawing of Dr. Oyedele">
         <div class="play-audio-with-text">
+          <audio src="https://med-fom-cell-phys.sites.olt.ubc.ca/files/2023/02/Full-Interview-Dr-Olusegun-Oyede.mp3"></audio>
           <button class="play-pause-icon" onclick="togglePlay(this)"></button>
           <p class="click-here-to-play-full-interview valign-text-middle opensans-bold-magic-potion-32px">
             Dr.Olusegun Oyedele<br/>Associate Professor of Teaching
@@ -471,6 +474,7 @@
       <div class="flex-col">
         <img src="https://med-fom-cell-phys.sites.olt.ubc.ca/files/2023/02/mat-1.png" alt="Drawing of Matt Tinney">
         <div class="play-audio-with-text">
+          <audio src="https://med-fom-cell-phys.sites.olt.ubc.ca/files/2023/02/Full-Interview-Matt-Tinney.mp3"></audio>
           <button class="play-pause-icon" onclick="togglePlay(this)"></button>
           <p class="click-here-to-play-full-interview valign-text-middle opensans-bold-magic-potion-32px">
             Matt Tinney<br/>Manager Gross Anatomy Lab
@@ -490,12 +494,25 @@
 
 <script>
     const playButtons = Array.from(document.getElementsByClassName("play-pause-icon"));
+    let playingAudio;
 
     function togglePlay(element) {
         playButtons.forEach(button => {
-            if (button !== element) button.id = "";
+            if (button !== element) stopPlaying(button);
         });
-        element.id = element.id ? "" : "playing";
+        element.id ? stopPlaying(element) : startPlaying(element);
+    }
+
+    function stopPlaying(button) {
+        playingAudio = button.previousElementSibling;
+        playingAudio.pause();
+        button.id = "";
+    }
+
+    function startPlaying(button) {
+        playingAudio = button.previousElementSibling;
+        playingAudio.play();
+        button.id = "playing";
     }
 </script>
 
