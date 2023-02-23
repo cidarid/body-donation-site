@@ -83,22 +83,24 @@
 
     .play-pause-icon {
         align-items: flex-start;
-        background-color: var(--light-blue);
-        border: 4px solid;
-        border-color: var(--blue);
-        border-radius: 60px;
-        display: flex;
         height: 120px;
-        justify-content: flex-end;
-        min-width: 120px;
-        padding: 23px 26px;
-        background-image: url(https://med-fom-cell-phys.sites.olt.ubc.ca/files/2023/02/polygon-1-2.png);
-        background-repeat: no-repeat;
-        background-position: center;
+        width: 120px;
+        background-image: url(https://med-fom-cell-phys.sites.olt.ubc.ca/files/2023/02/play.png);
+        background-size: contain;
+        border: none;
+        background-color: #ffffff;
     }
 
     .play-pause-icon:hover {
-        border-width: 8px;
+        background-image: url(https://med-fom-cell-phys.sites.olt.ubc.ca/files/2023/02/play-hover.png);
+    }
+
+    .play-pause-icon#playing {
+        background-image: url(https://med-fom-cell-phys.sites.olt.ubc.ca/files/2023/02/pause.png);
+    }
+
+    .play-pause-icon#playing:hover {
+        background-image: url(https://med-fom-cell-phys.sites.olt.ubc.ca/files/2023/02/pause-hover2.png);
     }
 
     .desktop-our-stories .click-here-to-play-full-interview {
@@ -375,7 +377,7 @@
         <img src="https://med-fom-cell-phys.sites.olt.ubc.ca/files/2023/02/kate-1-1.png"
              alt="Drawing of Kate Fitzsimmons smiling"/>
         <div class="play-audio-with-text">
-          <button class="play-pause-icon"></button>
+          <button class="play-pause-icon" onclick="togglePlay(this)"></button>
           <p class="click-here-to-play-full-interview valign-text-middle opensans-bold-magic-potion-32px">
             Kate Fitzsimmons<br/>2nd Year UBC Medical Student
           </p>
@@ -418,7 +420,7 @@
       <div class="flex-col">
         <img src="https://med-fom-cell-phys.sites.olt.ubc.ca/files/2023/02/army-1-1.png" alt="Drawing of Army Alam">
         <div class="play-audio-with-text">
-          <button class="play-pause-icon"></button>
+          <button class="play-pause-icon" onclick="togglePlay(this)"></button>
           <p class="click-here-to-play-full-interview valign-text-middle opensans-bold-magic-potion-32px">
             Army Alam<br/>4th Year UBC Medical Student
           </p>
@@ -429,7 +431,7 @@
       <div class="flex-col">
         <img src="https://med-fom-cell-phys.sites.olt.ubc.ca/files/2023/02/segun-1-1.png" alt="Drawing of Dr. Oyedele">
         <div class="play-audio-with-text">
-          <button class="play-pause-icon"></button>
+          <button class="play-pause-icon" onclick="togglePlay(this)"></button>
           <p class="click-here-to-play-full-interview valign-text-middle opensans-bold-magic-potion-32px">
             Dr.Olusegun Oyedele<br/>Associate Professor of Teaching
           </p>
@@ -469,7 +471,7 @@
       <div class="flex-col">
         <img src="https://med-fom-cell-phys.sites.olt.ubc.ca/files/2023/02/mat-1.png" alt="Drawing of Matt Tinney">
         <div class="play-audio-with-text">
-          <button class="play-pause-icon"></button>
+          <button class="play-pause-icon" onclick="togglePlay(this)"></button>
           <p class="click-here-to-play-full-interview valign-text-middle opensans-bold-magic-potion-32px">
             Matt Tinney<br/>Manager Gross Anatomy Lab
           </p>
@@ -485,5 +487,16 @@
     </div>
   </div>
 </div>
+
+<script>
+    const playButtons = Array.from(document.getElementsByClassName("play-pause-icon"));
+
+    function togglePlay(element) {
+        playButtons.forEach(button => {
+            if (button !== element) button.id = "";
+        });
+        element.id = element.id ? "" : "playing";
+    }
+</script>
 
 </html>
