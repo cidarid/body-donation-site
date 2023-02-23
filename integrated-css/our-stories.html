@@ -67,17 +67,7 @@
         width: 1440px;
     }
 
-    .desktop-our-stories .flex-col {
-        align-items: flex-start;
-        display: flex;
-        flex-direction: column;
-        gap: 23px;
-        min-height: 687px;
-        width: 544px;
-    }
-
-    .desktop-our-stories .kate-fitzsimmons {
-        background-image: url(https://med-fom-cell-phys.sites.olt.ubc.ca/files/2023/02/kate-1-1.png);
+    .flex-col > img {
         background-position: 50% 50%;
         background-size: cover;
         height: 544px;
@@ -102,7 +92,6 @@
         justify-content: flex-end;
         min-width: 120px;
         padding: 23px 26px;
-        visibility: hidden;
     }
 
     .desktop-our-stories .polygon-1 {
@@ -116,13 +105,6 @@
         line-height: 40px;
         margin-top: -1px;
         width: 401px;
-    }
-
-    .desktop-our-stories .flex-col-1 {
-        align-items: center;
-        gap: 44px;
-        margin-bottom: 20px;
-        min-height: 667px;
     }
 
     .desktop-our-stories .quote-1 {
@@ -145,6 +127,7 @@
         display: flex;
         min-width: 352px;
         padding: 0 49px;
+        margin: auto;
     }
 
     .desktop-our-stories .button-text {
@@ -176,31 +159,12 @@
         width: 448px;
     }
 
-    .desktop-our-stories .flex-col-2 {
+    .desktop-our-stories .flex-col {
         align-items: flex-start;
-        gap: 22px;
+        display: flex;
+        flex-direction: column;
+        gap: 23px;
         min-height: 687px;
-    }
-
-    .desktop-our-stories .army-alam {
-        background-image: url(https://med-fom-cell-phys.sites.olt.ubc.ca/files/2023/02/army-1-1.png);
-        background-position: 50% 50%;
-        background-size: cover;
-        height: 545px;
-        width: 544px;
-    }
-
-    .desktop-our-stories .flex-col-3 {
-        align-items: flex-start;
-        gap: 24px;
-        min-height: 687px;
-    }
-
-    .desktop-our-stories .dr-olusegun-oyedele {
-        background-image: url(https://med-fom-cell-phys.sites.olt.ubc.ca/files/2023/02/segun-1-1.png);
-        background-position: 50% 50%;
-        background-size: cover;
-        height: 543px;
         width: 544px;
     }
 
@@ -240,14 +204,6 @@
         width: 254px;
     }
 
-    .desktop-our-stories .matt-tinney {
-        background-image: url(https://med-fom-cell-phys.sites.olt.ubc.ca/files/2023/02/mat-1.png);
-        background-position: 50% 50%;
-        background-size: cover;
-        height: 544px;
-        width: 544px;
-    }
-
     .desktop-our-stories .back-to-top {
         align-items: center;
         background-color: var(--surface);
@@ -281,12 +237,6 @@
         margin-top: -1px;
         text-align: center;
         width: 254px;
-    }
-
-    .desktop-our-stories .flex-col-4 {
-        display: flex;
-        flex-direction: column;
-        width: 544px;
     }
 
     .desktop-our-stories .quote-3 {
@@ -415,7 +365,8 @@
     -->
     <div class="x-interview">
       <div class="flex-col">
-        <div class="kate-fitzsimmons"></div>
+        <img src="https://med-fom-cell-phys.sites.olt.ubc.ca/files/2023/02/kate-1-1.png"
+             alt="Drawing of Kate Fitzsimmons smiling"/>
         <div class="play-audio-with-text">
           <div class="play-pause-icon"><img class="polygon-1"
                                             src="https://med-fom-cell-phys.sites.olt.ubc.ca/files/2023/02/polygon-1-2.png"
@@ -425,7 +376,7 @@
           </p>
         </div>
       </div>
-      <div class="flex-col-1 flex-col-4">
+      <div class="flex-col">
         <div class="quote-1 quote-3">
           <p class="it-was-really-amazi valign-text-middle opensans-light-black-28px">
             “It was really amazing to me that the last people to spend time with my grandparents would have been my
@@ -443,7 +394,7 @@
       </div>
     </div>
     <div class="x-interview">
-      <div class="flex-col-1 flex-col-4">
+      <div class="flex-col">
         <div class="quote">
           <p class="for-many-people-my valign-text-middle opensans-light-black-28px">
             “For many people, myself included, this is the first time you are interacting with a patient, with a
@@ -460,8 +411,8 @@
           </a>
         </div>
       </div>
-      <div class="flex-col-2 flex-col-4">
-        <div class="army-alam"></div>
+      <div class="flex-col">
+        <img src="https://med-fom-cell-phys.sites.olt.ubc.ca/files/2023/02/army-1-1.png" alt="Drawing of Army Alam">
         <div class="play-audio-with-text">
           <div class="play-pause-icon"><img class="polygon-1"
                                             src="https://med-fom-cell-phys.sites.olt.ubc.ca/files/2023/02/polygon-1-2.png"
@@ -473,8 +424,8 @@
       </div>
     </div>
     <div class="x-interview">
-      <div class="flex-col-3 flex-col-4">
-        <div class="dr-olusegun-oyedele"></div>
+      <div class="flex-col">
+        <img src="https://med-fom-cell-phys.sites.olt.ubc.ca/files/2023/02/segun-1-1.png" alt="Drawing of Dr. Oyedele">
         <div class="play-audio-with-text">
           <div class="play-pause-icon"><img class="polygon-1"
                                             src="https://med-fom-cell-phys.sites.olt.ubc.ca/files/2023/02/polygon-1-2.png"
@@ -484,7 +435,7 @@
           </p>
         </div>
       </div>
-      <div class="flex-col-1 flex-col-4">
+      <div class="flex-col">
         <div class="quote-2 quote-3">
           <p class="if-i-could-sum-up-t valign-text-middle">
             “If I could sum up the Body Donation Program in one word... I would say legacy. I think that&#39;s one
@@ -502,7 +453,7 @@
       </div>
     </div>
     <div class="x-interview">
-      <div class="flex-col-1 flex-col-4">
+      <div class="flex-col">
         <div class="quote-2 quote-3">
           <p class="if-i-could-sum-up-t valign-text-middle" style="font-size: 28px">
             “I would like people to know that we&#39;re here for you. If it&#39;s something that you might consider
@@ -519,7 +470,7 @@
         </div>
       </div>
       <div class="flex-col">
-        <div class="matt-tinney"></div>
+        <img src="https://med-fom-cell-phys.sites.olt.ubc.ca/files/2023/02/mat-1.png" alt="Drawing of Matt Tinney">
         <div class="play-audio-with-text">
           <div class="play-pause-icon"><img class="polygon-1"
                                             src="https://med-fom-cell-phys.sites.olt.ubc.ca/files/2023/02/polygon-1-1.png"
