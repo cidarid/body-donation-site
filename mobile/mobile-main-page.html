@@ -9,10 +9,604 @@
   <link rel="shortcut icon" type="image/png" href="https://animaproject.s3.amazonaws.com/home/favicon.png" />
   <meta name="og:type" content="website" />
   <meta name="twitter:card" content="photo" />
-  <link rel="stylesheet" type="text/css" href="css/mobile-main-page.css" />
   <link rel="stylesheet" type="text/css" href="css/styleguide.css" />
   <link rel="stylesheet" type="text/css" href="css/globals.css" />
 </head>
+<style>
+  /* screen - mobile-main-page */
+
+  .mobile-main-page {
+    align-items: flex-start;
+    border: 1px none;
+    display: flex;
+    flex-direction: column;
+    min-width: 360px;
+    width: 100%;
+  }
+
+  .mobile-main-page .ubc-navigation-menu {
+    background-color: var(--surface);
+    height: 300px;
+    min-width: 360px;
+    position: relative;
+  }
+
+  .mobile-main-page .screenshot-container {
+    align-items: flex-start;
+    display: flex;
+    gap: 176px;
+    height: 166px;
+    left: 16px;
+    min-width: 328px;
+    position: absolute;
+    top: 0;
+  }
+
+  .mobile-main-page .screenshot-2022-10-03-194008-1 {
+    align-self: flex-end;
+    height: 116px;
+    width: 88px;
+  }
+
+  .mobile-main-page .overlap-group {
+    align-items: center;
+    background-color: var(--main-headers);
+    display: flex;
+    height: 80px;
+    justify-content: flex-end;
+    left: 0;
+    min-width: 360px;
+    padding: 0 35px;
+    position: absolute;
+    top: 166px;
+  }
+
+  .mobile-main-page .vector {
+    height: 20px;
+    width: 26px;
+  }
+
+  .mobile-main-page .main-page-menu {
+    background-color: var(--surface);
+    height: 1037px;
+    min-width: 360px;
+  }
+
+  .mobile-main-page .flex-col {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    left: 32px;
+    min-height: 990px;
+    position: relative;
+    top: 23px;
+    width: 296px;
+  }
+
+  .mobile-main-page .title {
+    height: 189px;
+    letter-spacing: 0;
+    line-height: 58px;
+    text-align: center;
+    width: 296px;
+  }
+
+  .mobile-main-page .heart-1 {
+    height: 296px;
+    margin-top: 25px;
+    object-fit: cover;
+    width: 296px;
+  }
+
+  .mobile-main-page .navigation-buttons {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 24px;
+    min-height: 456px;
+    width: 296px;
+  }
+
+  .mobile-main-page .navigation-buttons-item {
+    align-items: flex-start;
+    background-color: var(--light-blue);
+    border: 4px solid;
+    border-color: var(--blue);
+    border-radius: 10px;
+    display: flex;
+    min-width: 296px;
+    padding: 0 11px;
+  }
+
+  .mobile-main-page .button-text {
+    height: 72px;
+    letter-spacing: 0;
+    line-height: 28px;
+    margin-top: -5px;
+    text-align: center;
+    width: 265px;
+  }
+
+  .mobile-main-page .intro-text {
+    background-color: var(--surface);
+    height: 796px;
+    min-width: 360px;
+  }
+
+  .mobile-main-page .type-header3 {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    left: 32px;
+    position: relative;
+    top: 24px;
+    width: 296px;
+  }
+
+  .mobile-main-page .header {
+    align-self: stretch;
+    letter-spacing: 0;
+    line-height: 38px;
+    margin-top: -1.00px;
+    text-align: center;
+  }
+
+  .mobile-main-page .paragraph {
+    align-self: stretch;
+    letter-spacing: 0;
+    line-height: 26px;
+  }
+
+  .mobile-main-page .anatomical-material {
+    background-color: var(--surface);
+    height: 126px;
+    min-width: 360px;
+  }
+
+  .mobile-main-page .mobile-large-button {
+    align-items: flex-start;
+    background-color: var(--light-blue);
+    border: 4px solid;
+    border-color: var(--blue);
+    border-radius: 10px;
+    display: flex;
+    left: 32px;
+    width: 296px;
+    padding: 0 11px;
+    position: relative;
+    top: 27px;
+  }
+
+  .mobile-main-page .button-text-1 {
+    height: 72px;
+    letter-spacing: 0;
+    line-height: 26px;
+    margin-top: -5px;
+    text-align: center;
+    width: 265px;
+  }
+
+  .mobile-main-page .download-brochure {
+    background-color: var(--surface);
+    height: 284px;
+    min-width: 360px;
+    position: relative;
+  }
+
+  .mobile-main-page .mobile-large-button-1 {
+    align-items: flex-start;
+    background-color: var(--light-pink);
+    border: 4px solid;
+    border-color: var(--pink);
+    border-radius: 10px;
+    display: flex;
+    height: 72px;
+    left: 32px;
+    min-width: 296px;
+    padding: 0 11px;
+    position: absolute;
+    top: 188px;
+  }
+
+  .mobile-main-page .know-someone-who-may {
+    height: 140px;
+    left: 32px;
+    letter-spacing: 0;
+    line-height: 28px;
+    position: absolute;
+    text-align: center;
+    top: 23px;
+    width: 296px;
+  }
+
+  .mobile-main-page .contact-us {
+    background-color: var(--surface);
+    height: 431px;
+    min-width: 360px;
+    position: relative;
+  }
+
+  .mobile-main-page .back-to-top {
+    align-items: flex-start;
+    display: flex;
+    height: 47px;
+    left: 221px;
+    min-width: 107px;
+    position: absolute;
+    top: 360px;
+  }
+
+  .mobile-main-page .back-to-top-1 {
+    height: 47px;
+    letter-spacing: 0;
+    line-height: 26px;
+    margin-top: -1px;
+    text-align: center;
+    width: 107px;
+  }
+
+  .mobile-main-page .type-header3-1 {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    left: 32px;
+    position: absolute;
+    top: 24px;
+    width: 296px;
+  }
+
+  .mobile-main-page .header-1 {
+    align-self: stretch;
+    letter-spacing: 0;
+    line-height: 38px;
+    margin-top: -1.00px;
+    text-align: center;
+    white-space: nowrap;
+  }
+
+  .mobile-main-page .paragraph-1 {
+    align-self: stretch;
+    letter-spacing: 0;
+    line-height: 26px;
+    text-align: center;
+  }
+
+  .mobile-main-page .ubc-footer {
+    background-color: var(--surface);
+    height: 280px;
+    min-width: 360px;
+  }
+
+  .mobile-main-page .overlap-group1 {
+    height: 280px;
+    position: relative;
+    width: 360px;
+  }
+
+  .mobile-main-page .screenshot-2022-10-03-204313-1 {
+    height: 280px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 360px;
+  }
+
+  :root {
+    --black: #000000;
+    --blue: #5970af;
+    --green: #2f8292;
+    --light-blue: #a1a7ca;
+    --light-green: #aad4d1;
+    --light-pink: #c699b6;
+    --main-headers: #012045;
+    --pink: #965c88;
+    --surface: #ffffff;
+    --unselected: #dee2f8;
+
+    --font-size-l: 18px;
+    --font-size-m: 14px;
+    --font-size-xl: 20px;
+    --font-size-xxl: 24px;
+    --font-size-xxxl: 28px;
+    --font-size-xxxxl: 32px;
+    --font-size-xxxxxl: 40px;
+
+    --font-family-open_sans: "Open Sans", Helvetica;
+  }
+
+  .opensans-normal-black-18px {
+    color: var(--black);
+    font-family: var(--font-family-open_sans);
+    font-size: var(--font-size-l);
+    font-style: normal;
+    font-weight: 400;
+  }
+
+  .opensans-bold-white-18px {
+    color: var(--surface);
+    font-family: var(--font-family-open_sans);
+    font-size: var(--font-size-l);
+    font-style: normal;
+    font-weight: 700;
+  }
+
+  .opensans-normal-black-14px {
+    color: var(--black);
+    font-family: var(--font-family-open_sans);
+    font-size: var(--font-size-m);
+    font-style: normal;
+    font-weight: 400;
+  }
+
+  .opensans-bold-magic-potion-32px {
+    color: var(--main-headers);
+    font-family: var(--font-family-open_sans);
+    font-size: var(--font-size-xxxxl);
+    font-style: normal;
+    font-weight: 700;
+  }
+
+  .opensans-bold-black-18px {
+    color: var(--black);
+    font-family: var(--font-family-open_sans);
+    font-size: var(--font-size-l);
+    font-style: normal;
+    font-weight: 700;
+  }
+
+  .opensans-bold-magic-potion-24px {
+    color: var(--main-headers);
+    font-family: var(--font-family-open_sans);
+    font-size: var(--font-size-xxl);
+    font-style: normal;
+    font-weight: 700;
+  }
+
+  .opensans-bold-magic-potion-40px {
+    color: var(--main-headers);
+    font-family: var(--font-family-open_sans);
+    font-size: var(--font-size-xxxxxl);
+    font-style: normal;
+    font-weight: 700;
+  }
+
+  .opensans-bold-magic-potion-30px {
+    color: var(--main-headers);
+    font-family: var(--font-family-open_sans);
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+  }
+
+  .opensans-bold-magic-potion-20px {
+    color: var(--main-headers);
+    font-family: var(--font-family-open_sans);
+    font-size: var(--font-size-xl);
+    font-style: normal;
+    font-weight: 700;
+  }
+
+  .opensans-bold-magic-potion-48px {
+    color: var(--main-headers);
+    font-family: var(--font-family-open_sans);
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+  }
+
+  .opensans-normal-white-14px {
+    color: var(--surface);
+    font-family: var(--font-family-open_sans);
+    font-size: var(--font-size-m);
+    font-style: normal;
+    font-weight: 400;
+  }
+
+  .opensans-bold-magic-potion-18px {
+    color: var(--main-headers);
+    font-family: var(--font-family-open_sans);
+    font-size: var(--font-size-l);
+    font-style: normal;
+    font-weight: 700;
+  }
+
+  .opensans-bold-black-14px {
+    color: var(--black);
+    font-family: var(--font-family-open_sans);
+    font-size: var(--font-size-m);
+    font-style: normal;
+    font-weight: 700;
+  }
+
+  .opensans-light-black-20px {
+    color: var(--black);
+    font-family: var(--font-family-open_sans);
+    font-size: var(--font-size-xl);
+    font-style: normal;
+    font-weight: 300;
+  }
+
+  .opensans-light-black-32px {
+    color: var(--black);
+    font-family: var(--font-family-open_sans);
+    font-size: var(--font-size-xxxxl);
+    font-style: normal;
+    font-weight: 300;
+  }
+
+  .opensans-bold-magic-potion-50px {
+    color: var(--main-headers);
+    font-family: var(--font-family-open_sans);
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+  }
+
+  .opensans-light-black-28px {
+    color: var(--black);
+    font-family: var(--font-family-open_sans);
+    font-size: var(--font-size-xxxl);
+    font-style: italic;
+    font-weight: 300;
+  }
+
+  .opensans-light-black-14px {
+    color: var(--black);
+    font-family: var(--font-family-open_sans);
+    font-size: var(--font-size-m);
+    font-style: italic;
+    font-weight: 300;
+  }
+
+  .opensans-normal-magic-potion-14px {
+    color: var(--main-headers);
+    font-family: var(--font-family-open_sans);
+    font-size: var(--font-size-m);
+    font-style: normal;
+    font-weight: 400;
+  }
+
+  .opensans-light-black-18px {
+    color: var(--black);
+    font-family: var(--font-family-open_sans);
+    font-size: var(--font-size-l);
+    font-style: italic;
+    font-weight: 300;
+  }
+
+  .opensans-normal-jelly-bean-18px {
+    color: var(--green);
+    font-family: var(--font-family-open_sans);
+    font-size: var(--font-size-l);
+    font-style: normal;
+    font-weight: 400;
+  }
+
+  .opensans-bold-strikemaster-18px {
+    color: var(--pink);
+    font-family: var(--font-family-open_sans);
+    font-size: var(--font-size-l);
+    font-style: normal;
+    font-weight: 700;
+  }
+
+  .opensans-normal-strikemaster-18px {
+    color: var(--pink);
+    font-family: var(--font-family-open_sans);
+    font-size: var(--font-size-l);
+    font-style: normal;
+    font-weight: 400;
+  }
+
+  .opensans-bold-magic-potion-70px {
+    color: var(--main-headers);
+    font-family: var(--font-family-open_sans);
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 700;
+  }
+
+  .opensans-bold-white-90px {
+    color: var(--surface);
+    font-family: var(--font-family-open_sans);
+    font-size: 90px;
+    font-style: normal;
+    font-weight: 700;
+  }
+
+  @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+  @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,300italic");
+
+
+
+  .screen a {
+    display: contents;
+    text-decoration: none;
+  }
+
+  .container-center-horizontal {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    pointer-events: none;
+    width: 100%;
+  }
+
+  .container-center-horizontal>* {
+    flex-shrink: 0;
+    pointer-events: auto;
+  }
+
+  .align-self-flex-end {
+    align-self: flex-end;
+  }
+
+  .valign-text-middle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  .screenshot-2022-10-03-194008-2 {
+    height: 66px;
+    width: 64px;
+  }
+
+  .vector-1 {
+    height: 20px;
+    left: 299px;
+    position: absolute;
+    top: 196px;
+    width: 26px;
+  }
+
+  .span-1 {
+    line-height: 26px;
+  }
+
+  .step-3-mobile {
+    background-image: url(../img/step-3-mobile-1@2x.png);
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 108px;
+    left: 0;
+    position: absolute;
+    top: 1px;
+    width: 112px;
+  }
+
+  .before-passing-step {
+    background-position: 50% 50%;
+    background-size: cover;
+    position: absolute;
+  }
+
+  .paragraph-4 {
+    align-self: stretch;
+    letter-spacing: 0;
+    line-height: 26px;
+    text-align: center;
+  }
+
+  .ubc {
+    align-items: flex-start;
+    background-color: var(--surface);
+    display: flex;
+    width: 1440px;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+  }
+</style>
 
 <body style="margin: 0">
   <input type="hidden" id="anPageName" name="page" value="mobile-main-page" />
