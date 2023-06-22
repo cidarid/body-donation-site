@@ -1,0 +1,232 @@
+/* screen - mobile-why-donate */
+
+.mobile-why-donate {
+  align-items: flex-start;
+  border: 1px none;
+  display: flex;
+  flex-direction: column;
+  min-height: 3451px;
+  width: 360px;
+}
+
+.mobile-why-donate .ubc-navigation-menu {
+  align-items: center;
+  background-color: var(--surface);
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  width: 360px;
+}
+
+.mobile-why-donate .screenshot-container {
+  align-items: flex-start;
+  display: flex;
+  gap: 176px;
+  height: 166px;
+  min-width: 328px;
+}
+
+.mobile-why-donate .screenshot-2022-10-03-194008-1 {
+  align-self: flex-end;
+  height: 116px;
+  width: 88px;
+}
+
+.mobile-why-donate .overlap-group1 {
+  align-items: center;
+  background-color: var(--main-headers);
+  display: flex;
+  height: 80px;
+  justify-content: flex-end;
+  min-width: 360px;
+  padding: 0 35px;
+}
+
+.mobile-why-donate .vector {
+  height: 20px;
+  width: 26px;
+}
+
+.mobile-why-donate .why-donate {
+  align-items: center;
+  background-color: var(--surface);
+  display: flex;
+  flex-direction: column;
+  height: 2861px;
+  padding: 23px 0;
+  width: 360px;
+}
+
+.mobile-why-donate .title {
+  height: 111px;
+  letter-spacing: 0;
+  line-height: 58px;
+  width: 296px;
+}
+
+.mobile-why-donate .your-donation-is {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 25px;
+  width: 296px;
+}
+
+.mobile-why-donate .header {
+  align-self: stretch;
+  letter-spacing: 0;
+  line-height: 28px;
+  margin-top: -1.00px;
+}
+
+.mobile-why-donate .paragraph {
+  align-self: stretch;
+  letter-spacing: 0;
+  line-height: 26px;
+}
+
+.mobile-why-donate .x1000s-of-students-mobile {
+  background-image: url(../img/1000s-of-students-mobile-1.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 554px;
+  margin-top: 25px;
+  width: 296px;
+}
+
+.mobile-why-donate .from-death-comes-lif {
+  color: var(--black);
+  font-family: var(--font-family-open_sans);
+  font-size: var(--font-size-xl);
+  font-weight: 400;
+  height: 474px;
+  letter-spacing: 0;
+  line-height: 20px;
+  margin-top: 23px;
+  width: 296px;
+}
+
+.mobile-why-donate .span {
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.mobile-why-donate .people-illustration {
+  background-image: url(../img/people-2@2x.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 296px;
+  margin-top: 24px;
+  width: 296px;
+}
+
+.mobile-why-donate .dr-olusegun-oyedele-quote {
+  align-items: center;
+  background-color: #dbafcd;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-top: 24px;
+  min-height: 312px;
+  padding: 22px 0;
+  width: 296px;
+}
+
+.mobile-why-donate .someone-who-has-d {
+  color: var(--main-headers);
+  font-family: var(--font-family-open_sans);
+  font-size: var(--font-size-m);
+  font-style: italic;
+  font-weight: 300;
+  height: 178px;
+  letter-spacing: 0;
+  line-height: 26px;
+  margin-top: 1px;
+  text-align: center;
+  width: 240px;
+}
+
+.mobile-why-donate .play-pause-icon {
+  align-items: flex-start;
+  background-color: var(--light-blue);
+  border: 4px solid;
+  border-color: var(--blue);
+  border-radius: 32px;
+  display: flex;
+  height: 64px;
+  justify-content: flex-end;
+  min-width: 64px;
+  padding: 10.1px 15.6px;
+}
+
+.mobile-why-donate .polygon-1 {
+  height: 36px;
+  width: 31px;
+}
+
+.mobile-why-donate .kate-fitzsimmons-quote {
+  align-items: center;
+  background-color: #dbafcd;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-top: 24px;
+  min-height: 437px;
+  padding: 23px 0;
+  width: 296px;
+}
+
+.mobile-why-donate .it-was-really-amaz {
+  color: var(--main-headers);
+  font-family: var(--font-family-open_sans);
+  font-size: var(--font-size-m);
+  font-style: italic;
+  font-weight: 300;
+  height: 301px;
+  letter-spacing: 0;
+  line-height: 26px;
+  text-align: center;
+  width: 240px;
+}
+
+.mobile-why-donate .back-to-top {
+  align-items: flex-start;
+  align-self: flex-end;
+  display: flex;
+  margin-right: 32px;
+  margin-top: 24px;
+  min-width: 107px;
+}
+
+.mobile-why-donate .back-to-top-1 {
+  height: 47px;
+  letter-spacing: 0;
+  line-height: 26px;
+  margin-top: -1px;
+  text-align: center;
+  width: 107px;
+}
+
+.mobile-why-donate .ubc-footer {
+  align-items: flex-start;
+  background-color: var(--surface);
+  display: flex;
+  width: 360px;
+}
+
+.mobile-why-donate .overlap-group {
+  height: 290px;
+  position: relative;
+  width: 360px;
+}
+
+.mobile-why-donate .screenshot-2022-10-03-204313-1 {
+  height: 290px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 360px;
+}

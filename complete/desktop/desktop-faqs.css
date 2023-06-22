@@ -1,0 +1,364 @@
+/* screen - desktop-faqs */
+
+.desktop-faqs {
+  align-items: flex-start;
+  border: 1px none;
+  display: flex;
+  flex-direction: column;
+  min-height: 3036px;
+  width: 1440px;
+}
+
+.desktop-faqs .screenshot-2022-10-03-194008-1 {
+  height: 300px;
+  object-fit: cover;
+  width: 1440px;
+}
+
+.desktop-faqs .faq-header {
+  align-items: flex-start;
+  background-color: var(--surface);
+  display: flex;
+  height: 159px;
+  padding: 23px 160px;
+  width: 1440px;
+}
+
+.desktop-faqs .fa-qs {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  width: 1120px;
+}
+
+.desktop-faqs .header {
+  align-self: stretch;
+  letter-spacing: 0;
+  line-height: 58px;
+  margin-top: -1.00px;
+  white-space: nowrap;
+}
+
+.desktop-faqs .paragraph {
+  align-self: stretch;
+  letter-spacing: 0;
+  line-height: 40px;
+  white-space: nowrap;
+}
+
+.desktop-faqs .faqs1 {
+  align-items: flex-start;
+  background-color: var(--surface);
+  display: flex;
+  height: 1835px;
+  padding: 24px 160px;
+  width: 1440px;
+}
+
+.desktop-faqs .faq-menu {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  min-height: 1535px;
+  width: 1120px;
+}
+
+.desktop-faqs .about-the-program {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  min-height: 336px;
+  width: 1120px;
+}
+
+.desktop-faqs .about-the-program-1 {
+  letter-spacing: 0;
+  line-height: 48px;
+  margin-top: -1px;
+  white-space: nowrap;
+}
+
+.desktop-faqs .overlap-group3 {
+  background-color: var(--pink);
+  margin-top: 25px;
+}
+
+.desktop-faqs .can-i-make-a-financial-contribution {
+  height: 48px;
+  letter-spacing: 0;
+  line-height: 26px;
+  text-align: center;
+  width: 1120px;
+}
+
+.desktop-faqs .overlap-group {
+  background-color: var(--pink);
+  margin-top: 24px;
+}
+
+.desktop-faqs .name {
+  height: 48px;
+  letter-spacing: 0;
+  line-height: 26px;
+  text-align: center;
+  width: 1120px;
+}
+
+.desktop-faqs .how-are-donated-bodi {
+  height: 48px;
+  letter-spacing: 0;
+  line-height: 26px;
+  text-align: center;
+  width: 1120px;
+}
+
+.desktop-faqs .can-i-donate-my-rema {
+  height: 48px;
+  letter-spacing: 0;
+  line-height: 26px;
+  text-align: center;
+  width: 1120px;
+}
+
+.desktop-faqs .deciding-to-donate {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  margin-top: 48px;
+  min-height: 624px;
+  width: 1120px;
+}
+
+.desktop-faqs .deciding-to-donate-1 {
+  letter-spacing: 0;
+  line-height: 48px;
+  margin-left: 2px;
+  margin-top: -1px;
+  white-space: nowrap;
+}
+
+.desktop-faqs .overlap-group7 {
+  background-color: var(--blue);
+  margin-top: 25px;
+}
+
+.desktop-faqs .does-the-university {
+  height: 48px;
+  letter-spacing: 0;
+  line-height: 26px;
+  text-align: center;
+  width: 1120px;
+}
+
+.desktop-faqs .overlap-group-1 {
+  background-color: var(--blue);
+}
+
+.desktop-faqs .are-there-age-requir {
+  height: 48px;
+  letter-spacing: 0;
+  line-height: 26px;
+  text-align: center;
+  width: 1120px;
+}
+
+.desktop-faqs .what-conditions-prevent-body-donations {
+  height: 48px;
+  letter-spacing: 0;
+  line-height: normal;
+  text-align: center;
+  width: 1120px;
+}
+
+.desktop-faqs .does-medically-assis {
+  height: 48px;
+  letter-spacing: 0;
+  line-height: 26px;
+  text-align: center;
+  width: 1120px;
+}
+
+.desktop-faqs .can-i-register-to-do {
+  height: 48px;
+  letter-spacing: 0;
+  line-height: 26px;
+  text-align: center;
+  width: 1120px;
+}
+
+.desktop-faqs .what-are-the-costs-i {
+  height: 48px;
+  letter-spacing: 0;
+  line-height: 26px;
+  text-align: center;
+  width: 1120px;
+}
+
+.desktop-faqs .can-i-revoke-my-cons {
+  height: 48px;
+  letter-spacing: 0;
+  line-height: 26px;
+  text-align: center;
+  width: 1120px;
+}
+
+.desktop-faqs .who-should-i-notify-of-my-decision {
+  height: 48px;
+  letter-spacing: 0;
+  line-height: 26px;
+  text-align: center;
+  width: 1120px;
+}
+
+.desktop-faqs .what-happens-after-passing {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  margin-right: 0;
+  margin-top: 48px;
+  min-height: 408px;
+  width: 1120px;
+}
+
+.desktop-faqs .what-happens-after-passing-1 {
+  letter-spacing: 0;
+  line-height: 48px;
+  margin-top: -1px;
+  white-space: nowrap;
+}
+
+.desktop-faqs .overlap-group4 {
+  background-color: var(--green);
+  margin-top: 25px;
+}
+
+.desktop-faqs .what-if-i-die-outside-of-bc {
+  height: 48px;
+  letter-spacing: 0;
+  line-height: 26px;
+  text-align: center;
+  width: 1120px;
+}
+
+.desktop-faqs .overlap-group-2 {
+  background-color: var(--green);
+}
+
+.desktop-faqs .does-ubc-perform-autopsies {
+  height: 48px;
+  letter-spacing: 0;
+  line-height: 26px;
+  text-align: center;
+  width: 1120px;
+}
+
+.desktop-faqs .how-do-i-get-a-death-certificate {
+  height: 48px;
+  letter-spacing: 0;
+  line-height: 26px;
+  text-align: center;
+  width: 1120px;
+}
+
+.desktop-faqs .how-long-will-donati {
+  height: 48px;
+  letter-spacing: 0;
+  line-height: 26px;
+  text-align: center;
+  width: 1120px;
+}
+
+.desktop-faqs .what-happens-if-my-d {
+  height: 48px;
+  letter-spacing: 0;
+  line-height: 26px;
+  text-align: center;
+  width: 1120px;
+}
+
+.desktop-faqs .back-to-top {
+  align-items: flex-start;
+  cursor: pointer;
+  display: flex;
+  margin-top: 24px;
+  min-width: 107px;
+}
+
+.desktop-faqs .back-to-top-1 {
+  height: 47px;
+  letter-spacing: 0;
+  line-height: 26px;
+  margin-top: -1px;
+  text-align: center;
+  width: 107px;
+}
+
+.desktop-faqs .contact-us {
+  align-items: flex-end;
+  background-color: var(--surface);
+  gap: 24px;
+  padding: 24px 160px;
+  width: fit-content;
+}
+
+.desktop-faqs .contact-info {
+  align-items: flex-start;
+  gap: 14px;
+  width: 1120px;
+}
+
+.desktop-faqs .header-1 {
+  align-self: stretch;
+  letter-spacing: 0;
+  line-height: 48px;
+  margin-top: -1.00px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.desktop-faqs .paragraph-1 {
+  align-self: stretch;
+  letter-spacing: 0;
+  line-height: 26px;
+  text-align: center;
+}
+
+.desktop-faqs .back-to-top-2 {
+  cursor: pointer;
+  height: 47px;
+  min-width: 107px;
+  position: relative;
+}
+
+.desktop-faqs .back-to-top-3 {
+  height: 47px;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 26px;
+  position: absolute;
+  text-align: center;
+  top: -1px;
+  width: 107px;
+}
+
+.desktop-faqs .screenshot-2022-10-03-204313-2 {
+  height: 327px;
+  object-fit: cover;
+  width: 1440px;
+}
+
+.desktop-faqs .overlap {
+  align-items: flex-start;
+  border-radius: 10px;
+  display: flex;
+  min-width: 1120px;
+}
+
+.desktop-faqs .overlap-group-3 {
+  align-items: flex-start;
+  border-radius: 10px;
+  display: flex;
+  margin-top: 24px;
+  min-width: 1120px;
+}

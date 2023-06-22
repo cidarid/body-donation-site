@@ -1,0 +1,434 @@
+/* screen - mobile-faq */
+
+.mobile-faq {
+  align-items: flex-start;
+  border: 1px none;
+  display: flex;
+  flex-direction: column;
+  min-height: 3251px;
+  width: 360px;
+}
+
+.mobile-faq .ubc-navigation-menu {
+  align-items: center;
+  background-color: var(--surface);
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  width: 360px;
+}
+
+.mobile-faq .screenshot-container {
+  align-items: flex-start;
+  display: flex;
+  gap: 176px;
+  height: 166px;
+  min-width: 328px;
+}
+
+.mobile-faq .screenshot-2022-10-03-194008-1 {
+  align-self: flex-end;
+  height: 116px;
+  width: 88px;
+}
+
+.mobile-faq .overlap-group-3 {
+  align-items: center;
+  background-color: var(--main-headers);
+  display: flex;
+  height: 80px;
+  justify-content: flex-end;
+  min-width: 360px;
+  padding: 0 35px;
+}
+
+.mobile-faq .vector {
+  height: 20px;
+  width: 26px;
+}
+
+.mobile-faq .faq-header {
+  align-items: flex-start;
+  background-color: var(--surface);
+  display: flex;
+  height: 331px;
+  padding: 24px 32px;
+  width: 360px;
+}
+
+.mobile-faq .faq-header-1 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  width: 296px;
+}
+
+.mobile-faq .header {
+  align-self: stretch;
+  letter-spacing: 0;
+  line-height: 58px;
+  margin-top: -1.00px;
+}
+
+.mobile-faq .paragraph {
+  align-self: stretch;
+  letter-spacing: 0;
+  line-height: 28px;
+}
+
+.mobile-faq .about-the-program {
+  align-items: center;
+  background-color: var(--surface);
+  display: flex;
+  flex-direction: column;
+  height: 437px;
+  padding: 23px 0;
+  width: 360px;
+}
+
+.mobile-faq .about-the-program-1 {
+  letter-spacing: 0;
+  line-height: 28px;
+  margin-right: 26.0px;
+  min-height: 37px;
+  width: 270px;
+}
+
+.mobile-faq .overlap-group3 {
+  align-items: flex-start;
+  background-color: var(--pink);
+  border-radius: 10px;
+  display: flex;
+  margin-top: 25px;
+  min-width: 296px;
+  padding: 0 8px;
+}
+
+.mobile-faq .can-i-make-a-financial-contribution {
+  height: 64px;
+  letter-spacing: 0;
+  line-height: 26px;
+  text-align: center;
+  width: 280px;
+}
+
+.mobile-faq .overlap-group {
+  align-items: flex-start;
+  background-color: var(--pink);
+  border-radius: 10px;
+  display: flex;
+  margin-top: 24px;
+  min-width: 296px;
+  padding: 0 8px;
+}
+
+.mobile-faq .name {
+  height: 64px;
+  letter-spacing: 0;
+  line-height: 26px;
+  text-align: center;
+  width: 280px;
+}
+
+.mobile-faq .how-are-donated-bodi {
+  height: 64px;
+  letter-spacing: 0;
+  line-height: 26px;
+  text-align: center;
+  width: 280px;
+}
+
+.mobile-faq .can-i-donate-my-rema {
+  height: 64px;
+  letter-spacing: 0;
+  line-height: 26px;
+  text-align: center;
+  width: 280px;
+}
+
+.mobile-faq .deciding-to-donate-r {
+  align-items: center;
+  background-color: var(--surface);
+  display: flex;
+  flex-direction: column;
+  height: 858px;
+  padding: 23px 0;
+  width: 360px;
+}
+
+.mobile-faq .deciding-to-donate {
+  letter-spacing: 0;
+  line-height: 28px;
+  margin-right: 26.0px;
+  min-height: 90px;
+  width: 270px;
+}
+
+.mobile-faq .overlap-group7 {
+  align-items: flex-start;
+  background-color: var(--blue);
+  border-radius: 10px;
+  display: flex;
+  margin-top: 25px;
+  min-width: 296px;
+  padding: 0 8px;
+}
+
+.mobile-faq .does-the-university {
+  height: 64px;
+  letter-spacing: 0;
+  line-height: 26px;
+  text-align: center;
+  width: 280px;
+}
+
+.mobile-faq .overlap-group-1 {
+  align-items: flex-start;
+  background-color: var(--blue);
+  border-radius: 10px;
+  display: flex;
+  margin-top: 24px;
+  min-width: 296px;
+  padding: 0 8px;
+}
+
+.mobile-faq .are-there-age-requir {
+  height: 64px;
+  letter-spacing: 0;
+  line-height: 26px;
+  text-align: center;
+  width: 280px;
+}
+
+.mobile-faq .what-conditions-prevent-body-donations {
+  height: 64px;
+  letter-spacing: 0;
+  line-height: normal;
+  text-align: center;
+  width: 280px;
+}
+
+.mobile-faq .does-medically-assis {
+  height: 64px;
+  letter-spacing: 0;
+  line-height: 26px;
+  text-align: center;
+  width: 280px;
+}
+
+.mobile-faq .overlap-group3-1 {
+  align-items: center;
+  background-color: var(--blue);
+  border-radius: 10px;
+  display: flex;
+  height: 80px;
+  margin-top: 24px;
+  min-width: 296px;
+  padding: 0 8px;
+}
+
+.mobile-faq .can-i-register-to-do {
+  height: 64px;
+  letter-spacing: 0;
+  line-height: 26px;
+  text-align: center;
+  width: 280px;
+}
+
+.mobile-faq .what-are-the-costs-i {
+  height: 64px;
+  letter-spacing: 0;
+  line-height: 26px;
+  text-align: center;
+  width: 280px;
+}
+
+.mobile-faq .can-i-revoke-my-cons {
+  height: 64px;
+  letter-spacing: 0;
+  line-height: 26px;
+  text-align: center;
+  width: 280px;
+}
+
+.mobile-faq .who-should-i-notify-of-my-decision {
+  height: 64px;
+  letter-spacing: 0;
+  line-height: 26px;
+  text-align: center;
+  width: 280px;
+}
+
+.mobile-faq .what-happens-after-passing {
+  align-items: flex-end;
+  background-color: var(--surface);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  height: 604px;
+  padding: 21px 0;
+  width: 360px;
+}
+
+.mobile-faq .what-happens-after-passing-1 {
+  align-items: flex-start;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 3px;
+  min-height: 488px;
+  width: 296px;
+}
+
+.mobile-faq .what-happens-after-passing-2 {
+  letter-spacing: 0;
+  line-height: 28px;
+  margin-top: -1px;
+  min-height: 48px;
+  width: 270px;
+}
+
+.mobile-faq .overlap-group4 {
+  align-items: flex-start;
+  background-color: var(--green);
+  border-radius: 10px;
+  display: flex;
+  margin-top: 25px;
+  min-width: 296px;
+  padding: 0 8px;
+}
+
+.mobile-faq .what-if-i-die-outside-of-bc {
+  height: 64px;
+  letter-spacing: 0;
+  line-height: 26px;
+  text-align: center;
+  width: 280px;
+}
+
+.mobile-faq .overlap-group-2 {
+  align-items: flex-start;
+  background-color: var(--green);
+  border-radius: 10px;
+  display: flex;
+  margin-top: 24px;
+  min-width: 296px;
+  padding: 0 8px;
+}
+
+.mobile-faq .does-ubc-perform-autopsies {
+  height: 64px;
+  letter-spacing: 0;
+  line-height: 26px;
+  text-align: center;
+  width: 280px;
+}
+
+.mobile-faq .how-do-i-get-a-death-certificate {
+  height: 64px;
+  letter-spacing: 0;
+  line-height: 26px;
+  text-align: center;
+  width: 280px;
+}
+
+.mobile-faq .how-long-will-donati {
+  height: 64px;
+  letter-spacing: 0;
+  line-height: 26px;
+  text-align: center;
+  width: 280px;
+}
+
+.mobile-faq .overlap-group-4 {
+  align-items: flex-start;
+  background-color: var(--green);
+  border-radius: 10px;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 24px;
+  min-width: 296px;
+  padding: 0 5px;
+}
+
+.mobile-faq .what-happens-if-my-d {
+  height: 64px;
+  letter-spacing: 0;
+  line-height: 26px;
+  text-align: center;
+  width: 280px;
+}
+
+.mobile-faq .back-to-top {
+  align-items: flex-start;
+  display: flex;
+  margin-right: 32px;
+  min-width: 107px;
+}
+
+.mobile-faq .back-to-top-1 {
+  height: 47px;
+  letter-spacing: 0;
+  line-height: 26px;
+  margin-top: -1px;
+  text-align: center;
+  width: 107px;
+}
+
+.mobile-faq .contact-us {
+  align-items: flex-end;
+  background-color: var(--surface);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  height: 431px;
+  padding: 24px 0;
+  width: 360px;
+}
+
+.mobile-faq .type-header3 {
+  align-items: flex-start;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  width: 296px;
+}
+
+.mobile-faq .header-1 {
+  align-self: stretch;
+  letter-spacing: 0;
+  line-height: 38px;
+  margin-top: -1.00px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.mobile-faq .paragraph-1 {
+  align-self: stretch;
+  letter-spacing: 0;
+  line-height: 26px;
+  text-align: center;
+}
+
+.mobile-faq .ubc-footer {
+  align-items: flex-start;
+  background-color: var(--surface);
+  display: flex;
+  width: 360px;
+}
+
+.mobile-faq .overlap-group1 {
+  height: 290px;
+  position: relative;
+  width: 360px;
+}
+
+.mobile-faq .screenshot-2022-10-03-204313-1 {
+  height: 290px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 360px;
+}

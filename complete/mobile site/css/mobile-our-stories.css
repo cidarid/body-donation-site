@@ -1,0 +1,370 @@
+/* screen - mobile-our-stories */
+
+.mobile-our-stories {
+  align-items: flex-start;
+  border: 1px none;
+  display: flex;
+  flex-direction: column;
+  min-height: 4149px;
+  overflow-x: hidden;
+  width: 360px;
+}
+
+.mobile-our-stories .ubc-navigation-menu {
+  align-items: center;
+  background-color: var(--surface);
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  width: 360px;
+}
+
+.mobile-our-stories .screenshot-container {
+  align-items: flex-start;
+  display: flex;
+  gap: 176px;
+  height: 166px;
+  min-width: 328px;
+}
+
+.mobile-our-stories .screenshot-2022-10-03-194008-1 {
+  align-self: flex-end;
+  height: 116px;
+  width: 88px;
+}
+
+.mobile-our-stories .overlap-group2 {
+  align-items: center;
+  background-color: var(--main-headers);
+  display: flex;
+  height: 80px;
+  justify-content: flex-end;
+  min-width: 360px;
+  padding: 0 35px;
+}
+
+.mobile-our-stories .vector {
+  height: 20px;
+  width: 26px;
+}
+
+.mobile-our-stories .our-stories-header {
+  align-items: center;
+  background-color: var(--surface);
+  display: flex;
+  height: 232px;
+  padding: 0 32px;
+  width: 360px;
+}
+
+.mobile-our-stories .overlap-group1 {
+  height: 184px;
+  position: relative;
+  width: 296px;
+}
+
+.mobile-our-stories .type-header2 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 296px;
+}
+
+.mobile-our-stories .header {
+  align-self: stretch;
+  letter-spacing: 0;
+  line-height: 58px;
+  margin-top: -1.00px;
+  white-space: nowrap;
+}
+
+.mobile-our-stories .paragraph {
+  align-self: stretch;
+  letter-spacing: 0;
+  line-height: 28px;
+}
+
+.mobile-our-stories .audio-icon-no-interaction {
+  align-items: flex-start;
+  background-color: var(--light-blue);
+  border: 2px solid;
+  border-color: var(--blue);
+  border-radius: 14px;
+  display: flex;
+  height: 28px;
+  justify-content: flex-end;
+  left: 45px;
+  min-width: 28px;
+  padding: 4.2px 7.1px;
+  position: absolute;
+  top: 72px;
+}
+
+.mobile-our-stories .polygon-2 {
+  height: 16px;
+  width: 13px;
+}
+
+.mobile-our-stories .kate-fitzsimmons-interview {
+  align-items: center;
+  background-color: var(--surface);
+  display: flex;
+  flex-direction: column;
+  height: 786px;
+  padding: 24px 0;
+  width: 360px;
+}
+
+.mobile-our-stories .play-audio-with-text {
+  align-items: flex-start;
+  display: flex;
+  gap: 12px;
+  min-width: 290px;
+}
+
+.mobile-our-stories .play-pause-icon {
+  align-items: flex-start;
+  background-color: var(--light-blue);
+  border: 4px solid;
+  border-color: var(--blue);
+  border-radius: 31.99px/32.5px;
+  display: flex;
+  height: 65px;
+  justify-content: flex-end;
+  min-width: 64px;
+  padding: 10.3px 15.6px;
+}
+
+.mobile-our-stories .polygon-1 {
+  height: 37px;
+  width: 31px;
+}
+
+.mobile-our-stories .click-here-to-play-full-interview {
+  height: 65px;
+  letter-spacing: 0;
+  line-height: 28px;
+  margin-top: -1px;
+  width: 214px;
+}
+
+.mobile-our-stories .kate-fitzsimmons {
+  background-image: url(../img/kate-1@2x.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 296px;
+  margin-top: 24px;
+  width: 296px;
+}
+
+.mobile-our-stories .quote {
+  align-items: flex-start;
+  background-color: var(--surface);
+  border: 4px solid;
+  border-color: var(--light-green);
+  border-radius: 10px;
+  display: flex;
+  height: 255px;
+  margin-top: 24px;
+  min-width: 296px;
+  padding: 19px 24px;
+}
+
+.mobile-our-stories .it-was-really-amazi {
+  height: 207px;
+  letter-spacing: 0;
+  line-height: 26px;
+  text-align: center;
+  width: 240px;
+}
+
+.mobile-our-stories .download-transcript {
+  align-items: flex-start;
+  background-color: var(--light-blue);
+  border: 4px solid;
+  border-color: var(--blue);
+  border-radius: 10px;
+  display: flex;
+  margin-top: 18px;
+  min-width: 216px;
+  padding: 0 15px;
+}
+
+.mobile-our-stories .button-text {
+  height: 56px;
+  letter-spacing: 0;
+  line-height: 26px;
+  margin-top: -5px;
+  text-align: center;
+  width: 176px;
+}
+
+.mobile-our-stories .army-alam-interview {
+  align-items: center;
+  background-color: var(--surface);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  height: 868px;
+  padding: 24px 31px;
+  width: 360px;
+}
+
+.mobile-our-stories .army-alam {
+  background-image: url(../img/army-1@2x.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 296px;
+  width: 296px;
+}
+
+.mobile-our-stories .quote-1 {
+  align-self: flex-start;
+  border-color: var(--light-blue);
+  height: 331px;
+}
+
+.mobile-our-stories .for-many-people-my {
+  height: 283px;
+  letter-spacing: 0;
+  line-height: 26px;
+  text-align: center;
+  width: 240px;
+}
+
+.mobile-our-stories .dr-olysegun-oyedele-interview {
+  align-items: center;
+  background-color: var(--surface);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  height: 762px;
+  margin-left: -1px;
+  padding: 24px 31.0px;
+  width: 360px;
+}
+
+.mobile-our-stories .dr-olusegun-oyedele {
+  align-self: flex-end;
+  background-image: url(../img/segun-1@2x.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 296px;
+  width: 297px;
+}
+
+.mobile-our-stories .quote-2 {
+  border-color: var(--light-pink);
+  height: 225px;
+}
+
+.mobile-our-stories .if-i-could-sum-up-t {
+  height: 177px;
+  letter-spacing: 0;
+  line-height: 26px;
+  text-align: center;
+  width: 240px;
+}
+
+.mobile-our-stories .download-transcript-2 {
+  margin-right: 10.0px;
+}
+
+.mobile-our-stories .matthew-tinney-interview {
+  align-items: center;
+  background-color: var(--surface);
+  display: flex;
+  flex-direction: column;
+  height: 911px;
+  margin-left: -1px;
+  padding: 24px 0;
+  width: 360px;
+}
+
+.mobile-our-stories .matt-tinney {
+  background-image: url(../img/mat-1@2x.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 296px;
+  margin-top: 24px;
+  width: 296px;
+}
+
+.mobile-our-stories .quote-3 {
+  border-color: var(--light-blue);
+  height: 309px;
+  margin-top: 24px;
+}
+
+.mobile-our-stories .i-would-like-people {
+  height: 261px;
+  letter-spacing: 0;
+  line-height: 26px;
+  text-align: center;
+  width: 240px;
+}
+
+.mobile-our-stories .back-to-top {
+  align-items: flex-start;
+  align-self: flex-end;
+  display: flex;
+  margin-right: 32px;
+  margin-top: 24px;
+  min-width: 107px;
+}
+
+.mobile-our-stories .back-to-top-1 {
+  height: 47px;
+  letter-spacing: 0;
+  line-height: 26px;
+  margin-top: -1px;
+  text-align: center;
+  width: 107px;
+}
+
+.mobile-our-stories .ubc-footer {
+  align-items: flex-start;
+  background-color: var(--surface);
+  display: flex;
+  margin-left: -2px;
+  width: 360px;
+}
+
+.mobile-our-stories .overlap-group {
+  height: 290px;
+  position: relative;
+  width: 360px;
+}
+
+.mobile-our-stories .screenshot-2022-10-03-204313-1 {
+  height: 290px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 360px;
+}
+
+.mobile-our-stories .download-transcript-3 {
+  align-items: flex-start;
+  background-color: var(--light-blue);
+  border: 4px solid;
+  border-color: var(--blue);
+  border-radius: 10px;
+  display: flex;
+  min-width: 216px;
+  padding: 0 15px;
+}
+
+.mobile-our-stories .quote-4 {
+  align-items: flex-start;
+  background-color: var(--surface);
+  border: 4px solid;
+  border-radius: 10px;
+  display: flex;
+  min-width: 296px;
+  padding: 19px 24px;
+}
