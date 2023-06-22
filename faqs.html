@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width" name="viewport"/>
+  <meta content="website" name="og:type"/>
+  <meta content="photo" name="twitter:card"/>
+  <style>
+      @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+      @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,300italic"); /* screen - desktop-faqs */
+
+      .desktop-faqs {
+          align-items: flex-start;
+          border: 1px none;
+          display: flex;
+          flex-direction: column;
+          width: 1440px;
+      }
+
+      .desktop-faqs .faq-header {
+          align-items: flex-start;
+          background-color: var(--surface);
+          display: flex;
+          padding: 23px 160px;
+          width: 1440px;
+      }
+
+      .desktop-faqs .fa-qs {
+          align-items: flex-start;
+          display: flex;
+          flex-direction: column;
+          gap: 14px;
+          width: 1120px;
+      }
+
+      .desktop-faqs .paragraph {
+          align-self: stretch;
+          letter-spacing: 0;
+          line-height: 40px;
+          white-space: nowrap;
+      }
+
+      .desktop-faqs .faqs1 {
+          align-items: flex-start;
+          background-color: var(--surface);
+          display: flex;
+          height: 1835px;
+          padding: 24px 160px;
+          width: 1440px;
+      }
+
+      .desktop-faqs .faq-menu {
+          align-items: flex-end;
+          display: flex;
+          flex-direction: column;
+          min-height: 1535px;
+          width: 1120px;
+      }
+
+      .desktop-faqs .about-the-program {
+          align-items: flex-start;
+          display: flex;
+          flex-direction: column;
+          min-height: 336px;
+          width: 1120px;
+      }
+
+      .desktop-faqs .about-the-program-1 {
+          letter-spacing: 0;
+          line-height: 48px;
+          margin-top: -1px;
+          white-space: nowrap;
+      }
+
+      .accordion {
+          align-items: center;
+          border-radius: 10px;
+          border: none;
+          color: var(--surface);
+          display: flex;
+          flex-direction: column;
+          font-family: var(--font-family-open_sans);
+          font-size: var(--font-size-m);
+          font-style: normal;
+          font-weight: 700;
+          height: 48px;
+          justify-content: center;
+          letter-spacing: 0;
+          line-height: 26px;
+          min-width: 1120px;
+          text-align: center;
+          width: 1120px;
+          margin-top: 25px;
+          margin-bottom: 0;
+      }
+
+      .accordion.purple {
+          background-color: var(--pink);
+      }
+
+      .accordion.blue {
+          background-color: var(--blue);
+      }
+
+      .accordion.green {
+          background-color: var(--green);
+      }
+
+      .panel {
+          box-sizing: border-box;
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+          align-items: center;
+          width: 98%;
+          position: relative;
+          left: 1%;
+          border-radius: 0 0 10px 10px;
+          margin-top: -8px;
+          max-height: 0;
+          overflow: hidden;
+          transition: max-height 0.5s;
+      }
+
+      .panel-text {
+          padding: 16px 30px 20px;
+          font-family: var(--font-family-open_sans);
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 25px;
+          color: #000000;
+      }
+
+      .panel.purple {
+          /* TODO: rgba(var(--pink), 0)
+          https://stackoverflow.com/questions/52134888/hiding-showing-border
+          https://www.w3schools.com/howto/howto_js_accordion.asp */
+          border: 4px solid var(--pink);
+          background-color: var(--light-pink);
+      }
+
+      .panel.blue {
+          border: 4px solid var(--blue);
+          background-color: var(--light-blue);
+      }
+
+      .panel.green {
+          border: 4px solid var(--green);
+          background-color: var(--light-green);
+      }
+
+      .desktop-faqs .deciding-to-donate {
+          align-items: flex-start;
+          display: flex;
+          flex-direction: column;
+          margin-top: 48px;
+          min-height: 624px;
+          width: 1120px;
+      }
+
+      .desktop-faqs .deciding-to-donate-1 {
+          letter-spacing: 0;
+          line-height: 48px;
+          margin-left: 2px;
+          margin-top: -1px;
+          white-space: nowrap;
+      }
+
+      .desktop-faqs .what-happens-after-passing {
+          align-items: flex-start;
+          display: flex;
+          flex-direction: column;
+          margin-right: 0;
+          margin-top: 48px;
+          min-height: 408px;
+          width: 1120px;
+      }
+
+      .desktop-faqs .what-happens-after-passing-1 {
+          letter-spacing: 0;
+          line-height: 48px;
+          margin-top: -1px;
+          white-space: nowrap;
+      }
+
+      .desktop-faqs .back-to-top {
+          align-items: flex-start;
+          cursor: pointer;
+          display: flex;
+          margin-top: 24px;
+          min-width: 107px;
+      }
+
+      .desktop-faqs .back-to-top-1 {
+          height: 47px;
+          letter-spacing: 0;
+          line-height: 26px;
+          margin-top: -1px;
+          text-align: center;
+          width: 107px;
+      }
+
+      .desktop-faqs .contact-us {
+          align-items: flex-end;
+          background-color: var(--surface);
+          gap: 24px;
+          padding: 24px 160px;
+          width: -moz-fit-content;
+          width: fit-content;
+      }
+
+      .desktop-faqs .contact-info {
+          align-items: flex-start;
+          gap: 14px;
+          width: 1120px;
+      }
+
+      .desktop-faqs .header-1 {
+          align-self: stretch;
+          letter-spacing: 0;
+          line-height: 48px;
+          margin-top: -1.00px;
+          text-align: center;
+          white-space: nowrap;
+      }
+
+      .desktop-faqs .paragraph-1 {
+          align-self: stretch;
+          letter-spacing: 0;
+          line-height: 26px;
+          text-align: center;
+      }
+
+      .desktop-faqs .back-to-top-2 {
+          cursor: pointer;
+          height: 47px;
+          min-width: 107px;
+          position: relative;
+      }
+
+      .desktop-faqs .back-to-top-3 {
+          height: 47px;
+          left: 0;
+          letter-spacing: 0;
+          line-height: 26px;
+          position: absolute;
+          text-align: center;
+          top: -1px;
+          width: 107px;
+      }
+
+      p {
+          margin: 0;
+      }
+
+      .screen a {
+          display: contents;
+          text-decoration: none;
+      }
+
+      .container-center-horizontal {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          pointer-events: none;
+          width: 100%;
+      }
+
+      .container-center-horizontal > * {
+          flex-shrink: 0;
+          pointer-events: auto;
+      }
+
+      .valign-text-middle {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+      }
+
+      * {
+          box-sizing: border-box;
+      }
+
+      .contact {
+          display: flex;
+          flex-direction: column;
+      }
+
+      :root {
+          --black: #000000;
+          --blue: #5970af;
+          --green: #2f8292;
+          --pink: #965c88;
+          --surface: #ffffff;
+          --unselected: #dee2f8;
+          --light-blue: #a1a7ca;
+          --font-family-open_sans: "Open Sans", Helvetica;
+          --light-green: #aad4d1;
+          --main-headers: #012045;
+
+          --light-pink: #c699b6;
+          --font-size-l: 20px;
+          --font-size-m: 18px;
+          --font-size-s: 14px;
+          --font-size-xl: 28px;
+          --font-size-xxl: 32px;
+          --font-size-xxxl: 40px;
+
+          --font-size-xxxxl: 50px;
+      }
+
+      .opensans-normal-black-18px {
+          color: var(--black);
+          font-family: var(--font-family-open_sans);
+          font-size: var(--font-size-m);
+          font-style: normal;
+          font-weight: 400;
+      }
+
+      .opensans-bold-magic-potion-40px {
+          color: var(--main-headers);
+          font-family: var(--font-family-open_sans);
+          font-size: var(--font-size-xxxl);
+          font-style: normal;
+          font-weight: 700;
+      }
+
+      .opensans-light-black-32px {
+          color: var(--black);
+          font-family: var(--font-family-open_sans);
+          font-size: var(--font-size-xxl);
+          font-style: normal;
+          font-weight: 300;
+      }
+
+      body {
+          margin: 0;
+      }
+  </style>
+  <title>FAQs</title>
+</head>
+
+<body>
+<input id="anPageName" name="page" type="hidden" value="desktop-faqs"/>
+<div class="container-center-horizontal">
+  <div class="desktop-faqs screen">
+    <div class="faq-header" id="faq-header">
+      <div class="fa-qs">
+        <p class="paragraph opensans-light-black-32px">
+          Find answers to some common questions about the Body Donation Program.
+        </p>
+      </div>
+    </div>
+    <div class="faqs1">
+      <div class="faq-menu">
+        <div class="about-the-program">
+          <div class="about-the-program-1 opensans-bold-magic-potion-40px">About the Program</div>
+          <button class="accordion purple">
+            Can I make a financial contribution?
+          </button>
+          <div class="panel purple">
+            <div class="panel-text">
+              Yes, financial contributions are accepted. Cheques made payable to the Anatomical Sciences Research
+              Endowment, can be mailed to the program address below. <br> <br>
+              Department of Cellular & Physiological Sciences <br>
+              Faculty of Medicine <br>
+              2350 Health Sciences Mall <br>
+              Vancouver, BC Canada V6T 1Z3 <br>
+            </div>
+          </div>
+          <button class="accordion purple">
+            Will there be a memorial service for donors?
+          </button>
+          <div class="panel purple">
+            <div class="panel-text">
+              Yes, each year the students organize a beautiful and dignified memorial service for donors who were
+              cremated in the previous year. The memorial is an opportunity for students to express their appreciation
+              of the special privilege granted to them. The ceremony includes musical performances, and family members
+              and loved ones are invited to honor the donor and share fond memories with speeches and unforgettable
+              stories. Favorite pictures and treasured belongings of the donor can be displayed in the memory hall for
+              all guests to view. Invitations to the ceremony, typically held at the Life Sciences Atrium at UBC on a
+              Saturday in late September, are sent out to close family members and next of kin in early August.
+            </div>
+          </div>
+          <button class="accordion purple">
+            How are donated bodies used by the program?
+          </button>
+          <div class="panel purple">
+            <div class="panel-text">
+              Most body donations are used for teaching purposes and will be the subject of student examination and
+              dissection. However, some donations will be used specifically for medical and research training. These
+              donations will help to advance surgical training techniques and enhance progress in areas of medical
+              research, making a very special and valuable contribution to the education of our health care
+              professionals and the communities they serve. <br>
+              The UBC Body Donation program does not perform and is not involved in any individual- or disease-specific
+              research, as this is more appropriately performed in tissue culture or living patients.
+            </div>
+          </div>
+          <button class="accordion purple">
+            Can I donate my remains to a local medical program?
+          </button>
+          <div class="panel purple">
+            <div class="panel-text">
+              No, UBC - Vancouver is the only Body Donor Program in British Columbia
+            </div>
+          </div>
+        </div>
+        <div class="deciding-to-donate">
+          <p class="deciding-to-donate-1 opensans-bold-magic-potion-40px">
+            Deciding to Donate, Registration, and Consent
+          </p>
+          <button class="accordion blue">
+            Does the university accept all donations?
+          </button>
+          <div class="panel blue">
+            <div class="panel-text">
+              No. Every potential donor is appreciated, but some conditions will not allow for donation to occur. The
+              University reserves the right to decline any donation if considered unsuitable. For this reason it is
+              recommended that alternate arrangements be made in advance. For more information on what conditions may
+              prevent body donation, please see the questions below.
+            </div>
+          </div>
+          <button class="accordion blue">
+            Are there age requirements for donating?
+          </button>
+          <div class="panel blue">
+            <div class="panel-text">
+              There is no upper age limit for donation, but donors must be over the age of 30.
+            </div>
+          </div>
+          <button class="accordion blue">
+            What conditions prevent body donations?
+          </button>
+          <div class="panel blue">
+            <div class="panel-text">
+              <ul>
+                <li>Some infectious diseases</li>
+                <li>Severe antibiotic resistance infections</li>
+                <li>A body mass index higher than 27 or lower than 16.</li>
+                <li>Excessive trauma to the body (including recent surgery)</li>
+                <li>Autopsy or Coroner’s case</li>
+                <li>Delay in notification of death</li>
+                <li>Most organ donations (except corneas)</li>
+                <li>Some forms of cancer</li>
+                <li>Other conditions at the discretion of the Physician and Body program staff</li>
+              </ul>
+            </div>
+          </div>
+          <button class="accordion blue">
+            Does medically assisted dying prevent body donation?
+          </button>
+          <div class="panel blue">
+            <div class="panel-text">
+              No.
+            </div>
+          </div>
+          <button class="accordion blue">
+            Can I register to donate my body if I am a registerred organ donor?
+          </button>
+          <div class="panel blue">
+            <div class="panel-text">
+              Yes. However, in the event of solid organ removal for transplant (with the exception of corneal
+              transplant) body donation is not possible. <br>
+              If you are declined as an organ donor, body donation may be considered as an alternative. For information
+              on organ donation, please contact BC Transplant at 604-877-2240 or online at <a
+                    href="http://www.transplant.bc.ca/">www.transplant.bc.ca</a>
+            </div>
+          </div>
+          <button class="accordion blue">
+            What are the costs involved with donating?
+          </button>
+          <div class="panel blue">
+            <div class="panel-text">
+              The University covers all transportation costs throughout BC and the cost of cremation.
+            </div>
+          </div>
+          <button class="accordion blue">
+            Are there any costs not covered by the university?
+          </button>
+          <div class="panel blue">
+            <div class="panel-text">
+              Special urns, burial plots, monuments, or private memorial services for the donor. <br>
+              Registration of Death and the Issuance of Death Certificate through our partnered funeral home,
+              Alternatives
+              Funeral and Cremation Services.
+            </div>
+          </div>
+          <button class="accordion blue">
+            Can I revoke my consent once I have registerred?
+          </button>
+          <div class="panel blue">
+            <div class="panel-text">
+              Yes. You may contact the office at any time to rescind your consent for donation. After passing, UBC
+              cannot
+              accept donations if the family or executor of the donor contests the donation. <br>
+              However, family cannot revoke the donation after we have completed the transport and received the donor.
+            </div>
+          </div>
+          <button class="accordion blue">
+            Who should I notify of my decision?
+          </button>
+          <div class="panel blue">
+            <div class="panel-text">
+              It is recommended that you notify and discuss this decision with: <br>
+              <ul>
+                <li>Your next of kin</li>
+                <li>Executor of your estate</li>
+                <li>Your physician</li>
+                <li>Anyone else potentially involved in the donation process</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="what-happens-after-passing">
+          <div class="what-happens-after-passing-1 opensans-bold-magic-potion-40px">
+            What Happens After Passing?
+          </div>
+          <button class="accordion green">
+            What if I die outside of BC?
+          </button>
+          <div class="panel green">
+            <div class="panel-text">
+              A medical school in the region where death occurs may be contacted to make arrangements for donation to
+              another program. If you move away from British Columbia, we recommend that you make arrangements with a
+              donor program in your place of residence.
+            </div>
+          </div>
+          <button class="accordion green">
+            Does UBC perform autopsies?
+          </button>
+          <div class="panel green">
+            <div class="panel-text">
+              No.
+            </div>
+          </div>
+          <button class="accordion green">
+            How do I get a death certificate?
+          </button>
+          <div class="panel green">
+            <div class="panel-text">
+              Death Certificates will be issued for our donors by our contracted funeral home, Alternatives Funeral and
+              Cremation Services.
+            </div>
+          </div>
+          <button class="accordion green">
+            How long will donations remain with UBC?
+          </button>
+          <div class="panel green">
+            <div class="panel-text">
+              The Donation will remain at UBC up to a maximum of 3 years. However, donors have the option to register
+              indefinitely where a portion may be retained for use in teaching, training, and research. <br>
+              After it, the University will arrange for and provide cremation of the remains with Alternatives Funeral
+              and
+              Cremation Services. An executor/Next of kin will be contacted to collect the ashes in a simple urn
+              provided
+              by the University.
+            </div>
+          </div>
+          <button class="accordion green">
+            What happens if my donation is not accepted?
+          </button>
+          <div class="panel green">
+            <div class="panel-text">
+              If the body is not accepted into the donation program, it will be the responsibility of the executor or
+              next
+              of kin to proceed with your alternate arrangements.
+            </div>
+          </div>
+        </div>
+        <a href="#faq-header">
+          <div class="back-to-top">
+            <div class="back-to-top-1 valign-text-middle opensans-normal-black-18px">Back to Top</div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="contact-us contact">
+      <div class="contact-info contact">
+        <div class="header-1 opensans-bold-magic-potion-40px">Contact Us</div>
+        <p class="paragraph-1 opensans-normal-black-18px">
+          Contact Tel: 604-822-2578<br/>Fax: 604-827-4209<br/><br/>Department of Cellular &amp; Physiological
+          Sciences<br/>Faculty of Medicine<br/>2350 Health Sciences Mall<br/>Vancouver, BC Canada V6T
+          1Z3<br/>Website
+          cps.med.ubc.ca<br/>Contact us
+        </p>
+      </div>
+      <a href="#faq-header">
+        <div class="back-to-top-2">
+          <div class="back-to-top-3 valign-text-middle opensans-normal-black-18px">Back to Top</div>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+<script>
+  let acc = document.getElementsByClassName("accordion");
+  let i;
+  let activePanel;
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function () {
+      /* Toggle between adding and removing the "active" class,
+      to highlight the button that controls the panel */
+      this.classList.toggle("active");
+
+      /* Toggle between hiding and showing the active panel */
+      let panel = this.nextElementSibling;
+      // If maxHeight is not null, set it to null, otherwise set it to scrollHeight px
+      panel.style.maxHeight = (panel.style.maxHeight ? null : panel.scrollHeight + "px");
+      if (panel === activePanel) {
+        activePanel = null;
+      } else {
+        if (activePanel != null) {
+          activePanel.style.maxHeight = null;
+        }
+        activePanel = panel;
+      }
+    });
+  }
+</script>
+</body>
+
+</html>
